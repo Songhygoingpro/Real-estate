@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Box Example</title>
+</head>
+<body>
+    <form id="myForm" action="text.php" method="post">
+        <label for="mySelect">Choose an option:</label>
+        <select id="mySelect" name="mySelectValue">
+            <option value="110">Hello</option>
+            <option value="120">World</option>
+            <option value="130">Example</option>
+        </select>
+        <input type="hidden" id="selectedText" name="selectedText">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            var select = document.getElementById('mySelect');
+            var selectedOption = select.options[select.selectedIndex].text;
+            document.getElementById('selectedText').value = selectedOption;
+        });
+    </script>
+</body>
+</html>

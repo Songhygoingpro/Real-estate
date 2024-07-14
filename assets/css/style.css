@@ -1,12 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
-    box-sizing: border-box;
-    margin: 0;
+  margin: 0;
+  background-color: #EFF0F1;
+  font-family: "Inter", sans-serif;
 }
 
-section {
-    overflow-x: hidden;
-}
 
-.hero-section {
+/*navigation drawer button*/
+#burger {
+    display: none;
+  }
+  
+  .nav-menu__container {
+    position: relative;
+  }
+  
+  .nav-menu__button {
+    width: 30px;
+    height: 28px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    line-height: 8px;
+    font-family: "Poppins";
+  }
+  
+  .nav-menu__button span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.62, 0.43, 0.35, 1.47);
+  }
+  
+  #burger:checked ~ .nav-menu__button span:nth-child(1) {
+    width: 100%;
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  #burger:checked ~ .nav-menu__button span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+  }
+  
+  #burger:checked ~ .nav-menu__button span:nth-child(3) {
+    width: 100%;
+    transform: rotate(-45deg) translateY(-7px) translateX(7px);
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 76px;
+    right: 0;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem 1.5rem;
+  }
+  
+  
+  #burger:checked ~ .nav-menu {
+    transform: translateX(0);
+  }
 
+  /*custom select box*/
+  select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    background: none;
+    box-shadow: none;
+  }
+  
+  .select {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .select select {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    pointer-events: none; 
+    color: black;
+  }
+
+  /*custom aos*/
+
+  [data-aos="custom-fadeUp"] {
+    opacity: 0;
+  }
+  
+  [data-aos="custom-fadeUp"].aos-animate {
+    opacity: 1;
+  }
+  
+  input[type="text"] {
+    color: #333; 
+    padding: 10px;
 }
