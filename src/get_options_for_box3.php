@@ -1,4 +1,6 @@
 <?php
+
+include 'get_options_for_box2.php';
 // Simulated data for options in selectBox3 based on selectBox2 selection
 $optionsBox3 = array(
     '札幌市中央区' => '<option value="旭ケ丘">旭ケ丘</option>
@@ -393,7 +395,7 @@ $optionsBox3 = array(
   <option value="米里四条">米里四条</option>
   <option value="米里五条">米里五条</option>
   <option value="流通センター">流通センター</option>',
-  '札幌市豊平区' => ' <option value="旭町">旭町</option>
+    '札幌市豊平区' => ' <option value="旭町">旭町</option>
   <option value="水車町">水車町</option>
   <option value="月寒中央通">月寒中央通</option>
   <option value="月寒西一条">月寒西一条</option>
@@ -447,7 +449,7 @@ $optionsBox3 = array(
   <option value="美園十条">美園十条</option>
   <option value="美園十一条">美園十一条</option>
   <option value="美園十二条">美園十二条</option>',
-  '札幌市南区' => '<option value="石山">石山</option>
+    '札幌市南区' => '<option value="石山">石山</option>
 <option value="石山東">石山東</option>
 <option value="石山一条">石山一条</option>
 <option value="石山二条">石山二条</option>
@@ -541,7 +543,7 @@ $optionsBox3 = array(
 <option value="南三十九条西">南三十九条西</option>
 <option value="藻岩下">藻岩下</option>
 <option value="藻岩山">藻岩山</option>',
-'札幌市西区' => '<option value="琴似一条">琴似一条</option>
+    '札幌市西区' => '<option value="琴似一条">琴似一条</option>
 <option value="琴似二条">琴似二条</option>
 <option value="琴似三条">琴似三条</option>
 <option value="琴似四条">琴似四条</option>
@@ -946,7 +948,7 @@ $optionsBox3 = array(
 <option value="湯浜町">湯浜町</option>
 <option value="吉川町">吉川町</option>
 <option value="若松町">若松町</option>',
-'小樽市' => '<option value="相生町">相生町</option>
+    '小樽市' => '<option value="相生町">相生町</option>
 <option value="赤岩">赤岩</option>
 <option value="旭町">旭町</option>
 <option value="朝里">朝里</option>
@@ -1005,7 +1007,7 @@ $optionsBox3 = array(
 <option value="若竹町">若竹町</option>
 <option value="若松">若松</option>
 ',
-'旭川市' => '<option value="秋月１条">秋月１条</option>
+    '旭川市' => '<option value="秋月１条">秋月１条</option>
 <option value="秋月２条">秋月２条</option>
 <option value="秋月３条">秋月３条</option>
 <option value="曙北２条">曙北２条</option>
@@ -1338,7 +1340,7 @@ $optionsBox3 = array(
 <option value="９条西">９条西</option>
 <option value="１０条通">１０条通</option>
 <option value="１１条通">１１条通</option>',
-'室蘭市' => '<option value="石川町">石川町</option>
+    '室蘭市' => '<option value="石川町">石川町</option>
 <option value="入江町">入江町</option>
 <option value="絵鞆町">絵鞆町</option>
 <option value="大沢町">大沢町</option>
@@ -1562,7 +1564,7 @@ $optionsBox3 = array(
 <option value="若草町">若草町</option>
 <option value="若竹町">若竹町</option>
 <option value="若松町">若松町</option>',
-'帯広市' => '<option value="愛国町">愛国町</option>
+    '帯広市' => '<option value="愛国町">愛国町</option>
 <option value="泉町">泉町</option>
 <option value="以平町">以平町</option>
 <option value="稲田町">稲田町</option>
@@ -1701,7 +1703,7 @@ $optionsBox3 = array(
 <option value="基松町">基松町</option>
 <option value="八千代町">八千代町</option>
 <option value="依田町">依田町</option>',
-'北見市' => '<option value="相内町">相内町</option>
+    '北見市' => '<option value="相内町">相内町</option>
 <option value="青葉町">青葉町</option>
 <option value="曙町">曙町</option>
 <option value="朝日町">朝日町</option>
@@ -1864,7 +1866,7 @@ $optionsBox3 = array(
 <option value="留辺蘂町大和">留辺蘂町大和</option>
 <option value="若葉">若葉</option>
 <option value="若松">若松</option>',
-'夕張市' => '<option value="旭町">旭町</option>
+    '夕張市' => '<option value="旭町">旭町</option>
 <option value="楓">楓</option>
 <option value="鹿島明石町">鹿島明石町</option>
 <option value="鹿島栄町">鹿島栄町</option>
@@ -1916,7 +1918,7 @@ $optionsBox3 = array(
 <option value="南清水沢">南清水沢</option>
 <option value="紅葉山">紅葉山</option>
 <option value="若菜">若菜</option>',
-'岩見沢市' => '<option value="朝日町">朝日町</option>
+    '岩見沢市' => '<option value="朝日町">朝日町</option>
 <option value="有明町中央">有明町中央</option>
 <option value="有明町南">有明町南</option>
 <option value="大願町">大願町</option>
@@ -2097,7 +2099,7 @@ $optionsBox3 = array(
 <option value="十二条西">十二条西</option>
 <option value="十三条西">十三条西</option>
 ',
-'網走市' => '<option value="稲富">稲富</option>
+    '網走市' => '<option value="稲富">稲富</option>
 <option value="卯原内">卯原内</option>
 <option value="浦士別">浦士別</option>
 <option value="大曲">大曲</option>
@@ -2233,7 +2235,7 @@ $optionsBox3 = array(
 <option value="留萌村">留萌村</option>
 <option value="留萌原野">留萌原野</option>
 <option value="礼受町">礼受町</option>',
-'苫小牧市' => '<option value="青葉町">青葉町</option>
+    '苫小牧市' => '<option value="青葉町">青葉町</option>
 <option value="明野新町">明野新町</option>
 <option value="明野元町">明野元町</option>
 <option value="あけぼの町">あけぼの町</option>
@@ -2357,7 +2359,7 @@ $optionsBox3 = array(
 <option value="緑">緑</option>
 <option value="港">港</option>
 <option value="若葉台">若葉台</option>',
-'美唄市' => '<option value="一心町">一心町</option>
+    '美唄市' => '<option value="一心町">一心町</option>
 <option value="大通西一条南">大通西一条南</option>
 <option value="大通西一条北">大通西一条北</option>
 <option value="大通東一条南">大通東一条南</option>
@@ -2598,7 +2600,7 @@ $optionsBox3 = array(
 <option value="ゆめみ野東町">ゆめみ野東町</option>
 <option value="ゆめみ野南町">ゆめみ野南町</option>
 <option value="若草町">若草町</option>',
-'赤平市' => '<option value="赤平">赤平</option>
+    '赤平市' => '<option value="赤平">赤平</option>
 <option value="泉町">泉町</option>
 <option value="エルム町">エルム町</option>
 <option value="大町">大町</option>
@@ -2647,7 +2649,7 @@ $optionsBox3 = array(
 <option value="若木町西">若木町西</option>
 <option value="若木町南">若木町南</option>
 <option value="若木町北">若木町北</option>',
-'紋別市' => ' <option value="一本松">一本松</option>
+    '紋別市' => ' <option value="一本松">一本松</option>
     <option value="大山町">大山町</option>
     <option value="落石町">落石町</option>
     <option value="海洋公園">海洋公園</option>
@@ -2746,7 +2748,7 @@ $optionsBox3 = array(
 <option value="南士別町">南士別町</option>
 <option value="南町東">南町東</option>
 <option value="南町西">南町西</option>',
-'名寄市' => '<option value="曙">曙</option>
+    '名寄市' => '<option value="曙">曙</option>
 <option value="朝日">朝日</option>
 <option value="大通南">大通南</option>
 <option value="大通北">大通北</option>
@@ -2823,7 +2825,7 @@ $optionsBox3 = array(
 <option value="瑞穂">瑞穂</option>
 <option value="緑丘">緑丘</option>
 <option value="弥生">弥生</option>',
-'三笠市' => '<option value="有明町">有明町</option>
+    '三笠市' => '<option value="有明町">有明町</option>
 <option value="幾春別川向町">幾春別川向町</option>
 <option value="幾春別栗丘町">幾春別栗丘町</option>
 <option value="幾春別千住町">幾春別千住町</option>
@@ -2878,7 +2880,7 @@ $optionsBox3 = array(
 <option value="弥生町">弥生町</option>
 <option value="若草町">若草町</option>
 <option value="若松町">若松町</option>',
-'根室市' => '<option value="明郷">明郷</option>
+    '根室市' => '<option value="明郷">明郷</option>
 <option value="曙町">曙町</option>
 <option value="朝日町">朝日町</option>
 <option value="厚床">厚床</option>
@@ -2948,7 +2950,7 @@ $optionsBox3 = array(
 <option value="弥生町">弥生町</option>
 <option value="槍昔">槍昔</option>
 <option value="酪陽">酪陽</option>',
-'千歳市' => '<option value="青葉">青葉</option>
+    '千歳市' => '<option value="青葉">青葉</option>
 <option value="青葉丘">青葉丘</option>
 <option value="旭ケ丘">旭ケ丘</option>
 <option value="朝日町">朝日町</option>
@@ -3029,7 +3031,7 @@ $optionsBox3 = array(
 <option value="蘭越">蘭越</option>
 <option value="流通">流通</option>
 <option value="若草">若草</option>',
-'滝川市' => '<option value="朝日町東">朝日町東</option>
+    '滝川市' => '<option value="朝日町東">朝日町東</option>
 <option value="朝日町西">朝日町西</option>
 <option value="有明町">有明町</option>
 <option value="泉町">泉町</option>
@@ -3065,7 +3067,7 @@ $optionsBox3 = array(
 <option value="南滝の川">南滝の川</option>
 <option value="明神町">明神町</option>
 <option value="流通団地">流通団地</option>',
-'砂川市' => '<option value="一の沢">一の沢</option>
+    '砂川市' => '<option value="一の沢">一の沢</option>
 <option value="鶉">鶉</option>
 <option value="北吉野町">北吉野町</option>
 <option value="空知太">空知太</option>
@@ -3129,7 +3131,7 @@ $optionsBox3 = array(
 <option value="吉野二条北">吉野二条北</option>
 <option value="吉野三条南">吉野三条南</option>
 <option value="吉野四条南">吉野四条南</option>',
-'歌志内市' => '<option value="歌神">歌神</option>
+    '歌志内市' => '<option value="歌神">歌神</option>
 <option value="上歌">上歌</option>
 <option value="神威">神威</option>
 <option value="東光">東光</option>
@@ -3369,61 +3371,64 @@ $optionsBox3 = array(
 <option value="恵み野里美">恵み野里美</option>
 <option value="本町">本町</option>
 <option value="和光町">和光町</option>
-', '伊達市' => '<option value="旭町">旭町</option>
-<option value="網代町">網代町</option>
-<option value="乾町">乾町</option>
-<option value="有珠町">有珠町</option>
-<option value="梅本町">梅本町</option>
-<option value="大平町">大平町</option>
-<option value="大滝区愛地町">大滝区愛地町</option>
-<option value="大滝区上野町">大滝区上野町</option>
-<option value="大滝区北湯沢温泉町">大滝区北湯沢温泉町</option>
-<option value="大滝区清原町">大滝区清原町</option>
-<option value="大滝区三階滝町">大滝区三階滝町</option>
-<option value="大滝区昭園町">大滝区昭園町</option>
-<option value="大滝区清陵町">大滝区清陵町</option>
-<option value="大滝区大成町">大滝区大成町</option>
-<option value="大滝区豊里町">大滝区豊里町</option>
-<option value="大滝区本郷町">大滝区本郷町</option>
-<option value="大滝区本町">大滝区本町</option>
-<option value="大滝区円山町">大滝区円山町</option>
-<option value="大滝区宮城町">大滝区宮城町</option>
-<option value="大滝区優徳町">大滝区優徳町</option>
-<option value="大町">大町</option>
-<option value="鹿島町">鹿島町</option>
-<option value="上館山町">上館山町</option>
-<option value="上長和町">上長和町</option>
-<option value="北有珠町">北有珠町</option>
-<option value="北黄金町">北黄金町</option>
-<option value="北稀府町">北稀府町</option>
-<option value="喜門別町">喜門別町</option>
-<option value="清住町">清住町</option>
-<option value="志門気町">志門気町</option>
-<option value="末永町">末永町</option>
-<option value="竹原町">竹原町</option>
-<option value="館山下町">館山下町</option>
-<option value="館山町">館山町</option>
-<option value="中稀府町">中稀府町</option>
-<option value="長和町">長和町</option>
-<option value="錦町">錦町</option>
-<option value="西関内町">西関内町</option>
-<option value="西浜町">西浜町</option>
-<option value="萩原町">萩原町</option>
-<option value="東有珠町">東有珠町</option>
-<option value="東関内町">東関内町</option>
-<option value="東浜町">東浜町</option>
-<option value="舟岡町">舟岡町</option>
-<option value="幌美内町">幌美内町</option>
-<option value="松ケ枝町">松ケ枝町</option>
-<option value="南有珠町">南有珠町</option>
-<option value="南黄金町">南黄金町</option>
-<option value="南稀府町">南稀府町</option>
-<option value="向有珠町">向有珠町</option>
-<option value="元町">元町</option>
-<option value="山下町">山下町</option>
-<option value="弄月町">弄月町</option>
-<option value="若生町">若生町</option>
-', '北広島市' => '<option value="青葉町">青葉町</option>
+',
+    // '伊達市' => '<option value="旭町">旭町</option>
+    // <option value="網代町">網代町</option>
+    // <option value="乾町">乾町</option>
+    // <option value="有珠町">有珠町</option>
+    // <option value="梅本町">梅本町</option>
+    // <option value="大平町">大平町</option>
+    // <option value="大滝区愛地町">大滝区愛地町</option>
+    // <option value="大滝区上野町">大滝区上野町</option>
+    // <option value="大滝区北湯沢温泉町">大滝区北湯沢温泉町</option>
+    // <option value="大滝区清原町">大滝区清原町</option>
+    // <option value="大滝区三階滝町">大滝区三階滝町</option>
+    // <option value="大滝区昭園町">大滝区昭園町</option>
+    // <option value="大滝区清陵町">大滝区清陵町</option>
+    // <option value="大滝区大成町">大滝区大成町</option>
+    // <option value="大滝区豊里町">大滝区豊里町</option>
+    // <option value="大滝区本郷町">大滝区本郷町</option>
+    // <option value="大滝区本町">大滝区本町</option>
+    // <option value="大滝区円山町">大滝区円山町</option>
+    // <option value="大滝区宮城町">大滝区宮城町</option>
+    // <option value="大滝区優徳町">大滝区優徳町</option>
+    // <option value="大町">大町</option>
+    // <option value="鹿島町">鹿島町</option>
+    // <option value="上館山町">上館山町</option>
+    // <option value="上長和町">上長和町</option>
+    // <option value="北有珠町">北有珠町</option>
+    // <option value="北黄金町">北黄金町</option>
+    // <option value="北稀府町">北稀府町</option>
+    // <option value="喜門別町">喜門別町</option>
+    // <option value="清住町">清住町</option>
+    // <option value="志門気町">志門気町</option>
+    // <option value="末永町">末永町</option>
+    // <option value="竹原町">竹原町</option>
+    // <option value="館山下町">館山下町</option>
+    // <option value="館山町">館山町</option>
+    // <option value="中稀府町">中稀府町</option>
+    // <option value="長和町">長和町</option>
+    // <option value="錦町">錦町</option>
+    // <option value="西関内町">西関内町</option>
+    // <option value="西浜町">西浜町</option>
+    // <option value="萩原町">萩原町</option>
+    // <option value="東有珠町">東有珠町</option>
+    // <option value="東関内町">東関内町</option>
+    // <option value="東浜町">東浜町</option>
+    // <option value="舟岡町">舟岡町</option>
+    // <option value="幌美内町">幌美内町</option>
+    // <option value="松ケ枝町">松ケ枝町</option>
+    // <option value="南有珠町">南有珠町</option>
+    // <option value="南黄金町">南黄金町</option>
+    // <option value="南稀府町">南稀府町</option>
+    // <option value="向有珠町">向有珠町</option>
+    // <option value="元町">元町</option>
+    // <option value="山下町">山下町</option>
+    // <option value="弄月町">弄月町</option>
+    // <option value="若生町">若生町</option>
+    // '
+    // , 
+    '北広島市' => '<option value="青葉町">青葉町</option>
 <option value="朝日町">朝日町</option>
 <option value="泉町">泉町</option>
 <option value="稲穂町東">稲穂町東</option>
@@ -3478,7 +3483,7 @@ $optionsBox3 = array(
 <option value="輪厚中央">輪厚中央</option>
 <option value="輪厚元町">輪厚元町</option>
 <option value="若葉町">若葉町</option>',
-'石狩市' => '<option value="厚田区厚田">厚田区厚田</option>
+    '石狩市' => '<option value="厚田区厚田">厚田区厚田</option>
 <option value="厚田区押琴">厚田区押琴</option>
 <option value="厚田区濃昼">厚田区濃昼</option>
 <option value="厚田区小谷">厚田区小谷</option>
@@ -3563,7 +3568,7 @@ $optionsBox3 = array(
 <option value="緑苑台東二条">緑苑台東二条</option>
 <option value="緑苑台東三条">緑苑台東三条</option>
 <option value="若生町">若生町</option>',
-'北斗市' => '<option value="市渡">市渡</option>
+    '北斗市' => '<option value="市渡">市渡</option>
 <option value="一本木">一本木</option>
 <option value="稲里">稲里</option>
 <option value="飯生">飯生</option>
@@ -3700,7 +3705,7 @@ $optionsBox3 = array(
 <option value="六軒町">六軒町</option>
 <option value="若葉">若葉</option>
 <option value="蕨岱">蕨岱</option>',
-'石狩郡新篠津村' => '<option value="あけぼの">あけぼの</option>
+    '石狩郡新篠津村' => '<option value="あけぼの">あけぼの</option>
 <option value="いなほ">いなほ</option>
 <option value="かつら">かつら</option>
 <option value="上篠津">上篠津</option>
@@ -3735,7 +3740,7 @@ $optionsBox3 = array(
 <option value="南ケ丘">南ケ丘</option>
 <option value="みのり">みのり</option>
 <option value="萌出">萌出</option>',
-'松前郡松前町' => '<option value="赤神">赤神</option>
+    '松前郡松前町' => '<option value="赤神">赤神</option>
 <option value="朝日">朝日</option>
 <option value="愛宕">愛宕</option>
 <option value="荒谷">荒谷</option>
@@ -3793,7 +3798,7 @@ $optionsBox3 = array(
 <option value="吉岡">吉岡</option>
 <option value="吉田町">吉田町</option>
 <option value="吉野">吉野</option>',
-'上磯郡知内町' => '<option value="重内">重内</option>
+    '上磯郡知内町' => '<option value="重内">重内</option>
 <option value="小谷石">小谷石</option>
 <option value="上雷">上雷</option>
 <option value="中ノ川">中ノ川</option>
@@ -4271,7 +4276,7 @@ $optionsBox3 = array(
 <option value="見晴">見晴</option>
 <option value="社">社</option>
 ',
-'虻田郡留寿都村' => '<option value="旭野">旭野</option>
+    '虻田郡留寿都村' => '<option value="旭野">旭野</option>
 <option value="泉川">泉川</option>
 <option value="黒田">黒田</option>
 <option value="三ノ原">三ノ原</option>
@@ -4282,7 +4287,7 @@ $optionsBox3 = array(
 <option value="向丘">向丘</option>
 <option value="留寿都">留寿都</option>
 ',
-'虻田郡喜茂別町' => '<option value="相川">相川</option>
+    '虻田郡喜茂別町' => '<option value="相川">相川</option>
 <option value="旭町">旭町</option>
 <option value="大町">大町</option>
 <option value="金山">金山</option>
@@ -4321,7 +4326,7 @@ $optionsBox3 = array(
 <option value="三崎">三崎</option>
 <option value="脇方">脇方</option>
 ',
-'虻田郡倶知安町' => '<option value="旭">旭</option>
+    '虻田郡倶知安町' => '<option value="旭">旭</option>
 <option value="出雲">出雲</option>
 <option value="岩尾別">岩尾別</option>
 <option value="樺山">樺山</option>
@@ -4394,7 +4399,7 @@ $optionsBox3 = array(
 <option value="梨野舞納">梨野舞納</option>
 <option value="ワイス">ワイス</option>
 ',
-'岩内郡岩内町' => '<option value="相生">相生</option>
+    '岩内郡岩内町' => '<option value="相生">相生</option>
 <option value="大浜">大浜</option>
 <option value="清住">清住</option>
 <option value="栄">栄</option>
@@ -4636,7 +4641,7 @@ $optionsBox3 = array(
 <option value="１６区">１６区</option>
 <option value="２９区">２９区</option>
 <option value="３０区">３０区</option>',
-'夕張郡栗山町' => '<option value="朝日">朝日</option>
+    '夕張郡栗山町' => '<option value="朝日">朝日</option>
 <option value="旭台">旭台</option>
 <option value="阿野呂">阿野呂</option>
 <option value="雨煙別">雨煙別</option>
@@ -4666,7 +4671,7 @@ $optionsBox3 = array(
 <option value="南学田">南学田</option>
 <option value="森">森</option>
 <option value="湯地">湯地</option>',
-'樺戸郡月形町' => '<option value="赤川">赤川</option>
+    '樺戸郡月形町' => '<option value="赤川">赤川</option>
 <option value="麻生">麻生</option>
 <option value="雁里">雁里</option>
 <option value="北郷">北郷</option>
@@ -4692,7 +4697,7 @@ $optionsBox3 = array(
 <option value="南耕地">南耕地</option>
 <option value="南札比内">南札比内</option>
 <option value="南新田">南新田</option>',
-'樺戸郡浦臼町' => '<option value="浦臼第１">浦臼第１</option>
+    '樺戸郡浦臼町' => '<option value="浦臼第１">浦臼第１</option>
 <option value="浦臼第２">浦臼第２</option>
 <option value="浦臼第３">浦臼第３</option>
 <option value="浦臼第４">浦臼第４</option>
@@ -4718,7 +4723,7 @@ $optionsBox3 = array(
 <option value="弥生">弥生</option>
 <option value="吉野">吉野</option>
 ',
-'雨竜郡妹背牛町' => '<option value="１区">１区</option>
+    '雨竜郡妹背牛町' => '<option value="１区">１区</option>
 <option value="２区">２区</option>
 <option value="３区">３区</option>
 <option value="４区">４区</option>
@@ -4730,7 +4735,7 @@ $optionsBox3 = array(
 <option value="１０区">１０区</option>
 <option value="１１区">１１区</option>
 ',
-'雨竜郡秩父別町' => '<option value="滝の上">滝の上</option>
+    '雨竜郡秩父別町' => '<option value="滝の上">滝の上</option>
 <option value="中山">中山</option>
 <option value="東山">東山</option>
 <option value="南山">南山</option>
@@ -4745,7 +4750,7 @@ $optionsBox3 = array(
 <option value="７条">７条</option>
 <option value="８条">８条</option>
 <option value="９条">９条</option>
-','雨竜郡雨竜町' => '<option value="第１町内">第１町内</option>
+', '雨竜郡雨竜町' => '<option value="第１町内">第１町内</option>
 <option value="第２町内">第２町内</option>
 <option value="第３町内">第３町内</option>
 <option value="第４町内">第４町内</option>
@@ -4757,7 +4762,7 @@ $optionsBox3 = array(
 <option value="第１０町内">第１０町内</option>
 <option value="第１１町内">第１１町内</option>
 ',
-'雨竜郡北竜町' => '<option value="板谷">板谷</option>
+    '雨竜郡北竜町' => '<option value="板谷">板谷</option>
 <option value="岩村">岩村</option>
 <option value="恵岱別">恵岱別</option>
 <option value="西川">西川</option>
@@ -4766,7 +4771,7 @@ $optionsBox3 = array(
 <option value="三谷">三谷</option>
 <option value="和">和</option>
 <option value="竜西">竜西</option>
-','雨竜郡沼田町' => '<option value="旭町">旭町</option>
+', '雨竜郡沼田町' => '<option value="旭町">旭町</option>
 <option value="恵比島">恵比島</option>
 <option value="北一条">北一条</option>
 <option value="共成">共成</option>
@@ -4782,7 +4787,7 @@ $optionsBox3 = array(
 <option value="緑町">緑町</option>
 <option value="南一条">南一条</option>
 ',
-'上川郡鷹栖町' => '<option value="北野　西一条">北野　西一条</option>
+    '上川郡鷹栖町' => '<option value="北野　西一条">北野　西一条</option>
 <option value="北野　西二条">北野　西二条</option>
 <option value="北野　西三条">北野　西三条</option>
 <option value="北野　西四条">北野　西四条</option>
@@ -4872,7 +4877,7 @@ $optionsBox3 = array(
 <option value="２６号">２６号</option>
 <option value="２７号">２７号</option>
 ',
-'上川郡当麻町' => '<option value="伊香牛">伊香牛</option>
+    '上川郡当麻町' => '<option value="伊香牛">伊香牛</option>
 <option value="宇園別">宇園別</option>
 <option value="開明">開明</option>
 <option value="中央">中央</option>
@@ -4888,7 +4893,7 @@ $optionsBox3 = array(
 <option value="五条西">五条西</option>
 <option value="六条東">六条東</option>
 <option value="六条西">六条西</option>',
-'上川郡比布町' => '<option value="基線">基線</option>
+    '上川郡比布町' => '<option value="基線">基線</option>
 <option value="北町">北町</option>
 <option value="北１線">北１線</option>
 <option value="北２線">北２線</option>
@@ -4914,7 +4919,7 @@ $optionsBox3 = array(
 <option value="緑町">緑町</option>
 <option value="南１線">南１線</option>
 <option value="南町">南町</option>',
-'上川郡愛別町' => '<option value="愛山">愛山</option>
+    '上川郡愛別町' => '<option value="愛山">愛山</option>
 <option value="愛山町">愛山町</option>
 <option value="愛別">愛別</option>
 <option value="金富">金富</option>
@@ -5056,7 +5061,7 @@ $optionsBox3 = array(
 <option value="横牛">横牛</option>
 <option value="瑠辺蘂">瑠辺蘂</option>
 <option value="朗根内">朗根内</option>',
-'空知郡上富良野町' => '<option value="旭町">旭町</option>
+    '空知郡上富良野町' => '<option value="旭町">旭町</option>
 <option value="新井牧場">新井牧場</option>
 <option value="泉町">泉町</option>
 <option value="扇町">扇町</option>
@@ -5153,7 +5158,7 @@ $optionsBox3 = array(
 <option value="本町">本町</option>
 <option value="吉井農場">吉井農場</option>
 ',
-'空知郡南富良野町' => '<option value="幾寅">幾寅</option>
+    '空知郡南富良野町' => '<option value="幾寅">幾寅</option>
 <option value="落合">落合</option>
 <option value="金山">金山</option>
 <option value="北落合">北落合</option>
@@ -5161,7 +5166,7 @@ $optionsBox3 = array(
 <option value="東幾寅">東幾寅</option>
 <option value="東鹿越">東鹿越</option>
 ',
-'勇払郡占冠村' => '<option value="上トマム">上トマム</option>
+    '勇払郡占冠村' => '<option value="上トマム">上トマム</option>
 <option value="占冠">占冠</option>
 <option value="下トマム">下トマム</option>
 <option value="双珠別">双珠別</option>
@@ -5200,7 +5205,7 @@ $optionsBox3 = array(
 <option value="緑町">緑町</option>
 <option value="元町">元町</option>
 ',
-'上川郡下川町' => '<option value="旭町">旭町</option>
+    '上川郡下川町' => '<option value="旭町">旭町</option>
 <option value="一の橋">一の橋</option>
 <option value="上名寄">上名寄</option>
 <option value="北町">北町</option>
@@ -5216,7 +5221,7 @@ $optionsBox3 = array(
 <option value="緑町">緑町</option>
 <option value="南町">南町</option>
 ',
-'中川郡美深町' => '<option value="泉">泉</option>
+    '中川郡美深町' => '<option value="泉">泉</option>
 <option value="大手">大手</option>
 <option value="大通南">大通南</option>
 <option value="大通北">大通北</option>
@@ -5325,7 +5330,7 @@ $optionsBox3 = array(
 <option value="見晴町">見晴町</option>
 <option value="湯の沢">湯の沢</option>
 ',
-'留萌郡小平町' => '<option value="臼谷">臼谷</option>
+    '留萌郡小平町' => '<option value="臼谷">臼谷</option>
 <option value="大椴">大椴</option>
 <option value="沖内">沖内</option>
 <option value="鬼鹿千松">鬼鹿千松</option>
@@ -5370,7 +5375,7 @@ $optionsBox3 = array(
 <option value="三豊">三豊</option>
 <option value="力昼">力昼</option>
 ',
-'苫前郡羽幌町' => '<option value="曙">曙</option>
+    '苫前郡羽幌町' => '<option value="曙">曙</option>
 <option value="朝日">朝日</option>
 <option value="上築">上築</option>
 <option value="上羽幌">上羽幌</option>
@@ -5406,7 +5411,7 @@ $optionsBox3 = array(
 <option value="南七条">南七条</option>
 <option value="焼尻">焼尻</option>
 ',
-'苫前郡初山別村' => '<option value="明里">明里</option>
+    '苫前郡初山別村' => '<option value="明里">明里</option>
 <option value="有明">有明</option>
 <option value="共成">共成</option>
 <option value="栄">栄</option>
@@ -5453,7 +5458,7 @@ $optionsBox3 = array(
 <option value="山手裏通">山手裏通</option>
 <option value="山手通">山手通</option>
 ',
-'宗谷郡猿払村' => '<option value="浅茅野">浅茅野</option>
+    '宗谷郡猿払村' => '<option value="浅茅野">浅茅野</option>
 <option value="浅茅野台地">浅茅野台地</option>
 <option value="芦野">芦野</option>
 <option value="鬼志別北町">鬼志別北町</option>
@@ -5521,7 +5526,7 @@ $optionsBox3 = array(
 <option value="松音知">松音知</option>
 <option value="弥生">弥生</option>
 ',
-'枝幸郡枝幸町' => '<option value="宇遠内">宇遠内</option>
+    '枝幸郡枝幸町' => '<option value="宇遠内">宇遠内</option>
 <option value="歌登大曲">歌登大曲</option>
 <option value="歌登大奮">歌登大奮</option>
 <option value="歌登上徳志別">歌登上徳志別</option>
@@ -5560,7 +5565,7 @@ $optionsBox3 = array(
 <option value="南浜町">南浜町</option>
 <option value="目梨泊">目梨泊</option>
 <option value="山臼">山臼</option>',
-'天塩郡豊富町' => '<option value="阿沙流">阿沙流</option>
+    '天塩郡豊富町' => '<option value="阿沙流">阿沙流</option>
 <option value="芦川">芦川</option>
 <option value="有明">有明</option>
 <option value="駅前通">駅前通</option>
@@ -5605,9 +5610,9 @@ $optionsBox3 = array(
 <option value="稚咲内">稚咲内</option>
 ', '礼文郡礼文町' => '<option value="香深村">香深村</option>
 <option value="船泊村">船泊村</option>
-','利尻郡利尻町' => '<option value="沓形">沓形</option>
+', '利尻郡利尻町' => '<option value="沓形">沓形</option>
 <option value="仙法志">仙法志</option>',
-'利尻郡利尻富士町' => '<option value="鴛泊">鴛泊</option>
+    '利尻郡利尻富士町' => '<option value="鴛泊">鴛泊</option>
 <option value="鬼脇">鬼脇</option>
 ', '天塩郡幌延町' => '<option value="開進">開進</option>
 <option value="上問寒">上問寒</option>
@@ -5636,7 +5641,7 @@ $optionsBox3 = array(
 <option value="六条南">六条南</option>
 <option value="六条北">六条北</option>
 ',
-'網走郡美幌町' => '<option value="青葉">青葉</option>
+    '網走郡美幌町' => '<option value="青葉">青葉</option>
 <option value="青山南">青山南</option>
 <option value="青山北">青山北</option>
 <option value="昭野">昭野</option>
@@ -5685,7 +5690,7 @@ $optionsBox3 = array(
 <option value="美芳">美芳</option>
 <option value="元町">元町</option>
 ',
-'網走郡津別町' => '<option value="相生">相生</option>
+    '網走郡津別町' => '<option value="相生">相生</option>
 <option value="旭町">旭町</option>
 <option value="岩富">岩富</option>
 <option value="大通">大通</option>
@@ -5720,7 +5725,7 @@ $optionsBox3 = array(
 <option value="最上">最上</option>
 <option value="一条通">一条通</option>
 ',
-'斜里郡斜里町' => '<option value="青葉町">青葉町</option>
+    '斜里郡斜里町' => '<option value="青葉町">青葉町</option>
 <option value="朝日町">朝日町</option>
 <option value="以久科南">以久科南</option>
 <option value="以久科北">以久科北</option>
@@ -5755,7 +5760,7 @@ $optionsBox3 = array(
 <option value="峰浜">峰浜</option>
 <option value="来運">来運</option>
 ',
-'斜里郡清里町' => '<option value="青葉">青葉</option>
+    '斜里郡清里町' => '<option value="青葉">青葉</option>
 <option value="上斜里">上斜里</option>
 <option value="神威">神威</option>
 <option value="川向">川向</option>
@@ -5815,7 +5820,7 @@ $optionsBox3 = array(
 <option value="若富町">若富町</option>
 <option value="若葉町">若葉町</option>
 ',
-'常呂郡置戸町' => '<option value="秋田">秋田</option>
+    '常呂郡置戸町' => '<option value="秋田">秋田</option>
 <option value="朝日">朝日</option>
 <option value="安住">安住</option>
 <option value="大美">大美</option>
@@ -5852,7 +5857,7 @@ $optionsBox3 = array(
 <option value="若木">若木</option>
 <option value="若松">若松</option>
 ',
-'常呂郡佐呂間町' => '<option value="朝日">朝日</option>
+    '常呂郡佐呂間町' => '<option value="朝日">朝日</option>
 <option value="永代町">永代町</option>
 <option value="川西">川西</option>
 <option value="北">北</option>
@@ -5941,7 +5946,7 @@ $optionsBox3 = array(
 <option value="二条通南">二条通南</option>
 <option value="二条通北">二条通北</option>
 ',
-'紋別郡湧別町' => '<option value="曙町">曙町</option>
+    '紋別郡湧別町' => '<option value="曙町">曙町</option>
 <option value="旭">旭</option>
 <option value="開盛">開盛</option>
 <option value="上芭露">上芭露</option>
@@ -5996,7 +6001,7 @@ $optionsBox3 = array(
 <option value="元町">元町</option>
 <option value="雄柏">雄柏</option>
 ',
-'紋別郡興部町' => '<option value="秋里">秋里</option>
+    '紋別郡興部町' => '<option value="秋里">秋里</option>
 <option value="宇津">宇津</option>
 <option value="興部">興部</option>
 <option value="沙留">沙留</option>
@@ -6005,7 +6010,7 @@ $optionsBox3 = array(
 <option value="豊野">豊野</option>
 <option value="北興">北興</option>
 ',
-'紋別郡西興部村' => '<option value="奥興部">奥興部</option>
+    '紋別郡西興部村' => '<option value="奥興部">奥興部</option>
 <option value="忍路子">忍路子</option>
 <option value="上興部">上興部</option>
 <option value="上藻">上藻</option>
@@ -6027,7 +6032,7 @@ $optionsBox3 = array(
 <option value="幌内">幌内</option>
 <option value="南雄武">南雄武</option>
 ',
-'網走郡大空町' => '<option value="東藻琴新富">東藻琴新富</option>
+    '網走郡大空町' => '<option value="東藻琴新富">東藻琴新富</option>
 <option value="東藻琴末広">東藻琴末広</option>
 <option value="東藻琴大進">東藻琴大進</option>
 <option value="東藻琴千草">東藻琴千草</option>
@@ -6065,7 +6070,7 @@ $optionsBox3 = array(
 <option value="女満別本通">女満別本通</option>
 <option value="女満別夕陽台">女満別夕陽台</option>
 ',
-'虻田郡豊浦町' => '<option value="旭町">旭町</option>
+    '虻田郡豊浦町' => '<option value="旭町">旭町</option>
 <option value="大岸">大岸</option>
 <option value="海岸町">海岸町</option>
 <option value="上泉">上泉</option>
@@ -6083,7 +6088,7 @@ $optionsBox3 = array(
 <option value="山梨">山梨</option>
 <option value="礼文華">礼文華</option>
 ',
-'有珠郡壮瞥町' => '<option value="上久保内">上久保内</option>
+    '有珠郡壮瞥町' => '<option value="上久保内">上久保内</option>
 <option value="久保内">久保内</option>
 <option value="幸内">幸内</option>
 <option value="昭和新山">昭和新山</option>
@@ -6097,7 +6102,7 @@ $optionsBox3 = array(
 <option value="弁景">弁景</option>
 <option value="南久保内">南久保内</option>
 ',
-'白老郡白老町' => '<option value="石山">石山</option>
+    '白老郡白老町' => '<option value="石山">石山</option>
 <option value="大町">大町</option>
 <option value="川沿">川沿</option>
 <option value="北吉原">北吉原</option>
@@ -6117,7 +6122,7 @@ $optionsBox3 = array(
 <option value="森野">森野</option>
 <option value="若草町">若草町</option>
 ',
-'勇払郡厚真町' => '<option value="朝日">朝日</option>
+    '勇払郡厚真町' => '<option value="朝日">朝日</option>
 <option value="上野">上野</option>
 <option value="宇隆">宇隆</option>
 <option value="表町">表町</option>
@@ -6148,7 +6153,7 @@ $optionsBox3 = array(
 <option value="美里">美里</option>
 <option value="吉野">吉野</option>
 ',
-'虻田郡洞爺湖町' => '<option value="青葉町">青葉町</option>
+    '虻田郡洞爺湖町' => '<option value="青葉町">青葉町</option>
 <option value="旭浦">旭浦</option>
 <option value="旭町">旭町</option>
 <option value="泉">泉</option>
@@ -6174,7 +6179,7 @@ $optionsBox3 = array(
 <option value="本町">本町</option>
 <option value="三豊">三豊</option>
 ',
-'勇払郡安平町' => '<option value="安平">安平</option>
+    '勇払郡安平町' => '<option value="安平">安平</option>
 <option value="追分青葉">追分青葉</option>
 <option value="追分旭">追分旭</option>
 <option value="追分柏が丘">追分柏が丘</option>
@@ -6202,7 +6207,7 @@ $optionsBox3 = array(
 <option value="早来守田">早来守田</option>
 <option value="東早来">東早来</option>
 ',
-'勇払郡むかわ町' => '<option value="青葉">青葉</option>
+    '勇払郡むかわ町' => '<option value="青葉">青葉</option>
 <option value="旭岡">旭岡</option>
 <option value="有明">有明</option>
 <option value="生田">生田</option>
@@ -6238,7 +6243,7 @@ $optionsBox3 = array(
 <option value="米原">米原</option>
 <option value="若草">若草</option>
 ',
-'沙流郡日高町' => '<option value="旭町">旭町</option>
+    '沙流郡日高町' => '<option value="旭町">旭町</option>
 <option value="厚賀町">厚賀町</option>
 <option value="幾千世">幾千世</option>
 <option value="賀張">賀張</option>
@@ -6291,7 +6296,7 @@ $optionsBox3 = array(
 <option value="本町">本町</option>
 <option value="芽生">芽生</option>
 ',
-'新冠郡新冠町' => '<option value="朝日">朝日</option>
+    '新冠郡新冠町' => '<option value="朝日">朝日</option>
 <option value="東町">東町</option>
 <option value="泉">泉</option>
 <option value="岩清水">岩清水</option>
@@ -6317,7 +6322,7 @@ $optionsBox3 = array(
 <option value="里平">里平</option>
 <option value="若園">若園</option>
 ',
-'浦河郡浦河町' => '<option value="旭町">旭町</option>
+    '浦河郡浦河町' => '<option value="旭町">旭町</option>
 <option value="姉茶">姉茶</option>
 <option value="井寒台">井寒台</option>
 <option value="入船町">入船町</option>
@@ -6353,7 +6358,7 @@ $optionsBox3 = array(
 <option value="向が丘西">向が丘西</option>
 <option value="向別">向別</option>
 ',
-'様似郡様似町' => '<option value="旭">旭</option>
+    '様似郡様似町' => '<option value="旭">旭</option>
 <option value="朝日丘">朝日丘</option>
 <option value="鵜苫">鵜苫</option>
 <option value="大通">大通</option>
@@ -6373,7 +6378,7 @@ $optionsBox3 = array(
 <option value="緑町">緑町</option>
 <option value="港町">港町</option>
 ',
-'幌泉郡えりも町' => '<option value="歌別">歌別</option>
+    '幌泉郡えりも町' => '<option value="歌別">歌別</option>
 <option value="えりも岬">えりも岬</option>
 <option value="庶野">庶野</option>
 <option value="新浜">新浜</option>
@@ -6385,7 +6390,7 @@ $optionsBox3 = array(
 <option value="目黒">目黒</option>
 <option value="大和">大和</option>
 ',
-'日高郡新ひだか町' => '<option value="静内青柳町">静内青柳町</option>
+    '日高郡新ひだか町' => '<option value="静内青柳町">静内青柳町</option>
 <option value="静内旭町">静内旭町</option>
 <option value="静内入船町">静内入船町</option>
 <option value="静内浦和">静内浦和</option>
@@ -6438,7 +6443,7 @@ $optionsBox3 = array(
 <option value="三石美河">三石美河</option>
 <option value="三石港町">三石港町</option>
 <option value="三石美野和">三石美野和</option>',
-'河東郡音更町' => '<option value="大通">大通</option>
+    '河東郡音更町' => '<option value="大通">大通</option>
 <option value="大通北">大通北</option>
 <option value="長流枝">長流枝</option>
 <option value="長流枝幹線">長流枝幹線</option>
@@ -6535,7 +6540,7 @@ $optionsBox3 = array(
 <option value="緑陽台仲区">緑陽台仲区</option>
 <option value="緑陽台南区">緑陽台南区</option>
 <option value="緑陽台北区">緑陽台北区</option>',
-'河東郡士幌町' => '<option value="イショッポ">イショッポ</option>
+    '河東郡士幌町' => '<option value="イショッポ">イショッポ</option>
 <option value="ウリマク">ウリマク</option>
 <option value="上音更">上音更</option>
 <option value="士幌">士幌</option>
@@ -6554,7 +6559,7 @@ $optionsBox3 = array(
 <option value="ワッカクンネップ">ワッカクンネップ</option>
 </select>
 ',
-'河東郡上士幌町' => '<option value="居辺">居辺</option>
+    '河東郡上士幌町' => '<option value="居辺">居辺</option>
 <option value="上音更">上音更</option>
 <option value="上士幌">上士幌</option>
 <option value="黒石平">黒石平</option>
@@ -6563,7 +6568,7 @@ $optionsBox3 = array(
 <option value="幌加">幌加</option>
 <option value="三股">三股</option>
 ',
-'河東郡鹿追町' => '<option value="泉町">泉町</option>
+    '河東郡鹿追町' => '<option value="泉町">泉町</option>
 <option value="瓜幕東">瓜幕東</option>
 <option value="瓜幕西">瓜幕西</option>
 <option value="瓜幕南">瓜幕南</option>
@@ -6591,7 +6596,7 @@ $optionsBox3 = array(
 <option value="南町">南町</option>
 <option value="元町">元町</option>
 ',
-'上川郡新得町' => '<option value="上佐幌">上佐幌</option>
+    '上川郡新得町' => '<option value="上佐幌">上佐幌</option>
 <option value="屈足">屈足</option>
 <option value="屈足旭町">屈足旭町</option>
 <option value="屈足旭町東">屈足旭町東</option>
@@ -6626,7 +6631,7 @@ $optionsBox3 = array(
 <option value="四条南">四条南</option>
 <option value="五条南">五条南</option>
 ',
-'上川郡清水町' => '<option value="旭山">旭山</option>
+    '上川郡清水町' => '<option value="旭山">旭山</option>
 <option value="上然別">上然別</option>
 <option value="北一条">北一条</option>
 <option value="北二条">北二条</option>
@@ -6678,7 +6683,7 @@ $optionsBox3 = array(
 <option value="南五条西">南五条西</option>
 <option value="南六条西">南六条西</option>
 ',
-'河西郡芽室町' => '<option value="雄馬別">雄馬別</option>
+    '河西郡芽室町' => '<option value="雄馬別">雄馬別</option>
 <option value="上美生">上美生</option>
 <option value="上伏古">上伏古</option>
 <option value="上芽室基線">上芽室基線</option>
@@ -6788,7 +6793,7 @@ $optionsBox3 = array(
 <option value="元更別">元更別</option>
 <option value="元大正">元大正</option>
 ',
-'河西郡更別村' => '<option value="曙町">曙町</option>
+    '河西郡更別村' => '<option value="曙町">曙町</option>
 <option value="旭区">旭区</option>
 <option value="香川区">香川区</option>
 <option value="柏町">柏町</option>
@@ -6812,7 +6817,7 @@ $optionsBox3 = array(
 <option value="南更別区">南更別区</option>
 <option value="若葉町">若葉町</option>
 ',
-'広尾郡大樹町' => '<option value="相川">相川</option>
+    '広尾郡大樹町' => '<option value="相川">相川</option>
 <option value="暁町">暁町</option>
 <option value="旭浜">旭浜</option>
 <option value="石坂">石坂</option>
@@ -6868,7 +6873,7 @@ $optionsBox3 = array(
 <option value="二条通">二条通</option>
 <option value="三条通">三条通</option>
 ',
-'広尾郡広尾町' => '<option value="音調津">音調津</option>
+    '広尾郡広尾町' => '<option value="音調津">音調津</option>
 <option value="音調津区画外">音調津区画外</option>
 <option value="会所通">会所通</option>
 <option value="会所前">会所前</option>
@@ -6913,7 +6918,7 @@ $optionsBox3 = array(
 <option value="茂寄南">茂寄南</option>
 <option value="紋別">紋別</option>
 <option value="ルベシベツ">ルベシベツ</option>',
-'中川郡幕別町' => '<option value="相川">相川</option>
+    '中川郡幕別町' => '<option value="相川">相川</option>
 <option value="明野">明野</option>
 <option value="旭町">旭町</option>
 <option value="軍岡">軍岡</option>
@@ -6990,7 +6995,7 @@ $optionsBox3 = array(
 <option value="明倫">明倫</option>
 <option value="本町">本町</option>
 <option value="依田">依田</option>',
-'中川郡池田町' => '<option value="青山">青山</option>
+    '中川郡池田町' => '<option value="青山">青山</option>
 <option value="旭町">旭町</option>
 <option value="大通">大通</option>
 <option value="大通南">大通南</option>
@@ -7018,7 +7023,7 @@ $optionsBox3 = array(
 <option value="東一条">東一条</option>
 <option value="東二条">東二条</option>
 <option value="美加登">美加登</option>',
-'中川郡豊頃町' => '<option value="安骨">安骨</option>
+    '中川郡豊頃町' => '<option value="安骨">安骨</option>
 <option value="育素多">育素多</option>
 <option value="牛首別">牛首別</option>
 <option value="大津">大津</option>
@@ -7050,7 +7055,7 @@ $optionsBox3 = array(
 <option value="湧洞">湧洞</option>
 <option value="礼作別">礼作別</option>
 <option value="礼文内">礼文内</option>',
-'中川郡本別町' => '<option value="明美">明美</option>
+    '中川郡本別町' => '<option value="明美">明美</option>
 <option value="朝日町">朝日町</option>
 <option value="追名牛">追名牛</option>
 <option value="奥仙美里">奥仙美里</option>
@@ -7133,7 +7138,7 @@ $optionsBox3 = array(
 <option value="螺湾本町">螺湾本町</option>
 <option value="鷲府">鷲府</option>
 ',
-'足寄郡陸別町' => '<option value="旭町">旭町</option>
+    '足寄郡陸別町' => '<option value="旭町">旭町</option>
 <option value="ウエンベツ">ウエンベツ</option>
 <option value="大通">大通</option>
 <option value="恩根内">恩根内</option>
@@ -7175,7 +7180,7 @@ $optionsBox3 = array(
 <option value="弥生">弥生</option>
 <option value="林内">林内</option>
 <option value="若葉">若葉</option>',
-'十勝郡浦幌町' => '<option value="愛牛">愛牛</option>
+    '十勝郡浦幌町' => '<option value="愛牛">愛牛</option>
 <option value="相川">相川</option>
 <option value="朝日">朝日</option>
 <option value="厚内">厚内</option>
@@ -7238,7 +7243,7 @@ $optionsBox3 = array(
 <option value="養老">養老</option>
 <option value="吉野">吉野</option>
 <option value="留真">留真</option>',
-'釧路郡釧路町' => '<option value="曙">曙</option>
+    '釧路郡釧路町' => '<option value="曙">曙</option>
 <option value="跡永賀村">跡永賀村</option>
 <option value="柏東">柏東</option>
 <option value="柏西">柏西</option>
@@ -7283,7 +7288,7 @@ $optionsBox3 = array(
 <option value="よし野">よし野</option>
 <option value="若葉">若葉</option>
 <option value="わらび">わらび</option>',
-'厚岸郡厚岸町' => '<option value="愛冠">愛冠</option>
+    '厚岸郡厚岸町' => '<option value="愛冠">愛冠</option>
 <option value="有明">有明</option>
 <option value="糸魚沢">糸魚沢</option>
 <option value="太田">太田</option>
@@ -7342,7 +7347,7 @@ $optionsBox3 = array(
 <option value="若竹町">若竹町</option>
 <option value="若松">若松</option>
 <option value="湾月">湾月</option>',
-'厚岸郡浜中町' => '<option value="赤泊">赤泊</option>
+    '厚岸郡浜中町' => '<option value="赤泊">赤泊</option>
 <option value="アザラップ">アザラップ</option>
 <option value="姉別">姉別</option>
 <option value="姉別基線">姉別基線</option>
@@ -7412,7 +7417,7 @@ $optionsBox3 = array(
 <option value="四番沢">四番沢</option>
 <option value="六番沢">六番沢</option>
 <option value="渡散布">渡散布</option>',
-'川上郡標茶町' => '<option value="旭">旭</option>
+    '川上郡標茶町' => '<option value="旭">旭</option>
 <option value="麻生">麻生</option>
 <option value="阿歴内">阿歴内</option>
 <option value="阿歴内原野">阿歴内原野</option>
@@ -7470,7 +7475,7 @@ $optionsBox3 = array(
 <option value="南標茶">南標茶</option>
 <option value="雷別">雷別</option>
 <option value="ルルラン">ルルラン</option>',
-'川上郡弟子屈町' => '<option value="朝日">朝日</option>
+    '川上郡弟子屈町' => '<option value="朝日">朝日</option>
 <option value="アトサヌプリ原野">アトサヌプリ原野</option>
 <option value="跡佐登">跡佐登</option>
 <option value="跡佐登原野">跡佐登原野</option>
@@ -7505,7 +7510,7 @@ $optionsBox3 = array(
 <option value="南弟子屈">南弟子屈</option>
 <option value="最栄利別">最栄利別</option>
 <option value="湯の島">湯の島</option>',
-'阿寒郡鶴居村' => '<option value="アトコシヤラカ">アトコシヤラカ</option>
+    '阿寒郡鶴居村' => '<option value="アトコシヤラカ">アトコシヤラカ</option>
 <option value="温根内">温根内</option>
 <option value="上幌呂">上幌呂</option>
 <option value="支雪裡">支雪裡</option>
@@ -7526,7 +7531,7 @@ $optionsBox3 = array(
 <option value="幌呂西">幌呂西</option>
 <option value="茂雪裡">茂雪裡</option>
 <option value="茂幌呂">茂幌呂</option>',
-'白糠郡白糠町' => '<option value="暁">暁</option>
+    '白糠郡白糠町' => '<option value="暁">暁</option>
 <option value="大沢">大沢</option>
 <option value="大苗">大苗</option>
 <option value="大平">大平</option>
@@ -7607,7 +7612,7 @@ $optionsBox3 = array(
 <option value="南大曲">南大曲</option>
 <option value="南上茶路">南上茶路</option>
 <option value="和天別">和天別</option>',
-'野付郡別海町' => '<option value="泉川">泉川</option>
+    '野付郡別海町' => '<option value="泉川">泉川</option>
 <option value="奥行">奥行</option>
 <option value="尾岱沼">尾岱沼</option>
 <option value="尾岱沼潮見町">尾岱沼潮見町</option>
@@ -7659,7 +7664,7 @@ $optionsBox3 = array(
 <option value="本別海">本別海</option>
 <option value="美原">美原</option>
 <option value="矢臼別">矢臼別</option>',
-'標津郡中標津町' => '<option value="青葉台">青葉台</option>
+    '標津郡中標津町' => '<option value="青葉台">青葉台</option>
 <option value="旭ケ丘">旭ケ丘</option>
 <option value="大通南">大通南</option>
 <option value="大通北">大通北</option>
@@ -7803,7 +7808,7 @@ $optionsBox3 = array(
 <option value="養老牛">養老牛</option>
 <option value="りんどう町">りんどう町</option>
 ',
-'標津郡標津町' => '<option value="伊茶仁">伊茶仁</option>
+    '標津郡標津町' => '<option value="伊茶仁">伊茶仁</option>
 <option value="川北">川北</option>
 <option value="北一条">北一条</option>
 <option value="北二条">北二条</option>
@@ -8013,7 +8018,7 @@ $optionsBox3 = array(
 <option value="四ツ石">四ツ石</option>
 <option value="六枚橋">六枚橋</option>
 ',
-'弘前市' => '<option value="藍内">藍内</option>
+    '弘前市' => '<option value="藍内">藍内</option>
 <option value="青樹町">青樹町</option>
 <option value="青女子">青女子</option>
 <option value="青山">青山</option>
@@ -8606,7 +8611,7 @@ $optionsBox3 = array(
 <option value="若葉">若葉</option>
 <option value="脇元">脇元</option>
 ',
-'十和田市' => '<option value="赤沼">赤沼</option>
+    '十和田市' => '<option value="赤沼">赤沼</option>
 <option value="一本木沢">一本木沢</option>
 <option value="稲生町">稲生町</option>
 <option value="馬洗場">馬洗場</option>
@@ -8716,7 +8721,7 @@ $optionsBox3 = array(
 <option value="八幡">八幡</option>
 <option value="四川目">四川目</option>
 ',
-'むつ市' => '<option value="赤川町">赤川町</option>
+    'むつ市' => '<option value="赤川町">赤川町</option>
 <option value="旭町">旭町</option>
 <option value="荒川町">荒川町</option>
 <option value="宇田町">宇田町</option>
@@ -8887,7 +8892,7 @@ $optionsBox3 = array(
 <option value="森田町妙堂崎">森田町妙堂崎</option>
 <option value="森田町森田">森田町森田</option>
 <option value="森田町山田">森田町山田</option>',
-'平川市' => '<option value="荒田上駒田">荒田上駒田</option>
+    '平川市' => '<option value="荒田上駒田">荒田上駒田</option>
 <option value="荒田北稲村">荒田北稲村</option>
 <option value="荒田北岡部">荒田北岡部</option>
 <option value="荒田下駒田">荒田下駒田</option>
@@ -9244,7 +9249,7 @@ $optionsBox3 = array(
 <option value="八幡崎宮本">八幡崎宮本</option>
 <option value="八幡崎本宮">八幡崎本宮</option>
 <option value="四ツ屋亀田">四ツ屋亀田</option>',
-'東津軽郡平内町' => '<option value="浅所">浅所</option>
+    '東津軽郡平内町' => '<option value="浅所">浅所</option>
 <option value="小豆沢">小豆沢</option>
 <option value="稲生">稲生</option>
 <option value="内童子">内童子</option>
@@ -9271,7 +9276,7 @@ $optionsBox3 = array(
 <option value="盛田">盛田</option>
 <option value="薬師野">薬師野</option>
 <option value="山口">山口</option>',
-'東津軽郡今別町' => '<option value="今別">今別</option>
+    '東津軽郡今別町' => '<option value="今別">今別</option>
 <option value="大川平">大川平</option>
 <option value="大泊">大泊</option>
 <option value="奥平部">奥平部</option>
@@ -9281,14 +9286,14 @@ $optionsBox3 = array(
 <option value="袰月">袰月</option>
 <option value="村元">村元</option>
 <option value="山崎">山崎</option>',
-'東津軽郡蓬田村' => '<option value="阿弥陀川">阿弥陀川</option>
+    '東津軽郡蓬田村' => '<option value="阿弥陀川">阿弥陀川</option>
 <option value="郷沢">郷沢</option>
 <option value="瀬辺地">瀬辺地</option>
 <option value="中沢">中沢</option>
 <option value="長科">長科</option>
 <option value="広瀬">広瀬</option>
 <option value="蓬田">蓬田</option>',
-'東津軽郡外ヶ浜町' => '<option value="上蟹田">上蟹田</option>
+    '東津軽郡外ヶ浜町' => '<option value="上蟹田">上蟹田</option>
 <option value="蟹田">蟹田</option>
 <option value="蟹田石浜">蟹田石浜</option>
 <option value="蟹田大平">蟹田大平</option>
@@ -9335,7 +9340,7 @@ $optionsBox3 = array(
 <option value="三厩鎧嶋">三厩鎧嶋</option>
 <option value="三厩六條間">三厩六條間</option>
 ',
-'西津軽郡鰺ヶ沢町' => '<option value="赤石町">赤石町</option>
+    '西津軽郡鰺ヶ沢町' => '<option value="赤石町">赤石町</option>
 <option value="芦萢町">芦萢町</option>
 <option value="新町">新町</option>
 <option value="姥袋町">姥袋町</option>
@@ -9368,7 +9373,7 @@ $optionsBox3 = array(
 <option value="淀町">淀町</option>
 <option value="漁師町">漁師町</option>
 ',
-'西津軽郡深浦町' => '<option value="岩坂">岩坂</option>
+    '西津軽郡深浦町' => '<option value="岩坂">岩坂</option>
 <option value="岩崎">岩崎</option>
 <option value="追良瀬">追良瀬</option>
 <option value="大間越">大間越</option>
@@ -9392,7 +9397,7 @@ $optionsBox3 = array(
 <option value="柳田">柳田</option>
 <option value="横磯">横磯</option>
 ',
-'中津軽郡西目屋村' => '<option value="居森平">居森平</option>
+    '中津軽郡西目屋村' => '<option value="居森平">居森平</option>
 <option value="川原平">川原平</option>
 <option value="白沢">白沢</option>
 <option value="杉ケ沢">杉ケ沢</option>
@@ -9432,7 +9437,7 @@ $optionsBox3 = array(
 <option value="吉向">吉向</option>
 <option value="若松">若松</option>
 ',
-'南津軽郡大鰐町' => '<option value="居土">居土</option>
+    '南津軽郡大鰐町' => '<option value="居土">居土</option>
 <option value="大鰐">大鰐</option>
 <option value="唐牛">唐牛</option>
 <option value="蔵館">蔵館</option>
@@ -9448,7 +9453,7 @@ $optionsBox3 = array(
 <option value="三ツ目内">三ツ目内</option>
 <option value="森山">森山</option>
 ',
-'南津軽郡田舎館村' => '<option value="和泉">和泉</option>
+    '南津軽郡田舎館村' => '<option value="和泉">和泉</option>
 <option value="田舎舘">田舎舘</option>
 <option value="枝川">枝川</option>
 <option value="大根子">大根子</option>
@@ -9468,7 +9473,7 @@ $optionsBox3 = array(
 <option value="八反田">八反田</option>
 <option value="前田屋敷">前田屋敷</option>
 ',
-'北津軽郡板柳町' => '<option value="赤田">赤田</option>
+    '北津軽郡板柳町' => '<option value="赤田">赤田</option>
 <option value="飯田">飯田</option>
 <option value="石野">石野</option>
 <option value="いたや町">いたや町</option>
@@ -9496,7 +9501,7 @@ $optionsBox3 = array(
 <option value="夕顔関">夕顔関</option>
 <option value="横沢">横沢</option>
 ',
-'北津軽郡鶴田町' => '<option value="大巻">大巻</option>
+    '北津軽郡鶴田町' => '<option value="大巻">大巻</option>
 <option value="沖">沖</option>
 <option value="尾原">尾原</option>
 <option value="木筒">木筒</option>
@@ -9515,7 +9520,7 @@ $optionsBox3 = array(
 <option value="山道">山道</option>
 <option value="横萢">横萢</option>
 ',
-'北津軽郡中泊町' => '<option value="芦野">芦野</option>
+    '北津軽郡中泊町' => '<option value="芦野">芦野</option>
 <option value="今泉">今泉</option>
 <option value="薄市">薄市</option>
 <option value="大沢内">大沢内</option>
@@ -9554,7 +9559,7 @@ $optionsBox3 = array(
 <option value="宮川">宮川</option>
 <option value="宮野沢">宮野沢</option>
 ',
-'上北郡野辺地町' => '<option value="赤坂">赤坂</option>
+    '上北郡野辺地町' => '<option value="赤坂">赤坂</option>
 <option value="有戸">有戸</option>
 <option value="有戸鳥井平">有戸鳥井平</option>
 <option value="家ノ上">家ノ上</option>
@@ -9640,7 +9645,7 @@ $optionsBox3 = array(
 <option value="与田川尻">与田川尻</option>
 <option value="米内沢">米内沢</option>
 ',
-'上北郡七戸町' => '<option value="荒熊内">荒熊内</option>
+    '上北郡七戸町' => '<option value="荒熊内">荒熊内</option>
 <option value="荒屋">荒屋</option>
 <option value="有田沢">有田沢</option>
 <option value="家ノ裏">家ノ裏</option>
@@ -9816,7 +9821,7 @@ $optionsBox3 = array(
 <option value="山屋">山屋</option>
 <option value="和田">和田</option>
 <option value="和田下">和田下</option>',
-'上北郡六戸町' => '<option value="犬落瀬">犬落瀬</option>
+    '上北郡六戸町' => '<option value="犬落瀬">犬落瀬</option>
 <option value="折茂">折茂</option>
 <option value="金矢">金矢</option>
 <option value="上吉田">上吉田</option>
@@ -9825,7 +9830,7 @@ $optionsBox3 = array(
 <option value="下吉田">下吉田</option>
 <option value="鶴喰">鶴喰</option>
 <option value="柳町">柳町</option>',
-'上北郡横浜町' => '<option value="有畑">有畑</option>
+    '上北郡横浜町' => '<option value="有畑">有畑</option>
 <option value="家ノ前川目">家ノ前川目</option>
 <option value="稲荷平">稲荷平</option>
 <option value="夷ケ沢平">夷ケ沢平</option>
@@ -9862,7 +9867,7 @@ $optionsBox3 = array(
 <option value="向平">向平</option>
 <option value="屋敷形">屋敷形</option>
 <option value="横浜">横浜</option>',
-'上北郡東北町' => '<option value="赤川道">赤川道</option>
+    '上北郡東北町' => '<option value="赤川道">赤川道</option>
 <option value="空久保">空久保</option>
 <option value="旭北">旭北</option>
 <option value="旭南">旭南</option>
@@ -9981,7 +9986,7 @@ $optionsBox3 = array(
 <option value="横沢山">横沢山</option>
 <option value="横志多">横志多</option>
 <option value="和山平">和山平</option>',
-'上北郡六ヶ所村' => '<option value="尾駮">尾駮</option>
+    '上北郡六ヶ所村' => '<option value="尾駮">尾駮</option>
 <option value="倉内">倉内</option>
 <option value="鷹架">鷹架</option>
 <option value="出戸">出戸</option>
@@ -10074,10 +10079,10 @@ $optionsBox3 = array(
 <option value="山崎">山崎</option>
 <option value="洋光台">洋光台</option>
 <option value="若葉">若葉</option>',
-'下北郡大間町' => '<option value="大間">大間</option>
+    '下北郡大間町' => '<option value="大間">大間</option>
 <option value="奥戸">奥戸</option>
 ',
-'下北郡東通村' => '<option value="岩屋">岩屋</option>
+    '下北郡東通村' => '<option value="岩屋">岩屋</option>
 <option value="大利">大利</option>
 <option value="小田野沢">小田野沢</option>
 <option value="蒲野沢">蒲野沢</option>
@@ -10090,12 +10095,12 @@ $optionsBox3 = array(
 <option value="野牛">野牛</option>
 <option value="目名">目名</option>
 ',
-'下北郡風間浦村' => '<option value="易国間">易国間</option>
+    '下北郡風間浦村' => '<option value="易国間">易国間</option>
 <option value="下風呂">下風呂</option>
 <option value="蛇浦">蛇浦</option>
 ', '下北郡佐井村' => '<option value="佐井">佐井</option>
 <option value="長後">長後</option>
-','三戸郡三戸町' => '<option value="泉山">泉山</option>
+', '三戸郡三戸町' => '<option value="泉山">泉山</option>
 <option value="梅内">梅内</option>
 <option value="貝守">貝守</option>
 <option value="川守田">川守田</option>
@@ -10113,7 +10118,7 @@ $optionsBox3 = array(
 <option value="目時">目時</option>
 <option value="八日町">八日町</option>
 ',
-'三戸郡五戸町' => '<option value="赤川">赤川</option>
+    '三戸郡五戸町' => '<option value="赤川">赤川</option>
 <option value="赤川前">赤川前</option>
 <option value="赤坂">赤坂</option>
 <option value="浅水">浅水</option>
@@ -10275,7 +10280,7 @@ $optionsBox3 = array(
 <option value="虫追塚前">虫追塚前</option>
 <option value="横丁">横丁</option>
 <option value="六角">六角</option>',
-'三戸郡田子町' => '<option value="石亀">石亀</option>
+    '三戸郡田子町' => '<option value="石亀">石亀</option>
 <option value="関">関</option>
 <option value="相米">相米</option>
 <option value="田子">田子</option>
@@ -10285,7 +10290,7 @@ $optionsBox3 = array(
 <option value="茂市">茂市</option>
 <option value="山口">山口</option>
 ',
-'三戸郡南部町' => '<option value="相内">相内</option>
+    '三戸郡南部町' => '<option value="相内">相内</option>
 <option value="赤石">赤石</option>
 <option value="大向">大向</option>
 <option value="沖田面">沖田面</option>
@@ -10313,7 +10318,7 @@ $optionsBox3 = array(
 <option value="麦沢">麦沢</option>
 <option value="森越">森越</option>
 ',
-'三戸郡階上町' => '<option value="赤保内">赤保内</option>
+    '三戸郡階上町' => '<option value="赤保内">赤保内</option>
 <option value="金山沢">金山沢</option>
 <option value="蒼前西">蒼前西</option>
 <option value="蒼前東">蒼前東</option>
@@ -10324,7 +10329,7 @@ $optionsBox3 = array(
 <option value="晴山沢">晴山沢</option>
 <option value="平内">平内</option>
 ',
-'三戸郡新郷村' => '<option value="西越">西越</option>
+    '三戸郡新郷村' => '<option value="西越">西越</option>
 <option value="戸来">戸来</option>
 ', '盛岡市' => '<option value="青山">青山</option>
 <option value="浅岸">浅岸</option>
@@ -10486,7 +10491,7 @@ $optionsBox3 = array(
 <option value="湯沢南">湯沢南</option>
 <option value="流通センター北">流通センター北</option>
 <option value="若園町">若園町</option>',
-'宮古市' => '<option value="赤前">赤前</option>
+    '宮古市' => '<option value="赤前">赤前</option>
 <option value="愛宕">愛宕</option>
 <option value="新町">新町</option>
 <option value="泉町">泉町</option>
@@ -10651,7 +10656,7 @@ $optionsBox3 = array(
 <option value="日頃市町">日頃市町</option>
 <option value="末崎町">末崎町</option>
 ',
-'花巻市' => '<option value="浅沢">浅沢</option>
+    '花巻市' => '<option value="浅沢">浅沢</option>
 <option value="東町">東町</option>
 <option value="愛宕町">愛宕町</option>
 <option value="石神町">石神町</option>
@@ -10811,7 +10816,7 @@ $optionsBox3 = array(
 <option value="横志田">横志田</option>
 <option value="四日町">四日町</option>
 <option value="若葉町">若葉町</option>',
-'北上市' => '<option value="相去町">相去町</option>
+    '北上市' => '<option value="相去町">相去町</option>
 <option value="青柳町">青柳町</option>
 <option value="有田町">有田町</option>
 <option value="飯豊">飯豊</option>
@@ -10879,7 +10884,7 @@ $optionsBox3 = array(
 <option value="和賀町山口">和賀町山口</option>
 <option value="和賀町横川目">和賀町横川目</option>
 ',
-'久慈市' => '<option value="旭町">旭町</option>
+    '久慈市' => '<option value="旭町">旭町</option>
 <option value="荒町">荒町</option>
 <option value="宇部町">宇部町</option>
 <option value="枝成沢">枝成沢</option>
@@ -10924,7 +10929,7 @@ $optionsBox3 = array(
 <option value="山根町">山根町</option>
 <option value="八日町">八日町</option>
 ',
-'遠野市' => '<option value="青笹町青笹">青笹町青笹</option>
+    '遠野市' => '<option value="青笹町青笹">青笹町青笹</option>
 <option value="青笹町中沢">青笹町中沢</option>
 <option value="青笹町糠前">青笹町糠前</option>
 <option value="綾織町上綾織">綾織町上綾織</option>
@@ -10972,7 +10977,7 @@ $optionsBox3 = array(
 <option value="宮守町達曽部">宮守町達曽部</option>
 <option value="六日町">六日町</option>
 ',
-'一関市' => '<option value="相去">相去</option>
+    '一関市' => '<option value="相去">相去</option>
 <option value="青葉">青葉</option>
 <option value="赤荻">赤荻</option>
 <option value="旭町">旭町</option>
@@ -11089,7 +11094,7 @@ $optionsBox3 = array(
 <option value="要害">要害</option>
 <option value="蘭梅町">蘭梅町</option>
 ',
-'陸前高田市' => '<option value="小友町">小友町</option>
+    '陸前高田市' => '<option value="小友町">小友町</option>
 <option value="気仙町">気仙町</option>
 <option value="高田町">高田町</option>
 <option value="竹駒町">竹駒町</option>
@@ -11098,7 +11103,7 @@ $optionsBox3 = array(
 <option value="横田町">横田町</option>
 <option value="米崎町">米崎町</option>
 ',
-'釜石市' => '<option value="魚河岸">魚河岸</option>
+    '釜石市' => '<option value="魚河岸">魚河岸</option>
 <option value="鵜住居町">鵜住居町</option>
 <option value="嬉石町">嬉石町</option>
 <option value="大只越町">大只越町</option>
@@ -11138,7 +11143,7 @@ $optionsBox3 = array(
 <option value="両石町">両石町</option>
 <option value="礼ケ口町">礼ケ口町</option>
 ',
-'二戸市' => '<option value="安比">安比</option>
+    '二戸市' => '<option value="安比">安比</option>
 <option value="石切所">石切所</option>
 <option value="釜沢">釜沢</option>
 <option value="上斗米">上斗米</option>
@@ -11414,7 +11419,7 @@ $optionsBox3 = array(
 <option value="和屋敷道ノ上">和屋敷道ノ上</option>
 <option value="和屋敷道ノ下">和屋敷道ノ下</option>
 ',
-'奥州市' => '<option value="胆沢小山">胆沢小山</option>
+    '奥州市' => '<option value="胆沢小山">胆沢小山</option>
 <option value="胆沢南都田">胆沢南都田</option>
 <option value="胆沢若柳">胆沢若柳</option>
 <option value="江刺伊手">江刺伊手</option>
@@ -11826,7 +11831,7 @@ $optionsBox3 = array(
 <option value="水沢横町">水沢横町</option>
 <option value="水沢蓬田">水沢蓬田</option>
 <option value="水沢龍ヶ馬場">水沢龍ヶ馬場</option>',
-'滝沢市' => '<option value="穴口">穴口</option>
+    '滝沢市' => '<option value="穴口">穴口</option>
 <option value="一本木">一本木</option>
 <option value="岩手山">岩手山</option>
 <option value="鵜飼安達">鵜飼安達</option>
@@ -12023,7 +12028,7 @@ $optionsBox3 = array(
 <option value="南畑">南畑</option>
 <option value="谷地">谷地</option>
 ',
-'岩手郡葛巻町' => '<option value="江刈">江刈</option>
+    '岩手郡葛巻町' => '<option value="江刈">江刈</option>
 <option value="葛巻">葛巻</option>
 <option value="田部">田部</option>
 ', '岩手郡岩手町' => '<option value="五日市">五日市</option>
@@ -12082,7 +12087,7 @@ $optionsBox3 = array(
 <option value="山屋">山屋</option>
 <option value="吉水">吉水</option>
 ',
-'紫波郡矢巾町' => '<option value="間野々">間野々</option>
+    '紫波郡矢巾町' => '<option value="間野々">間野々</option>
 <option value="赤林">赤林</option>
 <option value="医大通">医大通</option>
 <option value="岩清水">岩清水</option>
@@ -12108,7 +12113,7 @@ $optionsBox3 = array(
 <option value="流通センター南">流通センター南</option>
 <option value="和味">和味</option>
 ',
-'和賀郡西和賀町' => '<option value="穴明">穴明</option>
+    '和賀郡西和賀町' => '<option value="穴明">穴明</option>
 <option value="上野々">上野々</option>
 <option value="越中畑">越中畑</option>
 <option value="大沓">大沓</option>
@@ -12157,7 +12162,7 @@ $optionsBox3 = array(
 <option value="芦ケ沢">芦ケ沢</option>
 <option value="鷲之巣">鷲之巣</option>
 ',
-'胆沢郡金ケ崎町' => '<option value="永栄">永栄</option>
+    '胆沢郡金ケ崎町' => '<option value="永栄">永栄</option>
 <option value="永沢">永沢</option>
 <option value="西根">西根</option>
 <option value="三ケ尻">三ケ尻</option>
@@ -12185,7 +12190,7 @@ $optionsBox3 = array(
 <option value="本町">本町</option>
 <option value="港町">港町</option>
 ',
-'下閉伊郡山田町' => '<option value="荒川">荒川</option>
+    '下閉伊郡山田町' => '<option value="荒川">荒川</option>
 <option value="飯岡">飯岡</option>
 <option value="石峠">石峠</option>
 <option value="大沢">大沢</option>
@@ -12201,7 +12206,7 @@ $optionsBox3 = array(
 <option value="船越">船越</option>
 <option value="山田">山田</option>
 ',
-'下閉伊郡岩泉町' => '<option value="浅内">浅内</option>
+    '下閉伊郡岩泉町' => '<option value="浅内">浅内</option>
 <option value="安家">安家</option>
 <option value="穴沢">穴沢</option>
 <option value="尼額">尼額</option>
@@ -12221,7 +12226,7 @@ $optionsBox3 = array(
 <option value="袰野">袰野</option>
 <option value="袰綿">袰綿</option>
 ',
-'下閉伊郡田野畑村' => '<option value="明戸">明戸</option>
+    '下閉伊郡田野畑村' => '<option value="明戸">明戸</option>
 <option value="一の渡">一の渡</option>
 <option value="蝦夷森">蝦夷森</option>
 <option value="大芦">大芦</option>
@@ -12262,7 +12267,7 @@ $optionsBox3 = array(
 <option value="羅賀">羅賀</option>
 <option value="和野">和野</option>
 ',
-'下閉伊郡普代村' => '<option value="芦生">芦生</option>
+    '下閉伊郡普代村' => '<option value="芦生">芦生</option>
 <option value="芦渡">芦渡</option>
 <option value="上の山">上の山</option>
 <option value="卯子酉">卯子酉</option>
@@ -12304,7 +12309,7 @@ $optionsBox3 = array(
 <option value="蛇口">蛇口</option>
 <option value="円子">円子</option>
 ',
-'九戸郡野田村' => '<option value="玉川">玉川</option>
+    '九戸郡野田村' => '<option value="玉川">玉川</option>
 <option value="野田">野田</option>
 ', '九戸郡九戸村' => '<option value="荒谷">荒谷</option>
 <option value="伊保内">伊保内</option>
@@ -12533,7 +12538,7 @@ $optionsBox3 = array(
 <option value="宮千代">宮千代</option>
 <option value="元寺小路">元寺小路</option>
 ',
-'仙台市若林区' => '<option value="荒井">荒井</option>
+    '仙台市若林区' => '<option value="荒井">荒井</option>
 <option value="荒井東">荒井東</option>
 <option value="荒井南">荒井南</option>
 <option value="荒浜">荒浜</option>
@@ -12616,7 +12621,7 @@ $optionsBox3 = array(
 <option value="六丁の目中町">六丁の目中町</option>
 <option value="六丁の目元町">六丁の目元町</option>
 <option value="若林">若林</option>',
-'仙台市太白区' => '<option value="青山">青山</option>
+    '仙台市太白区' => '<option value="青山">青山</option>
 <option value="秋保町境野">秋保町境野</option>
 <option value="秋保町長袋">秋保町長袋</option>
 <option value="秋保町馬場">秋保町馬場</option>
@@ -12698,7 +12703,7 @@ $optionsBox3 = array(
 <option value="山田新町">山田新町</option>
 <option value="山田本町">山田本町</option>
 <option value="若葉町">若葉町</option>',
-'仙台市泉区' => '<option value="愛隣町">愛隣町</option>
+    '仙台市泉区' => '<option value="愛隣町">愛隣町</option>
 <option value="明石南">明石南</option>
 <option value="明通">明通</option>
 <option value="朝日">朝日</option>
@@ -12755,7 +12760,7 @@ $optionsBox3 = array(
 <option value="館">館</option>
 <option value="山の寺">山の寺</option>
 <option value="友愛町">友愛町</option>',
-'石巻市' => '<option value="相野谷">相野谷</option>
+    '石巻市' => '<option value="相野谷">相野谷</option>
 <option value="茜平">茜平</option>
 <option value="あけぼの">あけぼの</option>
 <option value="あけぼの北">あけぼの北</option>
@@ -12955,7 +12960,7 @@ $optionsBox3 = array(
 <option value="渡波">渡波</option>
 <option value="渡波町">渡波町</option>
 <option value="和渕">和渕</option>',
-'塩竈市' => '<option value="青葉ケ丘">青葉ケ丘</option>
+    '塩竈市' => '<option value="青葉ケ丘">青葉ケ丘</option>
 <option value="赤坂">赤坂</option>
 <option value="旭町">旭町</option>
 <option value="芦畔町">芦畔町</option>
@@ -13019,7 +13024,7 @@ $optionsBox3 = array(
 <option value="宮町">宮町</option>
 <option value="向ケ丘">向ケ丘</option>
 <option value="本町">本町</option>',
-'気仙沼市' => '<option value="赤岩石兜">赤岩石兜</option>
+    '気仙沼市' => '<option value="赤岩石兜">赤岩石兜</option>
 <option value="赤岩老松">赤岩老松</option>
 <option value="赤岩大石倉">赤岩大石倉</option>
 <option value="赤岩大滝">赤岩大滝</option>
@@ -13381,7 +13386,7 @@ $optionsBox3 = array(
 <option value="早稲谷">早稲谷</option>
 <option value="渡戸">渡戸</option>
 <option value="和野">和野</option>',
-'白石市' => '<option value="旭町">旭町</option>
+    '白石市' => '<option value="旭町">旭町</option>
 <option value="兎作">兎作</option>
 <option value="延命寺北">延命寺北</option>
 <option value="大川町">大川町</option>
@@ -13453,7 +13458,7 @@ $optionsBox3 = array(
 <option value="柳川原">柳川原</option>
 <option value="柳町">柳町</option>
 <option value="亘理町">亘理町</option>',
-'名取市' => '<option value="愛の杜">愛の杜</option>
+    '名取市' => '<option value="愛の杜">愛の杜</option>
 <option value="飯野坂">飯野坂</option>
 <option value="植松">植松</option>
 <option value="牛野">牛野</option>
@@ -13494,7 +13499,7 @@ $optionsBox3 = array(
 <option value="閖上西">閖上西</option>
 <option value="閖上東">閖上東</option>
 <option value="ゆりが丘">ゆりが丘</option>',
-'角田市' => '<option value="稲置">稲置</option>
+    '角田市' => '<option value="稲置">稲置</option>
 <option value="江尻">江尻</option>
 <option value="枝野">枝野</option>
 <option value="岡">岡</option>
@@ -13517,7 +13522,7 @@ $optionsBox3 = array(
 <option value="平貫">平貫</option>
 <option value="藤田">藤田</option>
 <option value="横倉">横倉</option>',
-'多賀城市' => '<option value="市川">市川</option>
+    '多賀城市' => '<option value="市川">市川</option>
 <option value="浮島">浮島</option>
 <option value="大代">大代</option>
 <option value="笠神">笠神</option>
@@ -13541,7 +13546,7 @@ $optionsBox3 = array(
 <option value="宮内">宮内</option>
 <option value="明月">明月</option>
 <option value="八幡">八幡</option>',
-'岩沼市' => '<option value="相の原">相の原</option>
+    '岩沼市' => '<option value="相の原">相の原</option>
 <option value="朝日">朝日</option>
 <option value="あさひ野">あさひ野</option>
 <option value="阿武隈">阿武隈</option>
@@ -13896,7 +13901,7 @@ $optionsBox3 = array(
 <option value="米山町待井下">米山町待井下</option>
 <option value="米山町櫓場">米山町櫓場</option>
 <option value="米山町櫓場下">米山町櫓場下</option>',
-'栗原市' => '<option value="一迫青木">一迫青木</option>
+    '栗原市' => '<option value="一迫青木">一迫青木</option>
 <option value="一迫荒町">一迫荒町</option>
 <option value="一迫荒屋敷">一迫荒屋敷</option>
 <option value="一迫一本杉">一迫一本杉</option>
@@ -14290,7 +14295,7 @@ $optionsBox3 = array(
 <option value="築館成田">築館成田</option>
 <option value="築館西小山">築館西小山</option>
 <option value="築館萩沢">築館萩沢</option>',
-'大崎市' => '<option value="岩出山木通沢">岩出山木通沢</option>
+    '大崎市' => '<option value="岩出山木通沢">岩出山木通沢</option>
 <option value="岩出山池月">岩出山池月</option>
 <option value="岩出山浦小路">岩出山浦小路</option>
 <option value="岩出山上金沢">岩出山上金沢</option>
@@ -14570,7 +14575,7 @@ $optionsBox3 = array(
 <option value="ひより台">ひより台</option>
 <option value="杜乃橋">杜乃橋</option>
 ',
-'刈田郡蔵王町' => '<option value="円田">円田</option>
+    '刈田郡蔵王町' => '<option value="円田">円田</option>
 <option value="小村崎">小村崎</option>
 <option value="塩沢">塩沢</option>
 <option value="遠刈田温泉">遠刈田温泉</option>
@@ -14584,7 +14589,7 @@ $optionsBox3 = array(
 <option value="宮">宮</option>
 <option value="矢附">矢附</option>
 ',
-'刈田郡七ヶ宿町' => '<option value="赤地">赤地</option>
+    '刈田郡七ヶ宿町' => '<option value="赤地">赤地</option>
 <option value="愛宕下">愛宕下</option>
 <option value="油畑">油畑</option>
 <option value="板木">板木</option>
@@ -14690,7 +14695,7 @@ $optionsBox3 = array(
   <option value="六本杉">六本杉</option>
   <option value="若林山">若林山</option>
   <option value="割付">割付</option>',
-  '柴田郡大河原町' => '<option value="旭町">旭町</option>
+    '柴田郡大河原町' => '<option value="旭町">旭町</option>
 <option value="荒町">荒町</option>
 <option value="大芝">大芝</option>
 <option value="大竜">大竜</option>
@@ -14744,7 +14749,7 @@ $optionsBox3 = array(
 <option value="八乙女">八乙女</option>
 <option value="山崎町">山崎町</option>
 ',
-  '柴田郡村田町' => '<option value="足立">足立</option>
+    '柴田郡村田町' => '<option value="足立">足立</option>
 <option value="薄木">薄木</option>
 <option value="小泉">小泉</option>
 <option value="菅生">菅生</option>
@@ -14754,7 +14759,7 @@ $optionsBox3 = array(
 <option value="沼辺">沼辺</option>
 <option value="村田">村田</option>
 ',
-  '柴田郡柴田町' => '<option value="入間田">入間田</option>
+    '柴田郡柴田町' => '<option value="入間田">入間田</option>
 <option value="海老穴">海老穴</option>
 <option value="上川名">上川名</option>
 <option value="上名生">上名生</option>
@@ -14789,7 +14794,7 @@ $optionsBox3 = array(
 <option value="ゆずが丘">ゆずが丘</option>
 <option value="四日市場">四日市場</option>
 ',
-  '柴田郡川崎町' => '<option value="青根温泉">青根温泉</option>
+    '柴田郡川崎町' => '<option value="青根温泉">青根温泉</option>
 <option value="今宿">今宿</option>
 <option value="小野">小野</option>
 <option value="川内">川内</option>
@@ -15016,7 +15021,7 @@ $optionsBox3 = array(
 <option value="和田東">和田東</option>
 <option value="和田西">和田西</option>
 <option value="蕨平">蕨平</option>',
-'亘理郡亘理町' => '<option value="旭">旭</option>
+    '亘理郡亘理町' => '<option value="旭">旭</option>
 <option value="旭山">旭山</option>
 <option value="愛宕前">愛宕前</option>
 <option value="油田">油田</option>
@@ -15085,7 +15090,7 @@ $optionsBox3 = array(
 <option value="雪穴">雪穴</option>
 <option value="吉田">吉田</option>
 <option value="龍円寺前">龍円寺前</option>',
-'亘理郡山元町' => '<option value="浅生原">浅生原</option>
+    '亘理郡山元町' => '<option value="浅生原">浅生原</option>
 <option value="大平">大平</option>
 <option value="小平">小平</option>
 <option value="坂元">坂元</option>
@@ -15095,7 +15100,7 @@ $optionsBox3 = array(
 <option value="真庭">真庭</option>
 <option value="山寺">山寺</option>
 <option value="鷲足">鷲足</option>',
-'宮城郡松島町' => '<option value="磯崎">磯崎</option>
+    '宮城郡松島町' => '<option value="磯崎">磯崎</option>
 <option value="北小泉">北小泉</option>
 <option value="桜渡戸">桜渡戸</option>
 <option value="高城">高城</option>
@@ -15105,7 +15110,7 @@ $optionsBox3 = array(
 <option value="幡谷">幡谷</option>
 <option value="初原">初原</option>
 <option value="松島">松島</option>',
-'宮城郡七ヶ浜町' => '<option value="境山">境山</option>
+    '宮城郡七ヶ浜町' => '<option value="境山">境山</option>
 <option value="笹山">笹山</option>
 <option value="汐見台">汐見台</option>
 <option value="汐見台南">汐見台南</option>
@@ -15118,7 +15123,7 @@ $optionsBox3 = array(
 <option value="代ヶ崎浜">代ヶ崎浜</option>
 <option value="吉田浜">吉田浜</option>
 ',
-'宮城郡利府町' => '<option value="青葉台">青葉台</option>
+    '宮城郡利府町' => '<option value="青葉台">青葉台</option>
 <option value="青山">青山</option>
 <option value="赤沼">赤沼</option>
 <option value="飯土井">飯土井</option>
@@ -15169,7 +15174,7 @@ $optionsBox3 = array(
 <option value="吉田">吉田</option>
 <option value="流通平">流通平</option>
 ',
-'黒川郡大郷町' => '<option value="石原">石原</option>
+    '黒川郡大郷町' => '<option value="石原">石原</option>
 <option value="鶉崎">鶉崎</option>
 <option value="大松沢">大松沢</option>
 <option value="粕川">粕川</option>
@@ -15193,7 +15198,7 @@ $optionsBox3 = array(
 <option value="ときわ台南">ときわ台南</option>
 <option value="松の平">松の平</option>
 ',
-'加美郡色麻町' => '<option value="一の関">一の関</option>
+    '加美郡色麻町' => '<option value="一の関">一の関</option>
 <option value="王城寺">王城寺</option>
 <option value="清水">清水</option>
 <option value="黒沢">黒沢</option>
@@ -15206,7 +15211,7 @@ $optionsBox3 = array(
 <option value="平沢">平沢</option>
 <option value="吉田">吉田</option>
 ',
-'加美郡加美町' => '<option value="赤塚">赤塚</option>
+    '加美郡加美町' => '<option value="赤塚">赤塚</option>
 <option value="味ケ袋">味ケ袋</option>
 <option value="穴畑">穴畑</option>
 <option value="石原">石原</option>
@@ -15328,7 +15333,7 @@ $optionsBox3 = array(
 <option value="四日市場">四日市場</option>
 <option value="蓬田">蓬田</option>
 ',
-'遠田郡涌谷町' => '<option value="赤間屋敷">赤間屋敷</option>
+    '遠田郡涌谷町' => '<option value="赤間屋敷">赤間屋敷</option>
 <option value="市道">市道</option>
 <option value="一本柳">一本柳</option>
 <option value="猪岡短台">猪岡短台</option>
@@ -15409,7 +15414,7 @@ $optionsBox3 = array(
 <option value="六軒町裏">六軒町裏</option>
 <option value="涌谷">涌谷</option>
 ',
-'遠田郡美里町' => '<option value="青生">青生</option>
+    '遠田郡美里町' => '<option value="青生">青生</option>
 <option value="一本柳">一本柳</option>
 <option value="牛飼">牛飼</option>
 <option value="内役田">内役田</option>
@@ -15467,7 +15472,7 @@ $optionsBox3 = array(
 <option value="峯山浦">峯山浦</option>
 <option value="役田">役田</option>
 <option value="和多田沼">和多田沼</option>',
-'牡鹿郡女川町' => '<option value="旭が丘">旭が丘</option>
+    '牡鹿郡女川町' => '<option value="旭が丘">旭が丘</option>
 <option value="飯子浜">飯子浜</option>
 <option value="石浜">石浜</option>
 <option value="出島">出島</option>
@@ -15501,7 +15506,7 @@ $optionsBox3 = array(
 <option value="鷲神">鷲神</option>
 <option value="鷲神浜">鷲神浜</option>
 ',
-'本吉郡南三陸町' => '<option value="入谷">入谷</option>
+    '本吉郡南三陸町' => '<option value="入谷">入谷</option>
 <option value="歌津伊里前">歌津伊里前</option>
 <option value="歌津石泉">歌津石泉</option>
 <option value="歌津石浜">歌津石浜</option>
@@ -15609,7 +15614,7 @@ $optionsBox3 = array(
 <option value="志津川森山">志津川森山</option>
 <option value="戸倉">戸倉</option>
 ',
-'秋田市' => '<option value="旭川清澄町">旭川清澄町</option>
+    '秋田市' => '<option value="旭川清澄町">旭川清澄町</option>
 <option value="旭川新藤田東町">旭川新藤田東町</option>
 <option value="旭川新藤田西町">旭川新藤田西町</option>
 <option value="旭川南町">旭川南町</option>
@@ -15933,7 +15938,7 @@ $optionsBox3 = array(
 <option value="四ツ小屋">四ツ小屋</option>
 <option value="四ツ小屋小阿地">四ツ小屋小阿地</option>
 <option value="四ツ小屋末戸松本">四ツ小屋末戸松本</option>',
-'能代市' => '<option value="青葉町">青葉町</option>
+    '能代市' => '<option value="青葉町">青葉町</option>
 <option value="赤沼">赤沼</option>
 <option value="悪戸">悪戸</option>
 <option value="浅内">浅内</option>
@@ -16131,7 +16136,7 @@ $optionsBox3 = array(
 <option value="若田">若田</option>
 <option value="若松町">若松町</option>
 ',
-'横手市' => '<option value="赤川">赤川</option>
+    '横手市' => '<option value="赤川">赤川</option>
 <option value="赤坂">赤坂</option>
 <option value="朝倉町">朝倉町</option>
 <option value="旭川">旭川</option>
@@ -16454,7 +16459,7 @@ $optionsBox3 = array(
 <option value="横山町">横山町</option>
 <option value="四日町">四日町</option>
 ',
-'大館市' => '<option value="相染沢中岱">相染沢中岱</option>
+    '大館市' => '<option value="相染沢中岱">相染沢中岱</option>
 <option value="青葉町">青葉町</option>
 <option value="赤石">赤石</option>
 <option value="赤館">赤館</option>
@@ -16595,7 +16600,7 @@ $optionsBox3 = array(
 <option value="雪沢">雪沢</option>
 <option value="豊町">豊町</option>
 ',
-'男鹿市' => '<option value="五里合神谷">五里合神谷</option>
+    '男鹿市' => '<option value="五里合神谷">五里合神谷</option>
 <option value="五里合琴川">五里合琴川</option>
 <option value="五里合鮪川">五里合鮪川</option>
 <option value="五里合中石">五里合中石</option>
@@ -16647,7 +16652,7 @@ $optionsBox3 = array(
 <option value="脇本百川">脇本百川</option>
 <option value="脇本脇本">脇本脇本</option>
 ',
-'湯沢市' => '<option value="相川">相川</option>
+    '湯沢市' => '<option value="相川">相川</option>
 <option value="赤土">赤土</option>
 <option value="秋ノ宮">秋ノ宮</option>
 <option value="愛宕町">愛宕町</option>
@@ -16755,7 +16760,7 @@ $optionsBox3 = array(
 <option value="両神">両神</option>
 <option value="若葉町">若葉町</option>
 ',
-'鹿角市' => '<option value="尾去沢">尾去沢</option>
+    '鹿角市' => '<option value="尾去沢">尾去沢</option>
 <option value="十和田上向">十和田上向</option>
 <option value="十和田大湯">十和田大湯</option>
 <option value="十和田岡田">十和田岡田</option>
@@ -16768,7 +16773,7 @@ $optionsBox3 = array(
 <option value="八幡平">八幡平</option>
 <option value="花輪">花輪</option>
 ',
-'由利本荘市' => '<option value="赤田">赤田</option>
+    '由利本荘市' => '<option value="赤田">赤田</option>
 <option value="赤沼下">赤沼下</option>
 <option value="赤沼下道">赤沼下道</option>
 <option value="赤沼町">赤沼町</option>
@@ -17000,7 +17005,7 @@ $optionsBox3 = array(
 <option value="米坂">米坂</option>
 <option value="猟師町">猟師町</option>
 ',
-'潟上市' => '<option value="飯田川飯塚">飯田川飯塚</option>
+    '潟上市' => '<option value="飯田川飯塚">飯田川飯塚</option>
 <option value="飯田川金山">飯田川金山</option>
 <option value="飯田川下虻川">飯田川下虻川</option>
 <option value="飯田川和田妹川">飯田川和田妹川</option>
@@ -17016,7 +17021,7 @@ $optionsBox3 = array(
 <option value="天王大崎">天王大崎</option>
 <option value="天王">天王</option>
 ',
-'大仙市' => '<option value="朝日町">朝日町</option>
+    '大仙市' => '<option value="朝日町">朝日町</option>
 <option value="飯田">飯田</option>
 <option value="泉町">泉町</option>
 <option value="板見内">板見内</option>
@@ -17247,7 +17252,7 @@ $optionsBox3 = array(
 <option value="六郷西根">六郷西根</option>
 <option value="若竹町">若竹町</option>
 <option value="和合">和合</option>',
-'北秋田市' => '<option value="旭町">旭町</option>
+    '北秋田市' => '<option value="旭町">旭町</option>
 <option value="阿仁荒瀬">阿仁荒瀬</option>
 <option value="阿仁荒瀬川櫃畑">阿仁荒瀬川櫃畑</option>
 <option value="阿仁打当">阿仁打当</option>
@@ -17317,7 +17322,7 @@ $optionsBox3 = array(
 <option value="米代町">米代町</option>
 <option value="脇神">脇神</option>
 ',
-'にかほ市' => '<option value="伊勢居地">伊勢居地</option>
+    'にかほ市' => '<option value="伊勢居地">伊勢居地</option>
 <option value="院内">院内</option>
 <option value="大竹">大竹</option>
 <option value="小国">小国</option>
@@ -17410,7 +17415,7 @@ $optionsBox3 = array(
 <option value="三森">三森</option>
 <option value="両前寺">両前寺</option>
 ',
-'仙北市' => '<option value="角館町岩瀬">角館町岩瀬</option>
+    '仙北市' => '<option value="角館町岩瀬">角館町岩瀬</option>
 <option value="角館町岩瀬下タ野">角館町岩瀬下タ野</option>
 <option value="角館町岩瀬町">角館町岩瀬町</option>
 <option value="角館町上野">角館町上野</option>
@@ -17489,14 +17494,14 @@ $optionsBox3 = array(
 <option value="西木町西荒井">西木町西荒井</option>
 <option value="西木町桧木内">西木町桧木内</option>
 ',
-'鹿角郡小坂町' => '<option value="荒谷">荒谷</option>
+    '鹿角郡小坂町' => '<option value="荒谷">荒谷</option>
 <option value="上向">上向</option>
 <option value="小坂">小坂</option>
 <option value="小坂鉱山">小坂鉱山</option>
 <option value="大地">大地</option>
 <option value="十和田湖">十和田湖</option>
 ',
-'北秋田郡上小阿仁村' => '<option value="大林">大林</option>
+    '北秋田郡上小阿仁村' => '<option value="大林">大林</option>
 <option value="沖田面">沖田面</option>
 <option value="小沢田">小沢田</option>
 <option value="五反沢">五反沢</option>
@@ -17506,12 +17511,12 @@ $optionsBox3 = array(
 <option value="仏社">仏社</option>
 <option value="南沢">南沢</option>
 ',
-'山本郡藤里町' => '<option value="大沢">大沢</option>
+    '山本郡藤里町' => '<option value="大沢">大沢</option>
 <option value="粕毛">粕毛</option>
 <option value="太良">太良</option>
 <option value="藤琴">藤琴</option>
 <option value="矢坂">矢坂</option>',
-'山本郡三種町' => '<option value="芦崎">芦崎</option>
+    '山本郡三種町' => '<option value="芦崎">芦崎</option>
 <option value="天瀬川">天瀬川</option>
 <option value="鵜川">鵜川</option>
 <option value="大口">大口</option>
@@ -17527,7 +17532,7 @@ $optionsBox3 = array(
 <option value="豊岡金田">豊岡金田</option>
 <option value="浜田">浜田</option>
 <option value="森岳">森岳</option>',
-'山本郡八峰町' => '<option value="八森家の後">八森家の後</option>
+    '山本郡八峰町' => '<option value="八森家の後">八森家の後</option>
 <option value="八森家の上">八森家の上</option>
 <option value="八森家の向">八森家の向</option>
 <option value="八森伊勢鉢台">八森伊勢鉢台</option>
@@ -17602,7 +17607,7 @@ $optionsBox3 = array(
 <option value="峰浜水沢">峰浜水沢</option>
 <option value="峰浜目名潟">峰浜目名潟</option>
 ',
-'南秋田郡五城目町' => '<option value="石田六ケ村堰添">石田六ケ村堰添</option>
+    '南秋田郡五城目町' => '<option value="石田六ケ村堰添">石田六ケ村堰添</option>
 <option value="稲荷前">稲荷前</option>
 <option value="内川浅見内">内川浅見内</option>
 <option value="内川小倉">内川小倉</option>
@@ -17637,7 +17642,7 @@ $optionsBox3 = array(
 <option value="富津内富田">富津内富田</option>
 <option value="富津内中津又">富津内中津又</option>
 ',
-'南秋田郡八郎潟町' => '<option value="家の後">家の後</option>
+    '南秋田郡八郎潟町' => '<option value="家の後">家の後</option>
 <option value="イカリ">イカリ</option>
 <option value="浦大町">浦大町</option>
 <option value="大道">大道</option>
@@ -17666,7 +17671,7 @@ $optionsBox3 = array(
 <option value="真坂">真坂</option>
 <option value="夜叉袋">夜叉袋</option>
 ',
-'南秋田郡井川町' => '<option value="赤沢">赤沢</option>
+    '南秋田郡井川町' => '<option value="赤沢">赤沢</option>
 <option value="井内">井内</option>
 <option value="今戸">今戸</option>
 <option value="宇治木">宇治木</option>
@@ -17680,7 +17685,7 @@ $optionsBox3 = array(
 <option value="八田大倉">八田大倉</option>
 <option value="浜井川">浜井川</option>
 <option value="保野子">保野子</option>',
-'南秋田郡大潟村' => '<option value="大潟">大潟</option>
+    '南秋田郡大潟村' => '<option value="大潟">大潟</option>
 <option value="方上">方上</option>
 <option value="方口">方口</option>
 <option value="北">北</option>
@@ -17691,7 +17696,7 @@ $optionsBox3 = array(
 <option value="東">東</option>
 <option value="東野">東野</option>
 <option value="南">南</option>',
-'仙北郡美郷町' => '<option value="安城寺">安城寺</option>
+    '仙北郡美郷町' => '<option value="安城寺">安城寺</option>
 <option value="飯詰">飯詰</option>
 <option value="金沢">金沢</option>
 <option value="金沢西根">金沢西根</option>
@@ -17715,7 +17720,7 @@ $optionsBox3 = array(
 <option value="鑓田">鑓田</option>
 <option value="六郷">六郷</option>
 <option value="六郷東根">六郷東根</option>',
-'雄勝郡羽後町' => '<option value="赤袴">赤袴</option>
+    '雄勝郡羽後町' => '<option value="赤袴">赤袴</option>
 <option value="飯沢">飯沢</option>
 <option value="大久保">大久保</option>
 <option value="大沢">大沢</option>
@@ -17746,10 +17751,10 @@ $optionsBox3 = array(
 <option value="堀内">堀内</option>
 <option value="水沢">水沢</option>
 <option value="睦合">睦合</option>',
-'雄勝郡東成瀬村' => '<option value="岩井川">岩井川</option>
+    '雄勝郡東成瀬村' => '<option value="岩井川">岩井川</option>
 <option value="田子内">田子内</option>
 <option value="椿川">椿川</option>',
-'山形市' => '<option value="相生町">相生町</option>
+    '山形市' => '<option value="相生町">相生町</option>
 <option value="青田">青田</option>
 <option value="青田南">青田南</option>
 <option value="青野">青野</option>
@@ -18034,7 +18039,7 @@ $optionsBox3 = array(
 <option value="若葉町">若葉町</option>
 <option value="若宮">若宮</option>
 <option value="和合町">和合町</option>',
-'米沢市' => '<option value="相生町">相生町</option>
+    '米沢市' => '<option value="相生町">相生町</option>
 <option value="赤崩">赤崩</option>
 <option value="赤芝町">赤芝町</option>
 <option value="浅川">浅川</option>
@@ -18148,37 +18153,3461 @@ $optionsBox3 = array(
 <option value="六郷町西江股">六郷町西江股</option>
 <option value="六郷町西藤泉">六郷町西藤泉</option>
 <option value="六郷町一漆">六郷町一漆</option>',
-'鶴岡市' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => '',
-'' => ''
+    '鶴岡市' => '<option value="青柳町">青柳町</option>
+<option value="温海">温海</option>
+<option value="温海川">温海川</option>
+<option value="油戸">油戸</option>
+<option value="荒井京田">荒井京田</option>
+<option value="荒沢">荒沢</option>
+<option value="荒俣">荒俣</option>
+<option value="新屋敷">新屋敷</option>
+<option value="安丹">安丹</option>
+<option value="砂谷">砂谷</option>
+<option value="泉町">泉町</option>
+<option value="伊勢原町">伊勢原町</option>
+<option value="伊勢横内">伊勢横内</option>
+<option value="板井川">板井川</option>
+<option value="稲生">稲生</option>
+<option value="井岡">井岡</option>
+<option value="今泉">今泉</option>
+<option value="五十川">五十川</option>
+<option value="馬町">馬町</option>
+<option value="越後京田">越後京田</option>
+<option value="越中山">越中山</option>
+<option value="海老島町">海老島町</option>
+<option value="大網">大網</option>
+<option value="大荒">大荒</option>
+<option value="大岩川">大岩川</option>
+<option value="大川渡">大川渡</option>
+<option value="大塚町">大塚町</option>
+<option value="大鳥">大鳥</option>
+<option value="大西町">大西町</option>
+<option value="大針">大針</option>
+<option value="大広">大広</option>
+<option value="大山">大山</option>
+<option value="大淀川">大淀川</option>
+<option value="岡山">岡山</option>
+<option value="遠賀原">遠賀原</option>
+<option value="小国">小国</option>
+<option value="小名部">小名部</option>
+<option value="面野山">面野山</option>
+<option value="覚岸寺">覚岸寺</option>
+<option value="堅苔沢">堅苔沢</option>
+<option value="家中新町">家中新町</option>
+<option value="桂荒俣">桂荒俣</option>
+<option value="金谷">金谷</option>
+<option value="金沢">金沢</option>
+<option value="上清水">上清水</option>
+<option value="上田沢">上田沢</option>
+<option value="上中野目">上中野目</option>
+<option value="上名川">上名川</option>
+<option value="上畑町">上畑町</option>
+<option value="上藤島">上藤島</option>
+<option value="上山添">上山添</option>
+<option value="上山谷">上山谷</option>
+<option value="加茂">加茂</option>
+<option value="我老林">我老林</option>
+<option value="川尻">川尻</option>
+<option value="北京田">北京田</option>
+<option value="北茅原町">北茅原町</option>
+<option value="木野俣">木野俣</option>
+<option value="切添町">切添町</option>
+<option value="工藤">工藤</option>
+<option value="熊出">熊出</option>
+<option value="倉沢">倉沢</option>
+<option value="黒川">黒川</option>
+<option value="小岩川">小岩川</option>
+<option value="越沢">越沢</option>
+<option value="小京田">小京田</option>
+<option value="小菅野代">小菅野代</option>
+<option value="寿">寿</option>
+<option value="小中島">小中島</option>
+<option value="小波渡">小波渡</option>
+<option value="小真木原町">小真木原町</option>
+<option value="小淀川">小淀川</option>
+<option value="斎藤川原">斎藤川原</option>
+<option value="坂野下">坂野下</option>
+<option value="鷺畑">鷺畑</option>
+<option value="桜新町">桜新町</option>
+<option value="三光町">三光町</option>
+<option value="三瀬">三瀬</option>
+<option value="三千刈">三千刈</option>
+<option value="山王町">山王町</option>
+<option value="清水新田">清水新田</option>
+<option value="下川">下川</option>
+<option value="下興屋">下興屋</option>
+<option value="下小中">下小中</option>
+<option value="下清水">下清水</option>
+<option value="下田沢">下田沢</option>
+<option value="下中野目">下中野目</option>
+<option value="下名川">下名川</option>
+<option value="下山添">下山添</option>
+<option value="勝福寺">勝福寺</option>
+<option value="城南町">城南町</option>
+<option value="城北町">城北町</option>
+<option value="青龍寺">青龍寺</option>
+<option value="少連寺">少連寺</option>
+<option value="昭和町">昭和町</option>
+<option value="白山">白山</option>
+<option value="新海町">新海町</option>
+<option value="新斎部">新斎部</option>
+<option value="神明町">神明町</option>
+<option value="末広町">末広町</option>
+<option value="菅野代">菅野代</option>
+<option value="砂川">砂川</option>
+<option value="砂田町">砂田町</option>
+<option value="砂塚">砂塚</option>
+<option value="須走">須走</option>
+<option value="関川">関川</option>
+<option value="関根">関根</option>
+<option value="千石町">千石町</option>
+<option value="添川">添川</option>
+<option value="大東町">大東町</option>
+<option value="大半田">大半田</option>
+<option value="大部町">大部町</option>
+<option value="大宝寺">大宝寺</option>
+<option value="高坂">高坂</option>
+<option value="高田">高田</option>
+<option value="宝田">宝田</option>
+<option value="宝町">宝町</option>
+<option value="田川">田川</option>
+<option value="滝沢">滝沢</option>
+<option value="蛸井興屋">蛸井興屋</option>
+<option value="田代">田代</option>
+<option value="谷定">谷定</option>
+<option value="田麦俣">田麦俣</option>
+<option value="たらのき代">たらのき代</option>
+<option value="大宝寺町">大宝寺町</option>
+<option value="千安京田">千安京田</option>
+<option value="長者町">長者町</option>
+<option value="朝暘町">朝暘町</option>
+<option value="茅原">茅原</option>
+<option value="茅原町">茅原町</option>
+<option value="辻興屋">辻興屋</option>
+<option value="寺田">寺田</option>
+<option value="道形">道形</option>
+<option value="道形町">道形町</option>
+<option value="常盤木">常盤木</option>
+<option value="戸沢">戸沢</option>
+<option value="栃屋">栃屋</option>
+<option value="外内島">外内島</option>
+<option value="友江">友江</option>
+<option value="友江町">友江町</option>
+<option value="豊田">豊田</option>
+<option value="鳥居町">鳥居町</option>
+<option value="苗津">苗津</option>
+<option value="苗津町">苗津町</option>
+<option value="中京田">中京田</option>
+<option value="中沢">中沢</option>
+<option value="中清水">中清水</option>
+<option value="中田">中田</option>
+<option value="中楯">中楯</option>
+<option value="長沼">長沼</option>
+<option value="中野京田">中野京田</option>
+<option value="中野新田">中野新田</option>
+<option value="中橋">中橋</option>
+<option value="中山">中山</option>
+<option value="行沢">行沢</option>
+<option value="長崎">長崎</option>
+<option value="新形町">新形町</option>
+<option value="西荒屋">西荒屋</option>
+<option value="西片屋">西片屋</option>
+<option value="錦町">錦町</option>
+<option value="西京田">西京田</option>
+<option value="西新斎町">西新斎町</option>
+<option value="西茅原町">西茅原町</option>
+<option value="西沼">西沼</option>
+<option value="西目">西目</option>
+<option value="布目">布目</option>
+<option value="鼠ケ関">鼠ケ関</option>
+<option value="のぞみ町">のぞみ町</option>
+<option value="野田目">野田目</option>
+<option value="羽黒町赤川">羽黒町赤川</option>
+<option value="羽黒町荒川">羽黒町荒川</option>
+<option value="羽黒町石野新田">羽黒町石野新田</option>
+<option value="羽黒町市野山">羽黒町市野山</option>
+<option value="羽黒町猪俣新田">羽黒町猪俣新田</option>
+<option value="羽黒町後田">羽黒町後田</option>
+<option value="羽黒町上野新田">羽黒町上野新田</option>
+<option value="羽黒町大口">羽黒町大口</option>
+<option value="羽黒町押口">羽黒町押口</option>
+<option value="羽黒町金森目">羽黒町金森目</option>
+<option value="羽黒町狩谷野目">羽黒町狩谷野目</option>
+<option value="羽黒町川代">羽黒町川代</option>
+<option value="羽黒町川行">羽黒町川行</option>
+<option value="羽黒町黒瀬">羽黒町黒瀬</option>
+<option value="羽黒町小増川">羽黒町小増川</option>
+<option value="羽黒町坂ノ下">羽黒町坂ノ下</option>
+<option value="羽黒町十文字">羽黒町十文字</option>
+<option value="羽黒町仙道">羽黒町仙道</option>
+<option value="羽黒町染興屋">羽黒町染興屋</option>
+<option value="羽黒町高寺">羽黒町高寺</option>
+<option value="羽黒町玉川">羽黒町玉川</option>
+<option value="羽黒町手向">羽黒町手向</option>
+<option value="羽黒町戸野">羽黒町戸野</option>
+<option value="羽黒町富沢">羽黒町富沢</option>
+<option value="羽黒町中里">羽黒町中里</option>
+<option value="羽黒町野荒町">羽黒町野荒町</option>
+<option value="羽黒町野田">羽黒町野田</option>
+<option value="羽黒町昼田">羽黒町昼田</option>
+<option value="羽黒町細谷">羽黒町細谷</option>
+<option value="羽黒町増川新田">羽黒町増川新田</option>
+<option value="羽黒町町屋">羽黒町町屋</option>
+<option value="羽黒町松尾">羽黒町松尾</option>
+<option value="羽黒町松ケ岡">羽黒町松ケ岡</option>
+<option value="羽黒町馬渡ノ内下">羽黒町馬渡ノ内下</option>
+<option value="羽黒町三ツ橋">羽黒町三ツ橋</option>
+<option value="馬場町">馬場町</option>
+<option value="林崎">林崎</option>
+<option value="茨新田">茨新田</option>
+<option value="播磨">播磨</option>
+<option value="番田">番田</option>
+<option value="日枝">日枝</option>
+<option value="東荒屋">東荒屋</option>
+<option value="東岩本">東岩本</option>
+<option value="東新斎町">東新斎町</option>
+<option value="東原町">東原町</option>
+<option value="東堀越">東堀越</option>
+<option value="東目">東目</option>
+<option value="菱津">菱津</option>
+<option value="一霞">一霞</option>
+<option value="日出">日出</option>
+<option value="日吉町">日吉町</option>
+<option value="日和田町">日和田町</option>
+<option value="平形">平形</option>
+<option value="平田">平田</option>
+<option value="福田">福田</option>
+<option value="藤岡">藤岡</option>
+<option value="藤沢">藤沢</option>
+<option value="藤島">藤島</option>
+<option value="藤島関根">藤島関根</option>
+<option value="藤浪">藤浪</option>
+<option value="藤の花">藤の花</option>
+<option value="双葉町">双葉町</option>
+<option value="文園町">文園町</option>
+<option value="古郡">古郡</option>
+<option value="平京田">平京田</option>
+<option value="平成町">平成町</option>
+<option value="平足">平足</option>
+<option value="豊栄">豊栄</option>
+<option value="文下">文下</option>
+<option value="宝徳">宝徳</option>
+<option value="宝谷">宝谷</option>
+<option value="ほなみ町">ほなみ町</option>
+<option value="本郷">本郷</option>
+<option value="本町">本町</option>
+<option value="本田">本田</option>
+<option value="槇代">槇代</option>
+<option value="幕野内">幕野内</option>
+<option value="松沢">松沢</option>
+<option value="松根">松根</option>
+<option value="丸岡">丸岡</option>
+<option value="馬渡">馬渡</option>
+<option value="美咲町">美咲町</option>
+<option value="水沢">水沢</option>
+<option value="みずほ">みずほ</option>
+<option value="道田町">道田町</option>
+<option value="みどり町">みどり町</option>
+<option value="美原町">美原町</option>
+<option value="箕升新田">箕升新田</option>
+<option value="宮沢">宮沢</option>
+<option value="三和">三和</option>
+<option value="三和町">三和町</option>
+<option value="民田">民田</option>
+<option value="睦町">睦町</option>
+<option value="森片">森片</option>
+<option value="八色木">八色木</option>
+<option value="谷地興屋">谷地興屋</option>
+<option value="八ツ興屋">八ツ興屋</option>
+<option value="柳田">柳田</option>
+<option value="柳久瀬">柳久瀬</option>
+<option value="矢馳">矢馳</option>
+<option value="矢引">矢引</option>
+<option value="山五十川">山五十川</option>
+<option value="山田">山田</option>
+<option value="湯温海">湯温海</option>
+<option value="楪">楪</option>
+<option value="湯田川">湯田川</option>
+<option value="湯野沢">湯野沢</option>
+<option value="湯野浜">湯野浜</option>
+<option value="由良">由良</option>
+<option value="陽光町">陽光町</option>
+<option value="余慶町">余慶町</option>
+<option value="淀川町">淀川町</option>
+<option value="無音">無音</option>
+<option value="若葉町">若葉町</option>
+<option value="早田">早田</option>
+<option value="渡前">渡前</option>
+<option value="和名川">和名川</option>
+',
+    '酒田市' => '<option value="相生町">相生町</option>
+<option value="相沢">相沢</option>
+<option value="赤剥">赤剥</option>
+<option value="あきほ町">あきほ町</option>
+<option value="曙町">曙町</option>
+<option value="旭新町">旭新町</option>
+<option value="飛鳥">飛鳥</option>
+<option value="東町">東町</option>
+<option value="荒町">荒町</option>
+<option value="飯森山">飯森山</option>
+<option value="石名坂">石名坂</option>
+<option value="石橋">石橋</option>
+<option value="泉興野">泉興野</option>
+<option value="泉町">泉町</option>
+<option value="板戸">板戸</option>
+<option value="市条">市条</option>
+<option value="一番町">一番町</option>
+<option value="稲荷沢">稲荷沢</option>
+<option value="入船町">入船町</option>
+<option value="臼ケ沢">臼ケ沢</option>
+<option value="内町">内町</option>
+<option value="漆曽根">漆曽根</option>
+<option value="駅東">駅東</option>
+<option value="円能寺">円能寺</option>
+<option value="生石">生石</option>
+<option value="大川渡">大川渡</option>
+<option value="大久保">大久保</option>
+<option value="大島田">大島田</option>
+<option value="大多新田">大多新田</option>
+<option value="大槻新田">大槻新田</option>
+<option value="大豊田">大豊田</option>
+<option value="大沼新田">大沼新田</option>
+<option value="大野新田">大野新田</option>
+<option value="大浜">大浜</option>
+<option value="大町">大町</option>
+<option value="大宮">大宮</option>
+<option value="大宮町">大宮町</option>
+<option value="大蕨">大蕨</option>
+<option value="岡島田">岡島田</option>
+<option value="荻島">荻島</option>
+<option value="落野目">落野目</option>
+<option value="御成町">御成町</option>
+<option value="小見">小見</option>
+<option value="卸町">卸町</option>
+<option value="柏谷沢">柏谷沢</option>
+<option value="片町">片町</option>
+<option value="勝保関">勝保関</option>
+<option value="門田">門田</option>
+<option value="金谷">金谷</option>
+<option value="上青沢">上青沢</option>
+<option value="上北目">上北目</option>
+<option value="上黒川">上黒川</option>
+<option value="上興野">上興野</option>
+<option value="上野曽根">上野曽根</option>
+<option value="上本町">上本町</option>
+<option value="上餅山">上餅山</option>
+<option value="上安田">上安田</option>
+<option value="上安町">上安町</option>
+<option value="亀ケ崎">亀ケ崎</option>
+<option value="刈穂">刈穂</option>
+<option value="刈屋">刈屋</option>
+<option value="観音寺">観音寺</option>
+<option value="木川">木川</option>
+<option value="北青沢">北青沢</option>
+<option value="北今町">北今町</option>
+<option value="北里町">北里町</option>
+<option value="北沢">北沢</option>
+<option value="北仁田">北仁田</option>
+<option value="北新橋">北新橋</option>
+<option value="北新町">北新町</option>
+<option value="北千日町">北千日町</option>
+<option value="北千日堂前">北千日堂前</option>
+<option value="北浜町">北浜町</option>
+<option value="北平沢">北平沢</option>
+<option value="北俣">北俣</option>
+<option value="北町">北町</option>
+<option value="城輪">城輪</option>
+<option value="京田">京田</option>
+<option value="草刈谷地">草刈谷地</option>
+<option value="草津">草津</option>
+<option value="久保田">久保田</option>
+<option value="熊手島">熊手島</option>
+<option value="熊野田">熊野田</option>
+<option value="蔵小路">蔵小路</option>
+<option value="黒森">黒森</option>
+<option value="こあら">こあら</option>
+<option value="古荒新田">古荒新田</option>
+<option value="小泉">小泉</option>
+<option value="広栄町">広栄町</option>
+<option value="郡山">郡山</option>
+<option value="こがね町">こがね町</option>
+<option value="寿町">寿町</option>
+<option value="小林">小林</option>
+<option value="小牧">小牧</option>
+<option value="小牧新田">小牧新田</option>
+<option value="古湊町">古湊町</option>
+<option value="幸町">幸町</option>
+<option value="境興野">境興野</option>
+<option value="酒井新田">酒井新田</option>
+<option value="栄町">栄町</option>
+<option value="肴町">肴町</option>
+<option value="坂野辺新田">坂野辺新田</option>
+<option value="桜林">桜林</option>
+<option value="桜林興野">桜林興野</option>
+<option value="砂越">砂越</option>
+<option value="砂越緑町">砂越緑町</option>
+<option value="山居町">山居町</option>
+<option value="三之宮">三之宮</option>
+<option value="下瀬">下瀬</option>
+<option value="地見興屋">地見興屋</option>
+<option value="下青沢">下青沢</option>
+<option value="下黒川">下黒川</option>
+<option value="下餅山">下餅山</option>
+<option value="下安町">下安町</option>
+<option value="十里塚">十里塚</option>
+<option value="常禅寺">常禅寺</option>
+<option value="真学寺沢">真学寺沢</option>
+<option value="新出">新出</option>
+<option value="新橋">新橋</option>
+<option value="新町">新町</option>
+<option value="新屋敷">新屋敷</option>
+<option value="末広町">末広町</option>
+<option value="住吉町">住吉町</option>
+<option value="関">関</option>
+<option value="芹田">芹田</option>
+<option value="千石町">千石町</option>
+<option value="千日町">千日町</option>
+<option value="総光寺沢">総光寺沢</option>
+<option value="曽根田">曽根田</option>
+<option value="高砂">高砂</option>
+<option value="高見台">高見台</option>
+<option value="竹田">竹田</option>
+<option value="田沢">田沢</option>
+<option value="楯山">楯山</option>
+<option value="中央東町">中央東町</option>
+<option value="中央西町">中央西町</option>
+<option value="千代田">千代田</option>
+<option value="塚淵">塚淵</option>
+<option value="土崎">土崎</option>
+<option value="土渕">土渕</option>
+<option value="堤町">堤町</option>
+<option value="局">局</option>
+<option value="鶴田">鶴田</option>
+<option value="手蔵田">手蔵田</option>
+<option value="寺田">寺田</option>
+<option value="天神堂">天神堂</option>
+<option value="東栄町">東栄町</option>
+<option value="飛島">飛島</option>
+<option value="豊里">豊里</option>
+<option value="豊原">豊原</option>
+<option value="泥沢">泥沢</option>
+<option value="中北目">中北目</option>
+<option value="中野新田">中野新田</option>
+<option value="中野曽根">中野曽根</option>
+<option value="中野俣">中野俣</option>
+<option value="中野目">中野目</option>
+<option value="中牧田">中牧田</option>
+<option value="中町">中町</option>
+<option value="仲町">仲町</option>
+<option value="楢橋">楢橋</option>
+<option value="成興野">成興野</option>
+<option value="新青渡">新青渡</option>
+<option value="新井田町">新井田町</option>
+<option value="新堀">新堀</option>
+<option value="錦町">錦町</option>
+<option value="西坂本">西坂本</option>
+<option value="西田">西田</option>
+<option value="西野町">西野町</option>
+<option value="仁助谷地">仁助谷地</option>
+<option value="二番町">二番町</option>
+<option value="庭田">庭田</option>
+<option value="布目">布目</option>
+<option value="橋本">橋本</option>
+<option value="初瀬">初瀬</option>
+<option value="浜田">浜田</option>
+<option value="浜中">浜中</option>
+<option value="浜松町">浜松町</option>
+<option value="茨野新田">茨野新田</option>
+<option value="光ケ丘">光ケ丘</option>
+<option value="東泉町">東泉町</option>
+<option value="東大町">東大町</option>
+<option value="東中の口町">東中の口町</option>
+<option value="東両羽町">東両羽町</option>
+<option value="引地">引地</option>
+<option value="日の出町">日の出町</option>
+<option value="日吉町">日吉町</option>
+<option value="広岡新田">広岡新田</option>
+<option value="広野">広野</option>
+<option value="広野新田">広野新田</option>
+<option value="福山">福山</option>
+<option value="藤塚">藤塚</option>
+<option value="富士見町">富士見町</option>
+<option value="船場町">船場町</option>
+<option value="麓">麓</option>
+<option value="古青渡">古青渡</option>
+<option value="法連寺">法連寺</option>
+<option value="穂積">穂積</option>
+<option value="堀野内">堀野内</option>
+<option value="本川">本川</option>
+<option value="本町">本町</option>
+<option value="前川">前川</option>
+<option value="牧曽根">牧曽根</option>
+<option value="升田">升田</option>
+<option value="松原南">松原南</option>
+<option value="松美町">松美町</option>
+<option value="丸沼">丸沼</option>
+<option value="政所">政所</option>
+<option value="みずほ">みずほ</option>
+<option value="緑ケ丘">緑ケ丘</option>
+<option value="緑町">緑町</option>
+<option value="南新町">南新町</option>
+<option value="南新屋敷">南新屋敷</option>
+<option value="南千日町">南千日町</option>
+<option value="南平沢">南平沢</option>
+<option value="南町">南町</option>
+<option value="宮内">宮内</option>
+<option value="宮海">宮海</option>
+<option value="宮野浦">宮野浦</option>
+<option value="茗ケ沢">茗ケ沢</option>
+<option value="元新屋敷">元新屋敷</option>
+<option value="本楯">本楯</option>
+<option value="保岡">保岡</option>
+<option value="安田">安田</option>
+<option value="山田">山田</option>
+<option value="山楯">山楯</option>
+<option value="山寺">山寺</option>
+<option value="山元">山元</option>
+<option value="山谷">山谷</option>
+<option value="山谷新田">山谷新田</option>
+<option value="遊摺部">遊摺部</option>
+<option value="ゆたか">ゆたか</option>
+<option value="横代">横代</option>
+<option value="吉田">吉田</option>
+<option value="吉田新田">吉田新田</option>
+<option value="四ツ興野">四ツ興野</option>
+<option value="米島">米島</option>
+<option value="両羽町">両羽町</option>
+<option value="若竹町">若竹町</option>
+<option value="若浜町">若浜町</option>
+<option value="若原町">若原町</option>
+<option value="若宮町">若宮町</option>',
+    '新庄市' => '<option value="新町">新町</option>
+<option value="石川町">石川町</option>
+<option value="泉田">泉田</option>
+<option value="五日町">五日町</option>
+<option value="大手町">大手町</option>
+<option value="大町">大町</option>
+<option value="沖の町">沖の町</option>
+<option value="小田島">小田島</option>
+<option value="小田島町">小田島町</option>
+<option value="金沢">金沢</option>
+<option value="上金沢町">上金沢町</option>
+<option value="北町">北町</option>
+<option value="栄町">栄町</option>
+<option value="下金沢町">下金沢町</option>
+<option value="下田町">下田町</option>
+<option value="城南町">城南町</option>
+<option value="昭和">昭和</option>
+<option value="城西町">城西町</option>
+<option value="末広町">末広町</option>
+<option value="住吉町">住吉町</option>
+<option value="千門町">千門町</option>
+<option value="多門町">多門町</option>
+<option value="角沢">角沢</option>
+<option value="鉄砲町">鉄砲町</option>
+<option value="十日町">十日町</option>
+<option value="常葉町">常葉町</option>
+<option value="飛田">飛田</option>
+<option value="鳥越">鳥越</option>
+<option value="中道町">中道町</option>
+<option value="仁間">仁間</option>
+<option value="沼田">沼田</option>
+<option value="沼田町">沼田町</option>
+<option value="萩野">萩野</option>
+<option value="万場町">万場町</option>
+<option value="東谷地田町">東谷地田町</option>
+<option value="桧町">桧町</option>
+<option value="福田">福田</option>
+<option value="堀端町">堀端町</option>
+<option value="本町">本町</option>
+<option value="升形">升形</option>
+<option value="松本">松本</option>
+<option value="宮内町">宮内町</option>
+<option value="本合海">本合海</option>
+<option value="横打町">横打町</option>
+<option value="若葉町">若葉町</option>',
+    '寒河江市' => '<option value="石持町">石持町</option>
+<option value="内ノ袋">内ノ袋</option>
+<option value="落衣前">落衣前</option>
+<option value="上河原">上河原</option>
+<option value="菊地堂">菊地堂</option>
+<option value="雲河原">雲河原</option>
+<option value="越井坂町">越井坂町</option>
+<option value="小沼町">小沼町</option>
+<option value="幸町">幸町</option>
+<option value="栄町">栄町</option>
+<option value="寒河江">寒河江</option>
+<option value="幸生">幸生</option>
+<option value="幸田町">幸田町</option>
+<option value="慈恩寺">慈恩寺</option>
+<option value="柴橋">柴橋</option>
+<option value="島">島</option>
+<option value="下河原">下河原</option>
+<option value="白岩">白岩</option>
+<option value="新山">新山</option>
+<option value="新山町">新山町</option>
+<option value="末広町">末広町</option>
+<option value="清助新田">清助新田</option>
+<option value="高瀬台">高瀬台</option>
+<option value="高田">高田</option>
+<option value="高松">高松</option>
+<option value="高屋">高屋</option>
+<option value="田代">田代</option>
+<option value="中央">中央</option>
+<option value="中央工業団地">中央工業団地</option>
+<option value="道生">道生</option>
+<option value="留場">留場</option>
+<option value="中河原">中河原</option>
+<option value="中郷">中郷</option>
+<option value="仲谷地">仲谷地</option>
+<option value="七日町">七日町</option>
+<option value="西根">西根</option>
+<option value="西根北町">西根北町</option>
+<option value="日田">日田</option>
+<option value="入倉">入倉</option>
+<option value="東新山町">東新山町</option>
+<option value="平塩">平塩</option>
+<option value="日和田">日和田</option>
+<option value="船橋町">船橋町</option>
+<option value="ほなみ">ほなみ</option>
+<option value="本町">本町</option>
+<option value="松川">松川</option>
+<option value="丸内">丸内</option>
+<option value="みずき">みずき</option>
+<option value="緑町">緑町</option>
+<option value="南町">南町</option>
+<option value="箕輪">箕輪</option>
+<option value="宮内">宮内</option>
+<option value="本楯">本楯</option>
+<option value="元町">元町</option>
+<option value="八鍬">八鍬</option>
+<option value="谷沢">谷沢</option>
+<option value="山岸町">山岸町</option>
+<option value="八幡町">八幡町</option>
+<option value="夕カヘ">夕カヘ</option>
+<option value="米沢">米沢</option>
+<option value="六供町">六供町</option>
+<option value="若葉町">若葉町</option>',
+    '上山市' => '<option value="相生">相生</option>
+<option value="朝日台">朝日台</option>
+<option value="旭町">旭町</option>
+<option value="阿弥陀地">阿弥陀地</option>
+<option value="石崎">石崎</option>
+<option value="石曽根">石曽根</option>
+<option value="石堂">石堂</option>
+<option value="泉川">泉川</option>
+<option value="裏町">裏町</option>
+<option value="御井戸丁">御井戸丁</option>
+<option value="大石">大石</option>
+<option value="小倉">小倉</option>
+<option value="小笹">小笹</option>
+<option value="小白府">小白府</option>
+<option value="金生">金生</option>
+<option value="金生西">金生西</option>
+<option value="金生東">金生東</option>
+<option value="金瓶">金瓶</option>
+<option value="金谷">金谷</option>
+<option value="金山">金山</option>
+<option value="上生居">上生居</option>
+<option value="軽井沢">軽井沢</option>
+<option value="川口">川口</option>
+<option value="河崎">河崎</option>
+<option value="北町">北町</option>
+<option value="北町本丁">北町本丁</option>
+<option value="久保川">久保川</option>
+<option value="久保手">久保手</option>
+<option value="けやきの森">けやきの森</option>
+<option value="小穴">小穴</option>
+<option value="高野">高野</option>
+<option value="権現堂">権現堂</option>
+<option value="蔵王">蔵王</option>
+<option value="蔵王の森">蔵王の森</option>
+<option value="栄町">栄町</option>
+<option value="沢丁">沢丁</option>
+<option value="三本松">三本松</option>
+<option value="下生居">下生居</option>
+<option value="菖蒲">菖蒲</option>
+<option value="新金谷">新金谷</option>
+<option value="新丁">新丁</option>
+<option value="新町">新町</option>
+<option value="新湯">新湯</option>
+<option value="須田板">須田板</option>
+<option value="関根">関根</option>
+<option value="仙石">仙石</option>
+<option value="大門">大門</option>
+<option value="高松">高松</option>
+<option value="鶴脛町">鶴脛町</option>
+<option value="藤吾">藤吾</option>
+<option value="十日町">十日町</option>
+<option value="中生居">中生居</option>
+<option value="中山">中山</option>
+<option value="長清水">長清水</option>
+<option value="永野">永野</option>
+<option value="楢下">楢下</option>
+<option value="葉山">葉山</option>
+<option value="原口">原口</option>
+<option value="東町">東町</option>
+<option value="二日町">二日町</option>
+<option value="弁天">弁天</option>
+<option value="細谷">細谷</option>
+<option value="牧野">牧野</option>
+<option value="松山">松山</option>
+<option value="三上">三上</option>
+<option value="美咲町">美咲町</option>
+<option value="皆沢">皆沢</option>
+<option value="南町">南町</option>
+<option value="みはらしの丘">みはらしの丘</option>
+<option value="宮脇">宮脇</option>
+<option value="狸森">狸森</option>
+<option value="元城内">元城内</option>
+<option value="矢来">矢来</option>
+<option value="湯町">湯町</option>
+<option value="八日町">八日町</option>
+<option value="四ツ谷">四ツ谷</option>',
+    '村山市' => '<option value="五十沢">五十沢</option>
+<option value="稲下">稲下</option>
+<option value="岩野">岩野</option>
+<option value="駅西">駅西</option>
+<option value="大久保">大久保</option>
+<option value="大槇">大槇</option>
+<option value="大淀">大淀</option>
+<option value="金谷">金谷</option>
+<option value="河島">河島</option>
+<option value="河島山">河島山</option>
+<option value="碁点">碁点</option>
+<option value="白鳥">白鳥</option>
+<option value="杉島">杉島</option>
+<option value="田沢">田沢</option>
+<option value="楯岡">楯岡</option>
+<option value="楯岡荒町">楯岡荒町</option>
+<option value="楯岡五日町">楯岡五日町</option>
+<option value="楯岡大沢川">楯岡大沢川</option>
+<option value="楯岡北町">楯岡北町</option>
+<option value="楯岡新高田">楯岡新高田</option>
+<option value="楯岡新町">楯岡新町</option>
+<option value="楯岡楯">楯岡楯</option>
+<option value="楯岡俵町">楯岡俵町</option>
+<option value="楯岡鶴ケ町">楯岡鶴ケ町</option>
+<option value="楯岡十日町">楯岡十日町</option>
+<option value="楯岡中町">楯岡中町</option>
+<option value="楯岡馬場">楯岡馬場</option>
+<option value="楯岡東沢">楯岡東沢</option>
+<option value="楯岡笛田">楯岡笛田</option>
+<option value="楯岡二日町">楯岡二日町</option>
+<option value="楯岡晦日町">楯岡晦日町</option>
+<option value="楯岡湯沢">楯岡湯沢</option>
+<option value="たも山">たも山</option>
+<option value="樽石">樽石</option>
+<option value="中央">中央</option>
+<option value="長善寺">長善寺</option>
+<option value="土生田">土生田</option>
+<option value="富並">富並</option>
+<option value="長島">長島</option>
+<option value="名取">名取</option>
+<option value="西郷">西郷</option>
+<option value="林崎">林崎</option>
+<option value="本飯田">本飯田</option>
+<option value="山の内">山の内</option>
+<option value="雪の観音郷">雪の観音郷</option>
+<option value="湯沢">湯沢</option>
+<option value="湯野沢">湯野沢</option>',
+    '長井市' => '<option value="芦沢">芦沢</option>
+<option value="あら町">あら町</option>
+<option value="五十川">五十川</option>
+<option value="泉">泉</option>
+<option value="今泉">今泉</option>
+<option value="歌丸">歌丸</option>
+<option value="大町">大町</option>
+<option value="片田町">片田町</option>
+<option value="上伊佐沢">上伊佐沢</option>
+<option value="河井">河井</option>
+<option value="川原沢">川原沢</option>
+<option value="勧進代">勧進代</option>
+<option value="草岡">草岡</option>
+<option value="九野本">九野本</option>
+<option value="小出">小出</option>
+<option value="高野町">高野町</option>
+<option value="幸町">幸町</option>
+<option value="栄町">栄町</option>
+<option value="清水町">清水町</option>
+<option value="下伊佐沢">下伊佐沢</option>
+<option value="白兎">白兎</option>
+<option value="新町">新町</option>
+<option value="神明町">神明町</option>
+<option value="台町">台町</option>
+<option value="館町　南">館町　南</option>
+<option value="館町　北">館町　北</option>
+<option value="寺泉">寺泉</option>
+<option value="十日町">十日町</option>
+<option value="時庭">時庭</option>
+<option value="中伊佐沢">中伊佐沢</option>
+<option value="中道">中道</option>
+<option value="成田">成田</option>
+<option value="花作町">花作町</option>
+<option value="東町">東町</option>
+<option value="日の出町">日の出町</option>
+<option value="平山">平山</option>
+<option value="舟場">舟場</option>
+<option value="ままの上">ままの上</option>
+<option value="緑町">緑町</option>
+<option value="宮">宮</option>
+<option value="本町">本町</option>
+<option value="森">森</option>
+<option value="屋城町">屋城町</option>
+<option value="横町">横町</option>
+<option value="四ツ谷">四ツ谷</option>',
+    '天童市' => '<option value="荒谷">荒谷</option>
+<option value="石鳥居">石鳥居</option>
+<option value="泉町">泉町</option>
+<option value="五日町">五日町</option>
+<option value="今町">今町</option>
+<option value="駅西">駅西</option>
+<option value="老野森">老野森</option>
+<option value="大清水">大清水</option>
+<option value="大町">大町</option>
+<option value="柏木町">柏木町</option>
+<option value="鎌田">鎌田</option>
+<option value="鎌田本町">鎌田本町</option>
+<option value="上荻野戸">上荻野戸</option>
+<option value="川原子">川原子</option>
+<option value="北久野本">北久野本</option>
+<option value="北目">北目</option>
+<option value="久野本">久野本</option>
+<option value="窪野目">窪野目</option>
+<option value="蔵増">蔵増</option>
+<option value="鍬ノ町">鍬ノ町</option>
+<option value="小路">小路</option>
+<option value="小関">小関</option>
+<option value="桜町">桜町</option>
+<option value="下荻野戸">下荻野戸</option>
+<option value="清池">清池</option>
+<option value="清池東">清池東</option>
+<option value="高木">高木</option>
+<option value="高擶">高擶</option>
+<option value="高野辺">高野辺</option>
+<option value="田鶴町">田鶴町</option>
+<option value="田麦野">田麦野</option>
+<option value="塚野目">塚野目</option>
+<option value="寺津">寺津</option>
+<option value="天童中">天童中</option>
+<option value="東善寺">東善寺</option>
+<option value="藤内新田">藤内新田</option>
+<option value="道満">道満</option>
+<option value="中里">中里</option>
+<option value="仲町">仲町</option>
+<option value="長岡">長岡</option>
+<option value="長岡北">長岡北</option>
+<option value="奈良沢">奈良沢</option>
+<option value="成生">成生</option>
+<option value="糠塚">糠塚</option>
+<option value="貫津">貫津</option>
+<option value="芳賀">芳賀</option>
+<option value="芳賀タウン北">芳賀タウン北</option>
+<option value="芳賀タウン南">芳賀タウン南</option>
+<option value="原町">原町</option>
+<option value="万代">万代</option>
+<option value="東久野本">東久野本</option>
+<option value="東長岡">東長岡</option>
+<option value="東芳賀">東芳賀</option>
+<option value="東本町">東本町</option>
+<option value="一日町">一日町</option>
+<option value="干布">干布</option>
+<option value="本町">本町</option>
+<option value="交り江">交り江</option>
+<option value="松城町">松城町</option>
+<option value="乱川">乱川</option>
+<option value="三日町">三日町</option>
+<option value="南小畑">南小畑</option>
+<option value="南町">南町</option>
+<option value="矢野目">矢野目</option>
+<option value="山口">山口</option>
+<option value="山元">山元</option>',
+    '東根市' => '<option value="泉郷">泉郷</option>
+<option value="板垣大通り">板垣大通り</option>
+<option value="板垣北小路">板垣北小路</option>
+<option value="板垣北通り">板垣北通り</option>
+<option value="板垣新田">板垣新田</option>
+<option value="板垣中通り">板垣中通り</option>
+<option value="板垣西小路">板垣西小路</option>
+<option value="一本木">一本木</option>
+<option value="猪野沢">猪野沢</option>
+<option value="太田新田">太田新田</option>
+<option value="大林">大林</option>
+<option value="大林新田">大林新田</option>
+<option value="大森">大森</option>
+<option value="若木">若木</option>
+<option value="若木大通り">若木大通り</option>
+<option value="若木小路">若木小路</option>
+<option value="若木一条通り">若木一条通り</option>
+<option value="若木二条通り">若木二条通り</option>
+<option value="若木三条通り">若木三条通り</option>
+<option value="若木四条通り">若木四条通り</option>
+<option value="若木五条通り">若木五条通り</option>
+<option value="若木通り">若木通り</option>
+<option value="温泉町">温泉町</option>
+<option value="柏原">柏原</option>
+<option value="蟹沢">蟹沢</option>
+<option value="観音寺">観音寺</option>
+<option value="郡山">郡山</option>
+<option value="小林">小林</option>
+<option value="鷺の宿">鷺の宿</option>
+<option value="鷺ノ森">鷺ノ森</option>
+<option value="さくらんぼ駅前">さくらんぼ駅前</option>
+<option value="島大堀">島大堀</option>
+<option value="下川原">下川原</option>
+<option value="白水">白水</option>
+<option value="新田町">新田町</option>
+<option value="神町">神町</option>
+<option value="神町中央">神町中央</option>
+<option value="神町東">神町東</option>
+<option value="神町西">神町西</option>
+<option value="神町南">神町南</option>
+<option value="神町北">神町北</option>
+<option value="神町営団大通り">神町営団大通り</option>
+<option value="神町営団中通り">神町営団中通り</option>
+<option value="神町営団南通り">神町営団南通り</option>
+<option value="神町営団一条通り">神町営団一条通り</option>
+<option value="神町営団二条通り">神町営団二条通り</option>
+<option value="神町営団三条通り">神町営団三条通り</option>
+<option value="関山">関山</option>
+<option value="中央">中央</option>
+<option value="中央東">中央東</option>
+<option value="中央西">中央西</option>
+<option value="中央南">中央南</option>
+<option value="藤助新田">藤助新田</option>
+<option value="中島新田">中島新田</option>
+<option value="中島通り">中島通り</option>
+<option value="中島東通り">中島東通り</option>
+<option value="長瀞">長瀞</option>
+<option value="荷口">荷口</option>
+<option value="沼沢">沼沢</option>
+<option value="野川">野川</option>
+<option value="野田">野田</option>
+<option value="羽入">羽入</option>
+<option value="羽入東">羽入東</option>
+<option value="東根甲">東根甲</option>
+<option value="東根乙">東根乙</option>
+<option value="東根丙">東根丙</option>
+<option value="東根丁">東根丁</option>
+<option value="本町">本町</option>
+<option value="本丸北">本丸北</option>
+<option value="本丸西">本丸西</option>
+<option value="本丸東">本丸東</option>
+<option value="本丸南">本丸南</option>
+<option value="松沢">松沢</option>
+<option value="三日町">三日町</option>
+<option value="宮崎">宮崎</option>
+<option value="四ツ家">四ツ家</option>
+<option value="六田">六田</option>',
+    '尾花沢市' => '<option value="芦沢">芦沢</option>
+<option value="五十沢">五十沢</option>
+<option value="市野々">市野々</option>
+<option value="岩谷沢">岩谷沢</option>
+<option value="荻袋">荻袋</option>
+<option value="押切">押切</option>
+<option value="尾花沢">尾花沢</option>
+<option value="朧気">朧気</option>
+<option value="上ノ畑">上ノ畑</option>
+<option value="上柳渡戸">上柳渡戸</option>
+<option value="上町">上町</option>
+<option value="北郷">北郷</option>
+<option value="北町">北町</option>
+<option value="銀山新畑">銀山新畑</option>
+<option value="牛房野">牛房野</option>
+<option value="下柳渡戸">下柳渡戸</option>
+<option value="正厳">正厳</option>
+<option value="新町">新町</option>
+<option value="新町中央">新町中央</option>
+<option value="高橋">高橋</option>
+<option value="鶴子">鶴子</option>
+<option value="鶴巻田">鶴巻田</option>
+<option value="寺内">寺内</option>
+<option value="毒沢">毒沢</option>
+<option value="富山">富山</option>
+<option value="中島">中島</option>
+<option value="中町">中町</option>
+<option value="名木沢">名木沢</option>
+<option value="行沢">行沢</option>
+<option value="二藤袋">二藤袋</option>
+<option value="丹生">丹生</option>
+<option value="野黒沢">野黒沢</option>
+<option value="延沢">延沢</option>
+<option value="畑沢">畑沢</option>
+<option value="原田">原田</option>
+<option value="梺町">梺町</option>
+<option value="細野">細野</option>
+<option value="南沢">南沢</option>
+<option value="母袋">母袋</option>
+<option value="横町">横町</option>
+<option value="六沢">六沢</option>
+<option value="若葉町">若葉町</option>',
+    '南陽市' => '<option value="赤湯">赤湯</option>
+<option value="池黒">池黒</option>
+<option value="漆山">漆山</option>
+<option value="大橋">大橋</option>
+<option value="沖田">沖田</option>
+<option value="荻">荻</option>
+<option value="金沢">金沢</option>
+<option value="金山">金山</option>
+<option value="釜渡戸">釜渡戸</option>
+<option value="蒲生田">蒲生田</option>
+<option value="川樋">川樋</option>
+<option value="椚塚">椚塚</option>
+<option value="小岩沢">小岩沢</option>
+<option value="郡山">郡山</option>
+<option value="小滝">小滝</option>
+<option value="坂井">坂井</option>
+<option value="島貫">島貫</option>
+<option value="下荻">下荻</option>
+<option value="新田">新田</option>
+<option value="砂塚">砂塚</option>
+<option value="関根">関根</option>
+<option value="高梨">高梨</option>
+<option value="竹原">竹原</option>
+<option value="太郎">太郎</option>
+<option value="中央東">中央東</option>
+<option value="露橋">露橋</option>
+<option value="中落合">中落合</option>
+<option value="中ノ目">中ノ目</option>
+<option value="長岡">長岡</option>
+<option value="長瀞">長瀞</option>
+<option value="鍋田">鍋田</option>
+<option value="二色根">二色根</option>
+<option value="西落合">西落合</option>
+<option value="萩生田">萩生田</option>
+<option value="羽付">羽付</option>
+<option value="法師柳">法師柳</option>
+<option value="松沢">松沢</option>
+<option value="俎柳">俎柳</option>
+<option value="三間通">三間通</option>
+<option value="宮内">宮内</option>
+<option value="宮崎">宮崎</option>
+<option value="元中山">元中山</option>
+<option value="梨郷">梨郷</option>
+<option value="若狭郷屋">若狭郷屋</option>
+<option value="和田">和田</option>
+<option value="上野">上野</option>',
+    '東村山郡山辺町' => '<option value="近江">近江</option>
+<option value="大塚">大塚</option>
+<option value="大寺">大寺</option>
+<option value="大蕨">大蕨</option>
+<option value="北垣">北垣</option>
+<option value="北作">北作</option>
+<option value="北山">北山</option>
+<option value="清水">清水</option>
+<option value="杉下">杉下</option>
+<option value="根際">根際</option>
+<option value="畑谷">畑谷</option>
+<option value="三河尻">三河尻</option>
+<option value="緑ケ丘">緑ケ丘</option>
+<option value="簗沢">簗沢</option>
+<option value="山辺">山辺</option>
+<option value="要害">要害</option>',
+    '東村山郡中山町' => '<option value="あおば">あおば</option>
+<option value="いずみ">いずみ</option>
+<option value="岡">岡</option>
+<option value="金沢">金沢</option>
+<option value="小塩">小塩</option>
+<option value="達磨寺">達磨寺</option>
+<option value="土橋">土橋</option>
+<option value="長崎">長崎</option>
+<option value="向新田">向新田</option>
+<option value="柳沢">柳沢</option>',
+    '西村山郡河北町' => '<option value="岩木">岩木</option>
+<option value="新吉田">新吉田</option>
+<option value="田井">田井</option>
+<option value="造山">造山</option>
+<option value="西里">西里</option>
+<option value="畑中">畑中</option>
+<option value="溝延">溝延</option>
+<option value="谷地">谷地</option>
+<option value="谷地荒町東">谷地荒町東</option>
+<option value="谷地中央">谷地中央</option>
+<option value="谷地所岡">谷地所岡</option>
+<option value="谷地ひな市">谷地ひな市</option>
+<option value="吉田">吉田</option>',
+    '西村山郡西川町' => '<option value="入間">入間</option>
+<option value="岩根沢">岩根沢</option>
+<option value="大井沢">大井沢</option>
+<option value="海味">海味</option>
+<option value="志津">志津</option>
+<option value="砂子関">砂子関</option>
+<option value="月岡">月岡</option>
+<option value="月山沢">月山沢</option>
+<option value="綱取">綱取</option>
+<option value="沼山">沼山</option>
+<option value="原">原</option>
+<option value="本道寺">本道寺</option>
+<option value="間沢">間沢</option>
+<option value="水沢">水沢</option>
+<option value="睦合">睦合</option>
+<option value="吉川">吉川</option>',
+    '西村山郡朝日町' => '<option value="新宿">新宿</option>
+<option value="馬神">馬神</option>
+<option value="大暮山">大暮山</option>
+<option value="大滝">大滝</option>
+<option value="大沼">大沼</option>
+<option value="大船木">大船木</option>
+<option value="大谷">大谷</option>
+<option value="送橋">送橋</option>
+<option value="上郷">上郷</option>
+<option value="石須部">石須部</option>
+<option value="今平">今平</option>
+<option value="四ノ沢">四ノ沢</option>
+<option value="下芦沢">下芦沢</option>
+<option value="白倉">白倉</option>
+<option value="杉山">杉山</option>
+<option value="立木">立木</option>
+<option value="玉ノ井">玉ノ井</option>
+<option value="太郎">太郎</option>
+<option value="常盤">常盤</option>
+<option value="中沢">中沢</option>
+<option value="長沼">長沼</option>
+<option value="古槇">古槇</option>
+<option value="松程">松程</option>
+<option value="水本">水本</option>
+<option value="三中">三中</option>
+<option value="宮宿">宮宿</option>
+<option value="雪谷">雪谷</option>
+<option value="和合">和合</option>
+<option value="和合平">和合平</option>',
+    '西村山郡大江町' => '<option value="左沢">左沢</option>
+<option value="小見">小見</option>
+<option value="荻野">荻野</option>
+<option value="顔好甲">顔好甲</option>
+<option value="顔好乙">顔好乙</option>
+<option value="黒森">黒森</option>
+<option value="小釿">小釿</option>
+<option value="小清">小清</option>
+<option value="材木">材木</option>
+<option value="沢口">沢口</option>
+<option value="三郷甲">三郷甲</option>
+<option value="三郷乙">三郷乙</option>
+<option value="三郷丙">三郷丙</option>
+<option value="塩ノ平">塩ノ平</option>
+<option value="十八才甲">十八才甲</option>
+<option value="十八才乙">十八才乙</option>
+<option value="月布">月布</option>
+<option value="堂屋敷">堂屋敷</option>
+<option value="所部">所部</option>
+<option value="富沢">富沢</option>
+<option value="楢山">楢山</option>
+<option value="貫見">貫見</option>
+<option value="橋上">橋上</option>
+<option value="原田">原田</option>
+<option value="藤田">藤田</option>
+<option value="本郷甲">本郷甲</option>
+<option value="本郷乙">本郷乙</option>
+<option value="本郷丙">本郷丙</option>
+<option value="本郷丁">本郷丁</option>
+<option value="本郷戊">本郷戊</option>
+<option value="本郷己">本郷己</option>
+<option value="柳川">柳川</option>',
+    '北村山郡大石田町' => '<option value="今宿">今宿</option>
+<option value="岩ケ袋">岩ケ袋</option>
+<option value="駅前通り">駅前通り</option>
+<option value="大石田">大石田</option>
+<option value="大浦">大浦</option>
+<option value="海谷">海谷</option>
+<option value="桂木町">桂木町</option>
+<option value="川前">川前</option>
+<option value="駒籠">駒籠</option>
+<option value="次年子">次年子</option>
+<option value="鷹巣">鷹巣</option>
+<option value="田沢">田沢</option>
+<option value="豊田">豊田</option>
+<option value="緑町">緑町</option>
+<option value="横山">横山</option>
+<option value="四日町">四日町</option>',
+    '最上郡金山町' => '<option value="有屋">有屋</option>
+<option value="漆野">漆野</option>
+<option value="上台">上台</option>
+<option value="金山">金山</option>
+<option value="下野明">下野明</option>
+<option value="谷口銀山">谷口銀山</option>
+<option value="飛森">飛森</option>
+<option value="中田">中田</option>
+<option value="朴山">朴山</option>
+<option value="安沢">安沢</option>
+<option value="山崎">山崎</option>',
+    '最上郡最上町' => '<option value="大堀">大堀</option>
+<option value="黒澤">黒澤</option>
+<option value="堺田">堺田</option>
+<option value="志茂">志茂</option>
+<option value="瀬見">瀬見</option>
+<option value="月楯">月楯</option>
+<option value="富澤">富澤</option>
+<option value="東法田">東法田</option>
+<option value="法田">法田</option>
+<option value="本城">本城</option>
+<option value="満澤">満澤</option>
+<option value="向町">向町</option>
+<option value="若宮">若宮</option>',
+    '最上郡舟形町' => '<option value="長者原">長者原</option>
+<option value="富田">富田</option>
+<option value="長沢">長沢</option>
+<option value="舟形">舟形</option>
+<option value="堀内">堀内</option>',
+    '最上郡真室川町' => '<option value="新町">新町</option>
+<option value="内町">内町</option>
+<option value="大沢">大沢</option>
+<option value="大滝">大滝</option>
+<option value="釜渕">釜渕</option>
+<option value="川ノ内">川ノ内</option>
+<option value="木ノ下">木ノ下</option>
+<option value="差首鍋">差首鍋</option>
+<option value="及位">及位</option>
+<option value="平岡">平岡</option>',
+    '最上郡大蔵村' => '<option value="合海">合海</option>
+<option value="赤松">赤松</option>
+<option value="清水">清水</option>
+<option value="南山">南山</option>',
+    '最上郡鮭川村' => '<option value="石名坂">石名坂</option>
+<option value="川口">川口</option>
+<option value="京塚">京塚</option>
+<option value="佐渡">佐渡</option>
+<option value="中渡">中渡</option>
+<option value="庭月">庭月</option>
+<option value="曲川">曲川</option>
+<option value="向居">向居</option>',
+    '最上郡戸沢村' => '<option value="岩清水">岩清水</option>
+<option value="蔵岡">蔵岡</option>
+<option value="神田">神田</option>
+<option value="角川">角川</option>
+<option value="津谷">津谷</option>
+<option value="名高">名高</option>
+<option value="古口">古口</option>
+<option value="松坂">松坂</option>',
+    '東置賜郡高畠町' => '<option value="相森">相森</option>
+<option value="安久津">安久津</option>
+<option value="石岡">石岡</option>
+<option value="泉岡">泉岡</option>
+<option value="一本柳">一本柳</option>
+<option value="入生田">入生田</option>
+<option value="小其塚">小其塚</option>
+<option value="柏木目">柏木目</option>
+<option value="金原">金原</option>
+<option value="上平柳">上平柳</option>
+<option value="上和田">上和田</option>
+<option value="亀岡">亀岡</option>
+<option value="川沼">川沼</option>
+<option value="高安">高安</option>
+<option value="小郡山">小郡山</option>
+<option value="佐沢">佐沢</option>
+<option value="三条目">三条目</option>
+<option value="塩森">塩森</option>
+<option value="下和田">下和田</option>
+<option value="蛇口">蛇口</option>
+<option value="高畠">高畠</option>
+<option value="竹森">竹森</option>
+<option value="露藤">露藤</option>
+<option value="時沢">時沢</option>
+<option value="中里">中里</option>
+<option value="中島">中島</option>
+<option value="夏茂">夏茂</option>
+<option value="二井宿">二井宿</option>
+<option value="糠野目">糠野目</option>
+<option value="根岸">根岸</option>
+<option value="馬頭">馬頭</option>
+<option value="深沼">深沼</option>
+<option value="福沢">福沢</option>
+<option value="福沢南">福沢南</option>
+<option value="船橋">船橋</option>
+<option value="元和田">元和田</option>
+<option value="山崎">山崎</option>',
+    '東置賜郡川西町' => '<option value="大塚">大塚</option>
+<option value="大舟">大舟</option>
+<option value="尾長島">尾長島</option>
+<option value="上奥田">上奥田</option>
+<option value="上小松">上小松</option>
+<option value="黒川">黒川</option>
+<option value="高豆蒄">高豆蒄</option>
+<option value="小松">小松</option>
+<option value="下奥田">下奥田</option>
+<option value="下小松">下小松</option>
+<option value="下平柳">下平柳</option>
+<option value="洲島">洲島</option>
+<option value="高山">高山</option>
+<option value="玉庭">玉庭</option>
+<option value="時田">時田</option>
+<option value="中小松">中小松</option>
+<option value="西大塚">西大塚</option>
+<option value="莅">莅</option>
+<option value="東大塚">東大塚</option>
+<option value="朴沢">朴沢</option>
+<option value="堀金">堀金</option>
+<option value="吉田">吉田</option>',
+    '西置賜郡小国町' => '<option value="あけぼの">あけぼの</option>
+<option value="朝篠">朝篠</option>
+<option value="足野水">足野水</option>
+<option value="足水中里">足水中里</option>
+<option value="網代瀬">網代瀬</option>
+<option value="荒沢">荒沢</option>
+<option value="新股">新股</option>
+<option value="伊佐領">伊佐領</option>
+<option value="石滝">石滝</option>
+<option value="泉岡">泉岡</option>
+<option value="市野沢">市野沢</option>
+<option value="市野々">市野々</option>
+<option value="今市">今市</option>
+<option value="入折戸">入折戸</option>
+<option value="岩井沢">岩井沢</option>
+<option value="越中里">越中里</option>
+<option value="大石沢">大石沢</option>
+<option value="大滝">大滝</option>
+<option value="大宮">大宮</option>
+<option value="小国小坂町">小国小坂町</option>
+<option value="小国町">小国町</option>
+<option value="小渡">小渡</option>
+<option value="驚">驚</option>
+<option value="小股">小股</option>
+<option value="折戸">折戸</option>
+<option value="貝少">貝少</option>
+<option value="片貝">片貝</option>
+<option value="金目">金目</option>
+<option value="叶水">叶水</option>
+<option value="河原角">河原角</option>
+<option value="北">北</option>
+<option value="黒沢">黒沢</option>
+<option value="小倉">小倉</option>
+<option value="小玉川">小玉川</option>
+<option value="五味沢">五味沢</option>
+<option value="幸町">幸町</option>
+<option value="栄町">栄町</option>
+<option value="白子沢">白子沢</option>
+<option value="尻無沢">尻無沢</option>
+<option value="新原">新原</option>
+<option value="新屋敷">新屋敷</option>
+<option value="菅沼">菅沼</option>
+<option value="杉沢">杉沢</option>
+<option value="芹出">芹出</option>
+<option value="太鼓沢">太鼓沢</option>
+<option value="滝倉">滝倉</option>
+<option value="田沢頭">田沢頭</option>
+<option value="種沢">種沢</option>
+<option value="玉川">玉川</option>
+<option value="玉川中里">玉川中里</option>
+<option value="樽口">樽口</option>
+<option value="綱木箱口">綱木箱口</option>
+<option value="栃倉">栃倉</option>
+<option value="中島">中島</option>
+<option value="中田山崎">中田山崎</option>
+<option value="長沢">長沢</option>
+<option value="西">西</option>
+<option value="西滝">西滝</option>
+<option value="沼沢">沼沢</option>
+<option value="針生">針生</option>
+<option value="東滝">東滝</option>
+<option value="東原">東原</option>
+<option value="樋ノ沢">樋ノ沢</option>
+<option value="百子沢">百子沢</option>
+<option value="兵庫舘">兵庫舘</option>
+<option value="舟渡">舟渡</option>
+<option value="古田">古田</option>
+<option value="増岡">増岡</option>
+<option value="町原">町原</option>
+<option value="松岡">松岡</option>
+<option value="松崎">松崎</option>
+<option value="緑町">緑町</option>
+<option value="宮の台">宮の台</option>
+<option value="焼山">焼山</option>
+<option value="湯ノ花">湯ノ花</option>
+<option value="若山">若山</option>',
+    '西置賜郡白鷹町' => '<option value="浅立">浅立</option>
+<option value="鮎貝">鮎貝</option>
+<option value="荒砥甲">荒砥甲</option>
+<option value="荒砥乙">荒砥乙</option>
+<option value="大瀬">大瀬</option>
+<option value="黒鴨">黒鴨</option>
+<option value="畔藤">畔藤</option>
+<option value="佐野原">佐野原</option>
+<option value="下山">下山</option>
+<option value="十王">十王</option>
+<option value="菖蒲">菖蒲</option>
+<option value="高岡">高岡</option>
+<option value="高玉">高玉</option>
+<option value="滝野">滝野</option>
+<option value="栃窪">栃窪</option>
+<option value="中山">中山</option>
+<option value="萩野">萩野</option>
+<option value="針生">針生</option>
+<option value="広野">広野</option>
+<option value="箕和田">箕和田</option>
+<option value="深山">深山</option>
+<option value="山口">山口</option>
+<option value="横田尻">横田尻</option>',
+    '西置賜郡飯豊町' => '<option value="岩倉">岩倉</option>
+<option value="宇津沢">宇津沢</option>
+<option value="上原">上原</option>
+<option value="遅谷">遅谷</option>
+<option value="数馬">数馬</option>
+<option value="上屋地">上屋地</option>
+<option value="川内戸">川内戸</option>
+<option value="黒沢">黒沢</option>
+<option value="小白川">小白川</option>
+<option value="小屋">小屋</option>
+<option value="下屋地">下屋地</option>
+<option value="白川">白川</option>
+<option value="須郷">須郷</option>
+<option value="添川">添川</option>
+<option value="高造路">高造路</option>
+<option value="高峰">高峰</option>
+<option value="椿">椿</option>
+<option value="手ノ子">手ノ子</option>
+<option value="中">中</option>
+<option value="萩生">萩生</option>
+<option value="広河原">広河原</option>
+<option value="松原">松原</option>',
+    '東田川郡三川町' => '<option value="青山">青山</option>
+<option value="猪子">猪子</option>
+<option value="押切新田">押切新田</option>
+<option value="角田二口">角田二口</option>
+<option value="加藤">加藤</option>
+<option value="神花">神花</option>
+<option value="小尺">小尺</option>
+<option value="助川">助川</option>
+<option value="善阿弥">善阿弥</option>
+<option value="竹原田">竹原田</option>
+<option value="堤野">堤野</option>
+<option value="土口">土口</option>
+<option value="成田新田">成田新田</option>
+<option value="東沼">東沼</option>
+<option value="菱沼">菱沼</option>
+<option value="横内">横内</option>
+<option value="横川">横川</option>
+<option value="横川新田">横川新田</option>
+<option value="横山">横山</option>',
+    '東田川郡庄内町' => '<option value="赤渕新田">赤渕新田</option>
+<option value="跡">跡</option>
+<option value="余目">余目</option>
+<option value="余目新田">余目新田</option>
+<option value="新田目">新田目</option>
+<option value="生三">生三</option>
+<option value="榎木">榎木</option>
+<option value="大野">大野</option>
+<option value="大真木">大真木</option>
+<option value="近江新田">近江新田</option>
+<option value="落合">落合</option>
+<option value="家根合">家根合</option>
+<option value="狩川">狩川</option>
+<option value="肝煎">肝煎</option>
+<option value="久田">久田</option>
+<option value="京島">京島</option>
+<option value="清川">清川</option>
+<option value="桑田">桑田</option>
+<option value="小出新田">小出新田</option>
+<option value="境興屋">境興屋</option>
+<option value="沢新田">沢新田</option>
+<option value="科沢">科沢</option>
+<option value="島田">島田</option>
+<option value="常万">常万</option>
+<option value="松陽">松陽</option>
+<option value="杉浦">杉浦</option>
+<option value="千本杉">千本杉</option>
+<option value="添津">添津</option>
+<option value="返吉">返吉</option>
+<option value="高田麦">高田麦</option>
+<option value="立谷沢">立谷沢</option>
+<option value="田谷">田谷</option>
+<option value="千河原">千河原</option>
+<option value="堤新田">堤新田</option>
+<option value="廿六木">廿六木</option>
+<option value="主殿新田">主殿新田</option>
+<option value="中野">中野</option>
+<option value="西小野方">西小野方</option>
+<option value="西野">西野</option>
+<option value="西袋">西袋</option>
+<option value="払田">払田</option>
+<option value="提興屋">提興屋</option>
+<option value="平岡">平岡</option>
+<option value="深川">深川</option>
+<option value="福島">福島</option>
+<option value="福原">福原</option>
+<option value="古関">古関</option>
+<option value="堀野">堀野</option>
+<option value="前田野目">前田野目</option>
+<option value="槇島">槇島</option>
+<option value="廻館">廻館</option>
+<option value="三ケ沢">三ケ沢</option>
+<option value="南興屋">南興屋</option>
+<option value="南野">南野</option>
+<option value="南野新田">南野新田</option>
+<option value="宮曽根">宮曽根</option>
+<option value="茗荷瀬">茗荷瀬</option>
+<option value="本小野方">本小野方</option>
+<option value="吉岡">吉岡</option>
+<option value="吉方">吉方</option>
+<option value="連枝">連枝</option>',
+    '飽海郡遊佐町' => '<option value="岩川">岩川</option>
+<option value="江地">江地</option>
+<option value="大蕨岡">大蕨岡</option>
+<option value="小原田">小原田</option>
+<option value="鹿野沢">鹿野沢</option>
+<option value="上蕨岡">上蕨岡</option>
+<option value="北目">北目</option>
+<option value="小松">小松</option>
+<option value="庄泉">庄泉</option>
+<option value="白井新田">白井新田</option>
+<option value="菅里">菅里</option>
+<option value="杉沢">杉沢</option>
+<option value="直世">直世</option>
+<option value="当山">当山</option>
+<option value="富岡">富岡</option>
+<option value="豊岡">豊岡</option>
+<option value="野沢">野沢</option>
+<option value="比子">比子</option>
+<option value="吹浦">吹浦</option>
+<option value="藤崎">藤崎</option>
+<option value="増穂">増穂</option>
+<option value="宮田">宮田</option>
+<option value="遊佐">遊佐</option>
+<option value="吉出">吉出</option>',
+    '福島市' => '<option value="旭町">旭町</option>
+<option value="荒井">荒井</option>
+<option value="荒井北">荒井北</option>
+<option value="荒町">荒町</option>
+<option value="飯坂町">飯坂町</option>
+<option value="飯坂町中野">飯坂町中野</option>
+<option value="飯坂町東湯野">飯坂町東湯野</option>
+<option value="飯坂町平野">飯坂町平野</option>
+<option value="飯坂町茂庭">飯坂町茂庭</option>
+<option value="飯坂町湯野">飯坂町湯野</option>
+<option value="飯野町">飯野町</option>
+<option value="飯野町青木">飯野町青木</option>
+<option value="飯野町大久保">飯野町大久保</option>
+<option value="飯野町明治">飯野町明治</option>
+<option value="石田">石田</option>
+<option value="泉">泉</option>
+<option value="入江町">入江町</option>
+<option value="岩ノ前">岩ノ前</option>
+<option value="岩谷">岩谷</option>
+<option value="上町">上町</option>
+<option value="蝦貫">蝦貫</option>
+<option value="大笹生">大笹生</option>
+<option value="太田町">太田町</option>
+<option value="大波">大波</option>
+<option value="大平山">大平山</option>
+<option value="大町">大町</option>
+<option value="大森">大森</option>
+<option value="岡島">岡島</option>
+<option value="岡部">岡部</option>
+<option value="置賜町">置賜町</option>
+<option value="沖高">沖高</option>
+<option value="小倉寺">小倉寺</option>
+<option value="御倉町">御倉町</option>
+<option value="小田">小田</option>
+<option value="御山">御山</option>
+<option value="御山町">御山町</option>
+<option value="春日町">春日町</option>
+<option value="霞町">霞町</option>
+<option value="金谷川">金谷川</option>
+<option value="鎌田">鎌田</option>
+<option value="上荒子">上荒子</option>
+<option value="上鳥渡">上鳥渡</option>
+<option value="上名倉">上名倉</option>
+<option value="上野寺">上野寺</option>
+<option value="上浜町">上浜町</option>
+<option value="狩野">狩野</option>
+<option value="北五老内町">北五老内町</option>
+<option value="北沢又">北沢又</option>
+<option value="北中央">北中央</option>
+<option value="北中川原">北中川原</option>
+<option value="北ノ前">北ノ前</option>
+<option value="北原">北原</option>
+<option value="北町">北町</option>
+<option value="北矢野目">北矢野目</option>
+<option value="狐塚">狐塚</option>
+<option value="狐塚畑">狐塚畑</option>
+<option value="狐山">狐山</option>
+<option value="黒岩">黒岩</option>
+<option value="児石">児石</option>
+<option value="公事田">公事田</option>
+<option value="高野河原下">高野河原下</option>
+<option value="小金山">小金山</option>
+<option value="腰浜町">腰浜町</option>
+<option value="駒山">駒山</option>
+<option value="郷野目">郷野目</option>
+<option value="五老内町">五老内町</option>
+<option value="在庭坂">在庭坂</option>
+<option value="栄町">栄町</option>
+<option value="坂登">坂登</option>
+<option value="さくら">さくら</option>
+<option value="桜木町">桜木町</option>
+<option value="佐倉下">佐倉下</option>
+<option value="桜本">桜本</option>
+<option value="笹木野">笹木野</option>
+<option value="笹谷">笹谷</option>
+<option value="五月町">五月町</option>
+<option value="佐原">佐原</option>
+<option value="山居">山居</option>
+<option value="山居上">山居上</option>
+<option value="清水町">清水町</option>
+<option value="清水山">清水山</option>
+<option value="下荒子">下荒子</option>
+<option value="下飯坂">下飯坂</option>
+<option value="下鳥渡">下鳥渡</option>
+<option value="下野寺">下野寺</option>
+<option value="下谷地">下谷地</option>
+<option value="庄野">庄野</option>
+<option value="陣場町">陣場町</option>
+<option value="新浜町">新浜町</option>
+<option value="新町">新町</option>
+<option value="須川町">須川町</option>
+<option value="杉妻町">杉妻町</option>
+<option value="李平">李平</option>
+<option value="清明町">清明町</option>
+<option value="瀬上町">瀬上町</option>
+<option value="曽根田町">曽根田町</option>
+<option value="太平寺">太平寺</option>
+<option value="大明神">大明神</option>
+<option value="滝元">滝元</option>
+<option value="田沢">田沢</option>
+<option value="立子山">立子山</option>
+<option value="立石">立石</option>
+<option value="舘ノ内">舘ノ内</option>
+<option value="舘ノ前">舘ノ前</option>
+<option value="田中島">田中島</option>
+<option value="茶屋下">茶屋下</option>
+<option value="仲間町">仲間町</option>
+<option value="土船">土船</option>
+<option value="土湯温泉町">土湯温泉町</option>
+<option value="天神町">天神町</option>
+<option value="堂殿">堂殿</option>
+<option value="遠瀬戸">遠瀬戸</option>
+<option value="鴇頭森">鴇頭森</option>
+<option value="所窪">所窪</option>
+<option value="鳥谷野">鳥谷野</option>
+<option value="豊田町">豊田町</option>
+<option value="中荒子">中荒子</option>
+<option value="中町">中町</option>
+<option value="永井川">永井川</option>
+<option value="成川">成川</option>
+<option value="南向台">南向台</option>
+<option value="南平">南平</option>
+<option value="仁井田">仁井田</option>
+<option value="西中央">西中央</option>
+<option value="猫渕">猫渕</option>
+<option value="野田町">野田町</option>
+<option value="花園町">花園町</option>
+<option value="浜田町">浜田町</option>
+<option value="万世町">万世町</option>
+<option value="光が丘">光が丘</option>
+<option value="東中央">東中央</option>
+<option value="東浜町">東浜町</option>
+<option value="平石">平石</option>
+<option value="伏拝">伏拝</option>
+<option value="二子塚">二子塚</option>
+<option value="舟場町">舟場町</option>
+<option value="古川">古川</option>
+<option value="方木田">方木田</option>
+<option value="蓬莱町">蓬莱町</option>
+<option value="堀河町">堀河町</option>
+<option value="町庭坂">町庭坂</option>
+<option value="松川町">松川町</option>
+<option value="松川町　浅川">松川町　浅川</option>
+<option value="松川町　金沢">松川町　金沢</option>
+<option value="松川町　下川崎">松川町　下川崎</option>
+<option value="松川町　関谷">松川町　関谷</option>
+<option value="松川町　沼袋">松川町　沼袋</option>
+<option value="松川町　美郷">松川町　美郷</option>
+<option value="松川町　水原">松川町　水原</option>
+<option value="松木町">松木町</option>
+<option value="松浪町">松浪町</option>
+<option value="松山町">松山町</option>
+<option value="丸子">丸子</option>
+<option value="三河　南町">三河　南町</option>
+<option value="三河　北町">三河　北町</option>
+<option value="道前">道前</option>
+<option value="南沢又">南沢又</option>
+<option value="南中央">南中央</option>
+<option value="南町">南町</option>
+<option value="南矢野目">南矢野目</option>
+<option value="宮下町">宮下町</option>
+<option value="宮代">宮代</option>
+<option value="宮町">宮町</option>
+<option value="本内">本内</option>
+<option value="本町">本町</option>
+<option value="森合">森合</option>
+<option value="森合町">森合町</option>
+<option value="八木田">八木田</option>
+<option value="矢倉下">矢倉下</option>
+<option value="八島田">八島田</option>
+<option value="八島町">八島町</option>
+<option value="矢剣町">矢剣町</option>
+<option value="柳町">柳町</option>
+<option value="山際">山際</option>
+<option value="山口">山口</option>
+<option value="山下町">山下町</option>
+<option value="山田">山田</option>
+<option value="吉倉">吉倉</option>
+<option value="早稲町">早稲町</option>
+<option value="渡利">渡利</option>',
+    '会津若松市' => '<option value="相生町">相生町</option>
+<option value="旭町">旭町</option>
+<option value="居合町">居合町</option>
+<option value="飯盛">飯盛</option>
+<option value="石堂町">石堂町</option>
+<option value="一箕町金堀">一箕町金堀</option>
+<option value="一箕町亀賀">一箕町亀賀</option>
+<option value="一箕町鶴賀">一箕町鶴賀</option>
+<option value="一箕町松長">一箕町松長</option>
+<option value="一箕町八角">一箕町八角</option>
+<option value="一箕町八幡">一箕町八幡</option>
+<option value="インター西">インター西</option>
+<option value="上町">上町</option>
+<option value="駅前町">駅前町</option>
+<option value="追手町">追手町</option>
+<option value="扇町">扇町</option>
+<option value="大塚">大塚</option>
+<option value="大戸町芦牧">大戸町芦牧</option>
+<option value="大戸町石村">大戸町石村</option>
+<option value="大戸町大川">大戸町大川</option>
+<option value="大戸町小谷川端">大戸町小谷川端</option>
+<option value="大戸町小谷坂下">大戸町小谷坂下</option>
+<option value="大戸町小谷西村">大戸町小谷西村</option>
+<option value="大戸町小谷原">大戸町小谷原</option>
+<option value="大戸町小谷平沢">大戸町小谷平沢</option>
+<option value="大戸町小谷湯ノ平">大戸町小谷湯ノ平</option>
+<option value="大戸町上雨屋">大戸町上雨屋</option>
+<option value="大戸町上小塩">大戸町上小塩</option>
+<option value="大戸町上三寄大豆田">大戸町上三寄大豆田</option>
+<option value="大戸町上三寄乙">大戸町上三寄乙</option>
+<option value="大戸町上三寄香塩">大戸町上三寄香塩</option>
+<option value="大戸町上三寄丙">大戸町上三寄丙</option>
+<option value="大戸町上三寄南原">大戸町上三寄南原</option>
+<option value="大戸町下雨屋">大戸町下雨屋</option>
+<option value="大戸町高川">大戸町高川</option>
+<option value="大戸町宮内">大戸町宮内</option>
+<option value="大町">大町</option>
+<option value="御旗町">御旗町</option>
+<option value="表町">表町</option>
+<option value="徒之町">徒之町</option>
+<option value="金川町">金川町</option>
+<option value="亀賀">亀賀</option>
+<option value="河東町浅山">河東町浅山</option>
+<option value="河東町大田原">河東町大田原</option>
+<option value="河東町岡田">河東町岡田</option>
+<option value="河東町金田">河東町金田</option>
+<option value="河東町熊野堂">河東町熊野堂</option>
+<option value="河東町倉橋">河東町倉橋</option>
+<option value="河東町工業団地">河東町工業団地</option>
+<option value="河東町広野">河東町広野</option>
+<option value="河東町郡山">河東町郡山</option>
+<option value="河東町谷沢">河東町谷沢</option>
+<option value="河東町八田">河東町八田</option>
+<option value="河東町東長原">河東町東長原</option>
+<option value="河東町広田">河東町広田</option>
+<option value="河東町福島">河東町福島</option>
+<option value="河東町南高野">河東町南高野</option>
+<option value="河東町代田">河東町代田</option>
+<option value="川原町">川原町</option>
+<option value="北会津町麻生新田">北会津町麻生新田</option>
+<option value="北会津町安良田">北会津町安良田</option>
+<option value="北会津町石原">北会津町石原</option>
+<option value="北会津町和泉">北会津町和泉</option>
+<option value="北会津町出尻">北会津町出尻</option>
+<option value="北会津町今和泉">北会津町今和泉</option>
+<option value="北会津町大島">北会津町大島</option>
+<option value="北会津町柏原">北会津町柏原</option>
+<option value="北会津町金屋">北会津町金屋</option>
+<option value="北会津町蟹川">北会津町蟹川</option>
+<option value="北会津町上米塚">北会津町上米塚</option>
+<option value="北会津町北後庵">北会津町北後庵</option>
+<option value="北会津町小松">北会津町小松</option>
+<option value="北会津町鷺林">北会津町鷺林</option>
+<option value="北会津町三本松">北会津町三本松</option>
+<option value="北会津町下荒井">北会津町下荒井</option>
+<option value="北会津町下野">北会津町下野</option>
+<option value="北会津町下米塚">北会津町下米塚</option>
+<option value="北会津町十二所">北会津町十二所</option>
+<option value="北会津町新在家">北会津町新在家</option>
+<option value="北会津町舘">北会津町舘</option>
+<option value="北会津町田村山">北会津町田村山</option>
+<option value="北会津町寺堀">北会津町寺堀</option>
+<option value="北会津町天満">北会津町天満</option>
+<option value="北会津町中荒井">北会津町中荒井</option>
+<option value="北会津町中里">北会津町中里</option>
+<option value="北会津町西麻生">北会津町西麻生</option>
+<option value="北会津町西後庵">北会津町西後庵</option>
+<option value="北会津町白山">北会津町白山</option>
+<option value="北会津町東麻生">北会津町東麻生</option>
+<option value="北会津町東小松">北会津町東小松</option>
+<option value="北会津町二日町">北会津町二日町</option>
+<option value="北会津町古麻生">北会津町古麻生</option>
+<option value="北会津町古館">北会津町古館</option>
+<option value="北会津町ほたるの森">北会津町ほたるの森</option>
+<option value="北会津町本田">北会津町本田</option>
+<option value="北会津町松野">北会津町松野</option>
+<option value="北会津町真宮">北会津町真宮</option>
+<option value="北会津町水季の里">北会津町水季の里</option>
+<option value="北会津町宮ノ下">北会津町宮ノ下</option>
+<option value="北会津町宮袋">北会津町宮袋</option>
+<option value="北会津町宮袋新田">北会津町宮袋新田</option>
+<option value="北会津町両堂">北会津町両堂</option>
+<option value="北青木">北青木</option>
+<option value="北滝沢">北滝沢</option>
+<option value="行仁町">行仁町</option>
+<option value="慶山">慶山</option>
+<option value="建福寺前">建福寺前</option>
+<option value="神指町榎木檀">神指町榎木檀</option>
+<option value="神指町小見">神指町小見</option>
+<option value="神指町上神指">神指町上神指</option>
+<option value="神指町北四合">神指町北四合</option>
+<option value="神指町黒川">神指町黒川</option>
+<option value="神指町下神指">神指町下神指</option>
+<option value="神指町高久">神指町高久</option>
+<option value="神指町高瀬">神指町高瀬</option>
+<option value="神指町高瀬新田">神指町高瀬新田</option>
+<option value="神指町天満">神指町天満</option>
+<option value="神指町中四合">神指町中四合</option>
+<option value="神指町西城戸">神指町西城戸</option>
+<option value="神指町如来堂">神指町如来堂</option>
+<option value="神指町橋本">神指町橋本</option>
+<option value="神指町東城戸">神指町東城戸</option>
+<option value="神指町東神指">神指町東神指</option>
+<option value="神指町本丸">神指町本丸</option>
+<option value="神指町幕内">神指町幕内</option>
+<option value="神指町南四合">神指町南四合</option>
+<option value="神指町横沼">神指町横沼</option>
+<option value="高野町上沼">高野町上沼</option>
+<option value="高野町上高野">高野町上高野</option>
+<option value="高野町木流">高野町木流</option>
+<option value="高野町界沢">高野町界沢</option>
+<option value="高野町中沼">高野町中沼</option>
+<option value="高野町中前田">高野町中前田</option>
+<option value="高野町橋本木流">高野町橋本木流</option>
+<option value="高野町平塚">高野町平塚</option>
+<option value="高野町柳川">高野町柳川</option>
+<option value="蚕養町">蚕養町</option>
+<option value="材木町">材木町</option>
+<option value="栄町">栄町</option>
+<option value="桜町">桜町</option>
+<option value="五月町">五月町</option>
+<option value="城西町">城西町</option>
+<option value="城東町">城東町</option>
+<option value="城南町">城南町</option>
+<option value="城北町">城北町</option>
+<option value="昭和町">昭和町</option>
+<option value="城前">城前</option>
+<option value="新横町">新横町</option>
+<option value="住吉町">住吉町</option>
+<option value="千石町">千石町</option>
+<option value="高久工業団地">高久工業団地</option>
+<option value="宝町">宝町</option>
+<option value="滝沢町">滝沢町</option>
+<option value="館馬町">館馬町</option>
+<option value="館脇町">館脇町</option>
+<option value="中央">中央</option>
+<option value="対馬館町">対馬館町</option>
+<option value="堤町">堤町</option>
+<option value="鶴賀町">鶴賀町</option>
+<option value="天神町">天神町</option>
+<option value="天寧寺町">天寧寺町</option>
+<option value="中島町">中島町</option>
+<option value="中町">中町</option>
+<option value="七日町">七日町</option>
+<option value="飯寺北">飯寺北</option>
+<option value="錦町">錦町</option>
+<option value="西栄町">西栄町</option>
+<option value="西七日町">西七日町</option>
+<option value="西年貢">西年貢</option>
+<option value="日新町">日新町</option>
+<option value="橋本">橋本</option>
+<option value="花畑東">花畑東</option>
+<option value="花春町">花春町</option>
+<option value="花見ケ丘">花見ケ丘</option>
+<option value="馬場本町">馬場本町</option>
+<option value="馬場町">馬場町</option>
+<option value="東栄町">東栄町</option>
+<option value="東千石">東千石</option>
+<option value="東年貢">東年貢</option>
+<option value="東山町石山">東山町石山</option>
+<option value="東山町湯川">東山町湯川</option>
+<option value="東山町湯本">東山町湯本</option>
+<option value="桧町">桧町</option>
+<option value="白虎">白虎</option>
+<option value="白虎町">白虎町</option>
+<option value="日吉町">日吉町</option>
+<option value="藤原">藤原</option>
+<option value="古川町">古川町</option>
+<option value="平安町">平安町</option>
+<option value="本町">本町</option>
+<option value="幕内東町">幕内東町</option>
+<option value="幕内南町">幕内南町</option>
+<option value="町北町石堂">町北町石堂</option>
+<option value="町北町上荒久田">町北町上荒久田</option>
+<option value="町北町中沢">町北町中沢</option>
+<option value="町北町中沢西">町北町中沢西</option>
+<option value="町北町始">町北町始</option>
+<option value="町北町藤室">町北町藤室</option>
+<option value="町北町谷地">町北町谷地</option>
+<option value="真宮新町北">真宮新町北</option>
+<option value="真宮新町南">真宮新町南</option>
+<option value="緑町">緑町</option>
+<option value="湊町赤井">湊町赤井</option>
+<option value="湊町共和">湊町共和</option>
+<option value="湊町静潟">湊町静潟</option>
+<option value="湊町原">湊町原</option>
+<option value="湊町平潟">湊町平潟</option>
+<option value="南千石町">南千石町</option>
+<option value="南花畑">南花畑</option>
+<option value="南町">南町</option>
+<option value="宮町">宮町</option>
+<option value="明和町">明和町</option>
+<option value="門田町一ノ堰">門田町一ノ堰</option>
+<option value="門田町面川">門田町面川</option>
+<option value="門田町御山">門田町御山</option>
+<option value="門田町黒岩">門田町黒岩</option>
+<option value="門田町堤沢">門田町堤沢</option>
+<option value="門田町徳久">門田町徳久</option>
+<option value="門田町中野">門田町中野</option>
+<option value="門田町飯寺">門田町飯寺</option>
+<option value="門田町根岸東">門田町根岸東</option>
+<option value="門田町年貢町">門田町年貢町</option>
+<option value="門田町日吉">門田町日吉</option>
+<option value="門田町工業団地">門田町工業団地</option>
+<option value="八角町">八角町</option>
+<option value="柳原町">柳原町</option>
+<option value="山鹿町">山鹿町</option>
+<option value="山見">山見</option>
+<option value="山見町">山見町</option>
+<option value="湯川町">湯川町</option>
+<option value="湯川南">湯川南</option>
+<option value="八日町">八日町</option>
+<option value="米代">米代</option>
+<option value="和田">和田</option>',
+    '郡山市' => '<option value="赤木町">赤木町</option>
+<option value="阿久津町">阿久津町</option>
+<option value="安積">安積</option>
+<option value="安積荒井">安積荒井</option>
+<option value="安積荒井本町">安積荒井本町</option>
+<option value="安積北井">安積北井</option>
+<option value="安積町">安積町</option>
+<option value="安積町荒井">安積町荒井</option>
+<option value="安積町牛庭">安積町牛庭</option>
+<option value="安積町大森町">安積町大森町</option>
+<option value="安積町笹川">安積町笹川</option>
+<option value="安積町長久保">安積町長久保</option>
+<option value="安積町成田">安積町成田</option>
+<option value="安積町日出山">安積町日出山</option>
+<option value="安積町南長久保">安積町南長久保</option>
+<option value="安積町吉田">安積町吉田</option>
+<option value="朝日">朝日</option>
+<option value="愛宕町">愛宕町</option>
+<option value="熱海町安子島">熱海町安子島</option>
+<option value="熱海町熱海">熱海町熱海</option>
+<option value="熱海町石筵">熱海町石筵</option>
+<option value="熱海町上伊豆島">熱海町上伊豆島</option>
+<option value="熱海町下伊豆島">熱海町下伊豆島</option>
+<option value="熱海町高玉">熱海町高玉</option>
+<option value="熱海町玉川">熱海町玉川</option>
+<option value="熱海町中山">熱海町中山</option>
+<option value="熱海町長橋">熱海町長橋</option>
+<option value="あぶくま台">あぶくま台</option>
+<option value="荒井町">荒井町</option>
+<option value="新屋敷">新屋敷</option>
+<option value="池ノ台">池ノ台</option>
+<option value="石塚">石塚</option>
+<option value="石渕町">石渕町</option>
+<option value="うねめ町">うねめ町</option>
+<option value="駅前">駅前</option>
+<option value="逢瀬町河内">逢瀬町河内</option>
+<option value="逢瀬町多田野">逢瀬町多田野</option>
+<option value="逢瀬町夏出">逢瀬町夏出</option>
+<option value="大河原">大河原</option>
+<option value="大平町">大平町</option>
+<option value="大槻町">大槻町</option>
+<option value="大町">大町</option>
+<option value="開成">開成</option>
+<option value="香久池">香久池</option>
+<option value="賀庄">賀庄</option>
+<option value="柏山町">柏山町</option>
+<option value="片平町">片平町</option>
+<option value="蒲倉町">蒲倉町</option>
+<option value="上伊豆島">上伊豆島</option>
+<option value="上亀田">上亀田</option>
+<option value="上野山">上野山</option>
+<option value="亀田">亀田</option>
+<option value="亀田西">亀田西</option>
+<option value="榧の木">榧の木</option>
+<option value="川向">川向</option>
+<option value="喜久田町">喜久田町</option>
+<option value="喜久田町赤坂">喜久田町赤坂</option>
+<option value="喜久田町卸">喜久田町卸</option>
+<option value="喜久田町坪沢">喜久田町坪沢</option>
+<option value="喜久田町原">喜久田町原</option>
+<option value="喜久田町堀之内">喜久田町堀之内</option>
+<option value="喜久田町前田沢">喜久田町前田沢</option>
+<option value="喜久田町早稲原">喜久田町早稲原</option>
+<option value="北畑">北畑</option>
+<option value="希望ケ丘">希望ケ丘</option>
+<option value="久留米">久留米</option>
+<option value="桑野">桑野</option>
+<option value="桑野北町">桑野北町</option>
+<option value="桑野清水台">桑野清水台</option>
+<option value="小関谷地">小関谷地</option>
+<option value="御前南">御前南</option>
+<option value="湖南町赤津">湖南町赤津</option>
+<option value="湖南町舘">湖南町舘</option>
+<option value="湖南町中野">湖南町中野</option>
+<option value="湖南町浜路">湖南町浜路</option>
+<option value="湖南町馬入新田">湖南町馬入新田</option>
+<option value="湖南町福良">湖南町福良</option>
+<option value="湖南町舟津">湖南町舟津</option>
+<option value="湖南町三代">湖南町三代</option>
+<option value="湖南町横沢">湖南町横沢</option>
+<option value="小原田">小原田</option>
+<option value="五百渕西">五百渕西</option>
+<option value="五百渕山">五百渕山</option>
+<option value="菜根">菜根</option>
+<option value="菜根屋敷">菜根屋敷</option>
+<option value="栄町">栄町</option>
+<option value="咲田">咲田</option>
+<option value="桜木">桜木</option>
+<option value="笹川">笹川</option>
+<option value="佐野良">佐野良</option>
+<option value="静西">静西</option>
+<option value="静町">静町</option>
+<option value="島">島</option>
+<option value="清水台">清水台</option>
+<option value="下亀田">下亀田</option>
+<option value="下白岩町">下白岩町</option>
+<option value="下舘野">下舘野</option>
+<option value="十貫河原">十貫河原</option>
+<option value="昭和">昭和</option>
+<option value="白岩町">白岩町</option>
+<option value="城清水">城清水</option>
+<option value="神明町">神明町</option>
+<option value="水門町">水門町</option>
+<option value="図景">図景</option>
+<option value="外河原">外河原</option>
+<option value="台新">台新</option>
+<option value="大名艮">大名艮</option>
+<option value="台東">台東</option>
+<option value="田村町大供">田村町大供</option>
+<option value="田村町金沢">田村町金沢</option>
+<option value="田村町金屋">田村町金屋</option>
+<option value="田村町上道渡">田村町上道渡</option>
+<option value="田村町上行合">田村町上行合</option>
+<option value="田村町川曲">田村町川曲</option>
+<option value="田村町岩作">田村町岩作</option>
+<option value="田村町小川">田村町小川</option>
+<option value="田村町桜ケ丘">田村町桜ケ丘</option>
+<option value="田村町山中">田村町山中</option>
+<option value="田村町下道渡">田村町下道渡</option>
+<option value="田村町下行合">田村町下行合</option>
+<option value="田村町正直">田村町正直</option>
+<option value="田村町田母神">田村町田母神</option>
+<option value="田村町大善寺">田村町大善寺</option>
+<option value="田村町手代木">田村町手代木</option>
+<option value="田村町徳定">田村町徳定</option>
+<option value="田村町栃本">田村町栃本</option>
+<option value="田村町栃山神">田村町栃山神</option>
+<option value="田村町糠塚">田村町糠塚</option>
+<option value="田村町東山">田村町東山</option>
+<option value="田村町細田">田村町細田</option>
+<option value="田村町御代田">田村町御代田</option>
+<option value="田村町守山">田村町守山</option>
+<option value="田村町谷田川">田村町谷田川</option>
+<option value="長者">長者</option>
+<option value="土瓜">土瓜</option>
+<option value="堤">堤</option>
+<option value="堤下町">堤下町</option>
+<option value="鶴見坦">鶴見坦</option>
+<option value="東宿">東宿</option>
+<option value="道場">道場</option>
+<option value="堂前町">堂前町</option>
+<option value="富田西">富田西</option>
+<option value="富田東">富田東</option>
+<option value="富田町">富田町</option>
+<option value="豊田町">豊田町</option>
+<option value="虎丸町">虎丸町</option>
+<option value="中田町赤沼">中田町赤沼</option>
+<option value="中田町上石">中田町上石</option>
+<option value="中田町牛縊本郷">中田町牛縊本郷</option>
+<option value="中田町海老根">中田町海老根</option>
+<option value="中田町黒木">中田町黒木</option>
+<option value="中田町木目沢">中田町木目沢</option>
+<option value="中田町駒板">中田町駒板</option>
+<option value="中田町下枝">中田町下枝</option>
+<option value="中田町高倉">中田町高倉</option>
+<option value="中田町中津川">中田町中津川</option>
+<option value="中田町柳橋">中田町柳橋</option>
+<option value="中野">中野</option>
+<option value="中ノ目">中ノ目</option>
+<option value="中町">中町</option>
+<option value="名倉">名倉</option>
+<option value="名郷田">名郷田</option>
+<option value="七ツ池町">七ツ池町</option>
+<option value="並木">並木</option>
+<option value="成山町">成山町</option>
+<option value="鳴神">鳴神</option>
+<option value="西田町阿広木">西田町阿広木</option>
+<option value="西田町板橋">西田町板橋</option>
+<option value="西田町大網">西田町大網</option>
+<option value="西田町大田">西田町大田</option>
+<option value="西田町鬼生田">西田町鬼生田</option>
+<option value="西田町木村">西田町木村</option>
+<option value="西田町黒田">西田町黒田</option>
+<option value="西田町三町目">西田町三町目</option>
+<option value="西田町芹沢">西田町芹沢</option>
+<option value="西田町高柴">西田町高柴</option>
+<option value="西田町土棚">西田町土棚</option>
+<option value="西田町丹伊田">西田町丹伊田</option>
+<option value="西田町根木屋">西田町根木屋</option>
+<option value="西ノ内">西ノ内</option>
+<option value="芳賀">芳賀</option>
+<option value="八作内">八作内</option>
+<option value="麓山">麓山</option>
+<option value="原中">原中</option>
+<option value="晴門田">晴門田</option>
+<option value="燧田">燧田</option>
+<option value="東原">東原</option>
+<option value="菱田町">菱田町</option>
+<option value="備前舘">備前舘</option>
+<option value="日和田町">日和田町</option>
+<option value="日和田町梅沢">日和田町梅沢</option>
+<option value="日和田町高倉">日和田町高倉</option>
+<option value="日和田町八丁目">日和田町八丁目</option>
+<option value="深沢">深沢</option>
+<option value="深田台">深田台</option>
+<option value="富久山町久保田">富久山町久保田</option>
+<option value="富久山町堂坂">富久山町堂坂</option>
+<option value="富久山町福原">富久山町福原</option>
+<option value="富久山町南小泉">富久山町南小泉</option>
+<option value="富久山町北小泉">富久山町北小泉</option>
+<option value="富久山町八山田">富久山町八山田</option>
+<option value="不動前">不動前</option>
+<option value="船場向">船場向</option>
+<option value="古川">古川</option>
+<option value="古屋敷">古屋敷</option>
+<option value="方八町">方八町</option>
+<option value="細沼町">細沼町</option>
+<option value="待池台">待池台</option>
+<option value="町東">町東</option>
+<option value="松木町">松木町</option>
+<option value="緑ケ丘東">緑ケ丘東</option>
+<option value="緑ケ丘西">緑ケ丘西</option>
+<option value="緑町">緑町</option>
+<option value="南">南</option>
+<option value="三穂田町大谷">三穂田町大谷</option>
+<option value="三穂田町川田">三穂田町川田</option>
+<option value="三穂田町駒屋">三穂田町駒屋</option>
+<option value="三穂田町下守屋">三穂田町下守屋</option>
+<option value="三穂田町富岡">三穂田町富岡</option>
+<option value="三穂田町鍋山">三穂田町鍋山</option>
+<option value="三穂田町野田">三穂田町野田</option>
+<option value="三穂田町八幡">三穂田町八幡</option>
+<option value="三穂田町山口">三穂田町山口</option>
+<option value="巳六段">巳六段</option>
+<option value="向河原町">向河原町</option>
+<option value="舞木町">舞木町</option>
+<option value="本町">本町</option>
+<option value="桃見台">桃見台</option>
+<option value="八木橋">八木橋</option>
+<option value="谷島町">谷島町</option>
+<option value="谷地">谷地</option>
+<option value="谷地本町">谷地本町</option>
+<option value="安原町">安原町</option>
+<option value="八山田">八山田</option>
+<option value="八山田西">八山田西</option>
+<option value="山崎">山崎</option>
+<option value="山根町">山根町</option>
+<option value="横川町">横川町</option>
+<option value="横塚">横塚</option>
+<option value="若葉町">若葉町</option>',
+    'いわき市' => '<option value="東田町">東田町</option>
+<option value="石塚町">石塚町</option>
+<option value="石森">石森</option>
+<option value="泉滝尻">泉滝尻</option>
+<option value="泉玉露">泉玉露</option>
+<option value="泉もえぎ台">泉もえぎ台</option>
+<option value="泉ケ丘">泉ケ丘</option>
+<option value="泉町">泉町</option>
+<option value="泉町黒須野">泉町黒須野</option>
+<option value="泉町下川">泉町下川</option>
+<option value="泉町滝尻">泉町滝尻</option>
+<option value="泉町玉露">泉町玉露</option>
+<option value="泉町本谷">泉町本谷</option>
+<option value="岩間町">岩間町</option>
+<option value="植田町">植田町</option>
+<option value="後田町">後田町</option>
+<option value="薄磯">薄磯</option>
+<option value="内郷内町">内郷内町</option>
+<option value="内郷小島町">内郷小島町</option>
+<option value="内郷高野町">内郷高野町</option>
+<option value="内郷白水町">内郷白水町</option>
+<option value="内郷高坂町">内郷高坂町</option>
+<option value="内郷綴町">内郷綴町</option>
+<option value="内郷御台境町">内郷御台境町</option>
+<option value="内郷御厩町">内郷御厩町</option>
+<option value="内郷宮町">内郷宮町</option>
+<option value="江名">江名</option>
+<option value="江畑町">江畑町</option>
+<option value="大久町大久">大久町大久</option>
+<option value="大久町小山田">大久町小山田</option>
+<option value="大久町小久">大久町小久</option>
+<option value="小川町上平">小川町上平</option>
+<option value="小川町上小川">小川町上小川</option>
+<option value="小川町下小川">小川町下小川</option>
+<option value="小川町塩田">小川町塩田</option>
+<option value="小川町柴原">小川町柴原</option>
+<option value="小川町関場">小川町関場</option>
+<option value="小川町高萩">小川町高萩</option>
+<option value="小川町西小川">小川町西小川</option>
+<option value="小川町福岡">小川町福岡</option>
+<option value="小川町三島">小川町三島</option>
+<option value="小島町">小島町</option>
+<option value="小名浜">小名浜</option>
+<option value="小名浜相子島">小名浜相子島</option>
+<option value="小名浜愛宕上">小名浜愛宕上</option>
+<option value="小名浜愛宕町">小名浜愛宕町</option>
+<option value="小名浜岩出">小名浜岩出</option>
+<option value="小名浜大原">小名浜大原</option>
+<option value="小名浜岡小名">小名浜岡小名</option>
+<option value="小名浜金成">小名浜金成</option>
+<option value="小名浜上神白">小名浜上神白</option>
+<option value="小名浜君ケ塚町">小名浜君ケ塚町</option>
+<option value="小名浜島">小名浜島</option>
+<option value="小名浜下神白">小名浜下神白</option>
+<option value="小名浜住吉">小名浜住吉</option>
+<option value="小名浜諏訪町">小名浜諏訪町</option>
+<option value="小名浜玉川町">小名浜玉川町</option>
+<option value="小名浜寺廻町">小名浜寺廻町</option>
+<option value="小名浜中町境">小名浜中町境</option>
+<option value="小名浜西君ケ塚町">小名浜西君ケ塚町</option>
+<option value="小名浜西町">小名浜西町</option>
+<option value="小名浜野田">小名浜野田</option>
+<option value="小名浜花畑町">小名浜花畑町</option>
+<option value="小名浜港ケ丘">小名浜港ケ丘</option>
+<option value="小名浜南君ケ塚町">小名浜南君ケ塚町</option>
+<option value="小名浜南富岡">小名浜南富岡</option>
+<option value="小名浜林城">小名浜林城</option>
+<option value="小浜町">小浜町</option>
+<option value="折戸">折戸</option>
+<option value="鹿島町飯田">鹿島町飯田</option>
+<option value="鹿島町鹿島">鹿島町鹿島</option>
+<option value="鹿島町上蔵持">鹿島町上蔵持</option>
+<option value="鹿島町下蔵持">鹿島町下蔵持</option>
+<option value="鹿島町久保">鹿島町久保</option>
+<option value="鹿島町米田">鹿島町米田</option>
+<option value="鹿島町下矢田">鹿島町下矢田</option>
+<option value="鹿島町走熊">鹿島町走熊</option>
+<option value="鹿島町船戸">鹿島町船戸</option>
+<option value="鹿島町御代">鹿島町御代</option>
+<option value="金山町">金山町</option>
+<option value="川部町">川部町</option>
+<option value="川前町小白井">川前町小白井</option>
+<option value="川前町上桶売">川前町上桶売</option>
+<option value="川前町下桶売">川前町下桶売</option>
+<option value="川前町川前">川前町川前</option>
+<option value="草木台">草木台</option>
+<option value="桜ケ丘">桜ケ丘</option>
+<option value="郷ケ丘">郷ケ丘</option>
+<option value="佐糠町">佐糠町</option>
+<option value="自由ケ丘">自由ケ丘</option>
+<option value="湘南台">湘南台</option>
+<option value="常磐岩ケ岡町">常磐岩ケ岡町</option>
+<option value="常磐長孫町">常磐長孫町</option>
+<option value="常磐上矢田町">常磐上矢田町</option>
+<option value="常磐上湯長谷町">常磐上湯長谷町</option>
+<option value="常磐下湯長谷町">常磐下湯長谷町</option>
+<option value="常磐下船尾町">常磐下船尾町</option>
+<option value="常磐白鳥町">常磐白鳥町</option>
+<option value="常磐関船町">常磐関船町</option>
+<option value="常磐西郷町">常磐西郷町</option>
+<option value="常磐藤原町">常磐藤原町</option>
+<option value="常磐馬玉町">常磐馬玉町</option>
+<option value="常磐松が台">常磐松が台</option>
+<option value="常磐松久須根町">常磐松久須根町</option>
+<option value="常磐三沢町">常磐三沢町</option>
+<option value="常磐水野谷町">常磐水野谷町</option>
+<option value="常磐湯本町">常磐湯本町</option>
+<option value="瀬戸町">瀬戸町</option>
+<option value="添野町">添野町</option>
+<option value="平">平</option>
+<option value="平赤井">平赤井</option>
+<option value="平赤井比良">平赤井比良</option>
+<option value="平荒田目">平荒田目</option>
+<option value="平泉崎">平泉崎</option>
+<option value="平薄磯">平薄磯</option>
+<option value="平大室">平大室</option>
+<option value="平鎌田">平鎌田</option>
+<option value="平鎌田町">平鎌田町</option>
+<option value="平上荒川">平上荒川</option>
+<option value="平下荒川">平下荒川</option>
+<option value="平上大越">平上大越</option>
+<option value="平下大越">平下大越</option>
+<option value="平上片寄">平上片寄</option>
+<option value="平下片寄">平下片寄</option>
+<option value="平上神谷">平上神谷</option>
+<option value="平下神谷">平下神谷</option>
+<option value="平上高久">平上高久</option>
+<option value="平下高久">平下高久</option>
+<option value="平上平窪">平上平窪</option>
+<option value="平下平窪">平下平窪</option>
+<option value="平神谷作">平神谷作</option>
+<option value="平上山口">平上山口</option>
+<option value="平北神谷">平北神谷</option>
+<option value="平北白土">平北白土</option>
+<option value="平絹谷">平絹谷</option>
+<option value="平鯨岡">平鯨岡</option>
+<option value="平小泉">平小泉</option>
+<option value="平塩">平塩</option>
+<option value="平下平窪中島町">平下平窪中島町</option>
+<option value="平下平窪古川町">平下平窪古川町</option>
+<option value="平下平窪山土内町">平下平窪山土内町</option>
+<option value="平下山口">平下山口</option>
+<option value="平正月町">平正月町</option>
+<option value="平菅波">平菅波</option>
+<option value="平鶴ケ井">平鶴ケ井</option>
+<option value="平豊間">平豊間</option>
+<option value="平中神谷">平中神谷</option>
+<option value="平中塩">平中塩</option>
+<option value="平中平窪">平中平窪</option>
+<option value="平中平窪新町">平中平窪新町</option>
+<option value="平中平窪細田町">平中平窪細田町</option>
+<option value="平中山">平中山</option>
+<option value="平沼ノ内">平沼ノ内</option>
+<option value="平沼ノ内諏訪原">平沼ノ内諏訪原</option>
+<option value="平祢宜町">平祢宜町</option>
+<option value="平原高野">平原高野</option>
+<option value="平藤間">平藤間</option>
+<option value="平幕ノ内">平幕ノ内</option>
+<option value="平馬目">平馬目</option>
+<option value="平水品">平水品</option>
+<option value="平南白土">平南白土</option>
+<option value="平谷川瀬">平谷川瀬</option>
+<option value="平山崎">平山崎</option>
+<option value="平吉野谷">平吉野谷</option>
+<option value="平四ツ波">平四ツ波</option>
+<option value="平六町目">平六町目</option>
+<option value="高倉町">高倉町</option>
+<option value="田人町石住">田人町石住</option>
+<option value="田人町貝泊">田人町貝泊</option>
+<option value="田人町黒田">田人町黒田</option>
+<option value="田人町荷路夫">田人町荷路夫</option>
+<option value="田人町南大平">田人町南大平</option>
+<option value="田人町旅人">田人町旅人</option>
+<option value="中央台飯野">中央台飯野</option>
+<option value="中央台鹿島">中央台鹿島</option>
+<option value="中央台高久">中央台高久</option>
+<option value="中部工業団地">中部工業団地</option>
+<option value="遠野町入遠野">遠野町入遠野</option>
+<option value="遠野町大平">遠野町大平</option>
+<option value="遠野町上遠野">遠野町上遠野</option>
+<option value="遠野町上根本">遠野町上根本</option>
+<option value="遠野町滝">遠野町滝</option>
+<option value="遠野町根岸">遠野町根岸</option>
+<option value="遠野町深山田">遠野町深山田</option>
+<option value="富津町">富津町</option>
+<option value="中岡町">中岡町</option>
+<option value="中之作">中之作</option>
+<option value="永崎">永崎</option>
+<option value="勿来町">勿来町</option>
+<option value="仁井田町">仁井田町</option>
+<option value="錦町">錦町</option>
+<option value="錦町中央">錦町中央</option>
+<option value="沼部町">沼部町</option>
+<option value="葉山">葉山</option>
+<option value="久之浜町金ケ沢">久之浜町金ケ沢</option>
+<option value="久之浜町末続">久之浜町末続</option>
+<option value="久之浜町田之網">久之浜町田之網</option>
+<option value="久之浜町久之浜">久之浜町久之浜</option>
+<option value="久之浜町西">久之浜町西</option>
+<option value="平成">平成</option>
+<option value="三沢町">三沢町</option>
+<option value="南台">南台</option>
+<option value="三和町上市萱">三和町上市萱</option>
+<option value="三和町下市萱">三和町下市萱</option>
+<option value="三和町上永井">三和町上永井</option>
+<option value="三和町下永井">三和町下永井</option>
+<option value="三和町上三坂">三和町上三坂</option>
+<option value="三和町中三坂">三和町中三坂</option>
+<option value="三和町下三坂">三和町下三坂</option>
+<option value="三和町合戸">三和町合戸</option>
+<option value="三和町差塩">三和町差塩</option>
+<option value="三和町中寺">三和町中寺</option>
+<option value="三和町渡戸">三和町渡戸</option>
+<option value="明治団地">明治団地</option>
+<option value="山田町">山田町</option>
+<option value="山玉町">山玉町</option>
+<option value="洋向台">洋向台</option>
+<option value="好間工業団地">好間工業団地</option>
+<option value="好間町愛谷">好間町愛谷</option>
+<option value="好間町今新田">好間町今新田</option>
+<option value="好間町大利">好間町大利</option>
+<option value="好間町小谷作">好間町小谷作</option>
+<option value="好間町上好間">好間町上好間</option>
+<option value="好間町中好間">好間町中好間</option>
+<option value="好間町下好間">好間町下好間</option>
+<option value="好間町川中子">好間町川中子</option>
+<option value="好間町北好間">好間町北好間</option>
+<option value="好間町榊小屋">好間町榊小屋</option>
+<option value="四倉町">四倉町</option>
+<option value="四倉町大森">四倉町大森</option>
+<option value="四倉町上岡">四倉町上岡</option>
+<option value="四倉町上仁井田">四倉町上仁井田</option>
+<option value="四倉町下仁井田">四倉町下仁井田</option>
+<option value="四倉町上柳生">四倉町上柳生</option>
+<option value="四倉町下柳生">四倉町下柳生</option>
+<option value="四倉町狐塚">四倉町狐塚</option>
+<option value="四倉町駒込">四倉町駒込</option>
+<option value="四倉町塩木">四倉町塩木</option>
+<option value="四倉町白岩">四倉町白岩</option>
+<option value="四倉町玉山">四倉町玉山</option>
+<option value="四倉町戸田">四倉町戸田</option>
+<option value="四倉町中島">四倉町中島</option>
+<option value="四倉町長友">四倉町長友</option>
+<option value="四倉町名木">四倉町名木</option>
+<option value="四倉町細谷">四倉町細谷</option>
+<option value="四倉町薬王寺">四倉町薬王寺</option>
+<option value="四倉町八茎">四倉町八茎</option>
+<option value="四倉町山田小湊">四倉町山田小湊</option>
+<option value="若葉台">若葉台</option>
+<option value="渡辺町泉田">渡辺町泉田</option>
+<option value="渡辺町上釜戸">渡辺町上釜戸</option>
+<option value="渡辺町田部">渡辺町田部</option>
+<option value="渡辺町中釜戸">渡辺町中釜戸</option>
+<option value="渡辺町昼野">渡辺町昼野</option>
+<option value="渡辺町洞">渡辺町洞</option>
+<option value="渡辺町松小屋">渡辺町松小屋</option>',
+    '白河市' => '<option value="会津町">会津町</option>
+<option value="明戸">明戸</option>
+<option value="旭町">旭町</option>
+<option value="愛宕町">愛宕町</option>
+<option value="飯沢">飯沢</option>
+<option value="飯沢山">飯沢山</option>
+<option value="家ノ前">家ノ前</option>
+<option value="池下">池下</option>
+<option value="池下裏">池下裏</option>
+<option value="池下向山">池下向山</option>
+<option value="石切場">石切場</option>
+<option value="泉田">泉田</option>
+<option value="板橋">板橋</option>
+<option value="一番町">一番町</option>
+<option value="上ノ台">上ノ台</option>
+<option value="上ノ原">上ノ原</option>
+<option value="上野原">上野原</option>
+<option value="薄葉">薄葉</option>
+<option value="馬町">馬町</option>
+<option value="馬町裏">馬町裏</option>
+<option value="馬町下">馬町下</option>
+<option value="裏山">裏山</option>
+<option value="円明寺">円明寺</option>
+<option value="老久保">老久保</option>
+<option value="老久保山">老久保山</option>
+<option value="追廻">追廻</option>
+<option value="大暮矢見山">大暮矢見山</option>
+<option value="大坂山">大坂山</option>
+<option value="大手町">大手町</option>
+<option value="大和田">大和田</option>
+<option value="和尚壇">和尚壇</option>
+<option value="和尚壇山">和尚壇山</option>
+<option value="鬼越">鬼越</option>
+<option value="鬼越道下">鬼越道下</option>
+<option value="鬼越山">鬼越山</option>
+<option value="表郷河東田">表郷河東田</option>
+<option value="表郷金山">表郷金山</option>
+<option value="表郷小松">表郷小松</option>
+<option value="表郷下羽原">表郷下羽原</option>
+<option value="表郷高木">表郷高木</option>
+<option value="表郷内松">表郷内松</option>
+<option value="表郷中寺">表郷中寺</option>
+<option value="表郷中野">表郷中野</option>
+<option value="表郷番沢">表郷番沢</option>
+<option value="表郷深渡戸">表郷深渡戸</option>
+<option value="表郷堀之内">表郷堀之内</option>
+<option value="表郷三森">表郷三森</option>
+<option value="表郷社田">表郷社田</option>
+<option value="表郷梁森">表郷梁森</option>
+<option value="表郷八幡">表郷八幡</option>
+<option value="女石">女石</option>
+<option value="郭内">郭内</option>
+<option value="影鬼越">影鬼越</option>
+<option value="鍛冶町">鍛冶町</option>
+<option value="金屋町">金屋町</option>
+<option value="亀石">亀石</option>
+<option value="萱根">萱根</option>
+<option value="借宿">借宿</option>
+<option value="勘定町">勘定町</option>
+<option value="関川窪">関川窪</option>
+<option value="北裏">北裏</option>
+<option value="北中川原">北中川原</option>
+<option value="北登リ町">北登リ町</option>
+<option value="北堀川端">北堀川端</option>
+<option value="北堀切">北堀切</option>
+<option value="北真舟">北真舟</option>
+<option value="金勝寺">金勝寺</option>
+<option value="金勝寺東">金勝寺東</option>
+<option value="金鈴">金鈴</option>
+<option value="久田野">久田野</option>
+<option value="九番町">九番町</option>
+<option value="九番町西裏">九番町西裏</option>
+<option value="双石">双石</option>
+<option value="合戦坂">合戦坂</option>
+<option value="小田川">小田川</option>
+<option value="転坂">転坂</option>
+<option value="五番町川原">五番町川原</option>
+<option value="五郎窪">五郎窪</option>
+<option value="細工町">細工町</option>
+<option value="宰領町">宰領町</option>
+<option value="栄町">栄町</option>
+<option value="桜町">桜町</option>
+<option value="三番町">三番町</option>
+<option value="三本松">三本松</option>
+<option value="三本松山">三本松山</option>
+<option value="塩路山">塩路山</option>
+<option value="士多町">士多町</option>
+<option value="士多町東">士多町東</option>
+<option value="七番町">七番町</option>
+<option value="十三原">十三原</option>
+<option value="十三原道上">十三原道上</option>
+<option value="十三原道下">十三原道下</option>
+<option value="十文字">十文字</option>
+<option value="菖蒲沢">菖蒲沢</option>
+<option value="昭和町">昭和町</option>
+<option value="白井掛">白井掛</option>
+<option value="白井掛下">白井掛下</option>
+<option value="白坂">白坂</option>
+<option value="新池">新池</option>
+<option value="新蔵町">新蔵町</option>
+<option value="新白河">新白河</option>
+<option value="新高山">新高山</option>
+<option value="新夏梨">新夏梨</option>
+<option value="新道">新道</option>
+<option value="菅生舘">菅生舘</option>
+<option value="関辺">関辺</option>
+<option value="瀬戸原">瀬戸原</option>
+<option value="束前町">束前町</option>
+<option value="外薄葉">外薄葉</option>
+<option value="大">大</option>
+<option value="大工町">大工町</option>
+<option value="大信上新城">大信上新城</option>
+<option value="大信隈戸">大信隈戸</option>
+<option value="大信下小屋">大信下小屋</option>
+<option value="大信下新城">大信下新城</option>
+<option value="大信田園町府">大信田園町府</option>
+<option value="大信豊地">大信豊地</option>
+<option value="大信中新城">大信中新城</option>
+<option value="大信増見">大信増見</option>
+<option value="大信町屋">大信町屋</option>
+<option value="鷹匠町">鷹匠町</option>
+<option value="高山">高山</option>
+<option value="高山西">高山西</option>
+<option value="田島">田島</option>
+<option value="立石">立石</option>
+<option value="立石山">立石山</option>
+<option value="田中山">田中山</option>
+<option value="田町">田町</option>
+<option value="鶴芝">鶴芝</option>
+<option value="鶴巻">鶴巻</option>
+<option value="鶴巻山">鶴巻山</option>
+<option value="手代町">手代町</option>
+<option value="寺小路">寺小路</option>
+<option value="天神町">天神町</option>
+<option value="道場小路">道場小路</option>
+<option value="道場町">道場町</option>
+<option value="東武塚">東武塚</option>
+<option value="土武塚">土武塚</option>
+<option value="豊地">豊地</option>
+<option value="中島">中島</option>
+<option value="中田">中田</option>
+<option value="中野山">中野山</option>
+<option value="中町">中町</option>
+<option value="中町北裏">中町北裏</option>
+<option value="中山">中山</option>
+<option value="中山下">中山下</option>
+<option value="中山東">中山東</option>
+<option value="中山南">中山南</option>
+<option value="夏梨">夏梨</option>
+<option value="南湖">南湖</option>
+<option value="仁井町">仁井町</option>
+<option value="西大沼">西大沼</option>
+<option value="西小丸山">西小丸山</option>
+<option value="西三坂">西三坂</option>
+<option value="西三坂山">西三坂山</option>
+<option value="二番町">二番町</option>
+<option value="年貢町">年貢町</option>
+<option value="登リ町">登リ町</option>
+<option value="旗宿">旗宿</option>
+<option value="八幡小路">八幡小路</option>
+<option value="八幡山">八幡山</option>
+<option value="八竜神">八竜神</option>
+<option value="花見坂">花見坂</option>
+<option value="葉ノ木平">葉ノ木平</option>
+<option value="番士小路">番士小路</option>
+<option value="日影">日影</option>
+<option value="東形見">東形見</option>
+<option value="東蕪内">東蕪内</option>
+<option value="東釜子">東釜子</option>
+<option value="東上野出島">東上野出島</option>
+<option value="東工業団地">東工業団地</option>
+<option value="東下野出島">東下野出島</option>
+<option value="東千田">東千田</option>
+<option value="東栃本">東栃本</option>
+<option value="東深仁井田">東深仁井田</option>
+<option value="東大沼">東大沼</option>
+<option value="東小丸山">東小丸山</option>
+<option value="東三坂山">東三坂山</option>
+<option value="日向">日向</option>
+<option value="風神下">風神下</option>
+<option value="風神山東">風神山東</option>
+<option value="袋町">袋町</option>
+<option value="藤沢">藤沢</option>
+<option value="藤沢山">藤沢山</option>
+<option value="舟田">舟田</option>
+<option value="古池">古池</option>
+<option value="古高山">古高山</option>
+<option value="蛇石">蛇石</option>
+<option value="豊年">豊年</option>
+<option value="町田">町田</option>
+<option value="松並">松並</option>
+<option value="真舟">真舟</option>
+<option value="丸小山">丸小山</option>
+<option value="みさか">みさか</option>
+<option value="道東">道東</option>
+<option value="南家ノ前">南家ノ前</option>
+<option value="南池下">南池下</option>
+<option value="南中川原">南中川原</option>
+<option value="南登リ町">南登リ町</option>
+<option value="南堀川端">南堀川端</option>
+<option value="南堀切">南堀切</option>
+<option value="南町">南町</option>
+<option value="南真舟">南真舟</option>
+<option value="向新蔵">向新蔵</option>
+<option value="向寺">向寺</option>
+<option value="巡り矢">巡り矢</option>
+<option value="本沼">本沼</option>
+<option value="本町">本町</option>
+<option value="本町北裏">本町北裏</option>
+<option value="文珠山">文珠山</option>
+<option value="八百屋町">八百屋町</option>
+<option value="屋敷添">屋敷添</option>
+<option value="弥次郎窪">弥次郎窪</option>
+<option value="結城">結城</option>
+<option value="友月山">友月山</option>
+<option value="横町">横町</option>
+<option value="与惣小屋">与惣小屋</option>
+<option value="与惣小屋山">与惣小屋山</option>
+<option value="四ツ谷">四ツ谷</option>
+<option value="米村道北">米村道北</option>
+<option value="米山越">米山越</option>
+<option value="羅漢前">羅漢前</option>
+<option value="六反山">六反山</option>',
+    '須賀川市' => '<option value="あおば町">あおば町</option>
+<option value="朝日田">朝日田</option>
+<option value="旭町">旭町</option>
+<option value="芦田塚">芦田塚</option>
+<option value="愛宕山">愛宕山</option>
+<option value="雨田">雨田</option>
+<option value="池上町">池上町</option>
+<option value="池下">池下</option>
+<option value="池ノ下町">池ノ下町</option>
+<option value="泉田">泉田</option>
+<option value="市野関">市野関</option>
+<option value="一里坦">一里坦</option>
+<option value="稲">稲</option>
+<option value="稲荷町">稲荷町</option>
+<option value="今泉">今泉</option>
+<option value="岩崎">岩崎</option>
+<option value="岩作">岩作</option>
+<option value="岩瀬森">岩瀬森</option>
+<option value="岩渕">岩渕</option>
+<option value="牛袋町">牛袋町</option>
+<option value="馬町">馬町</option>
+<option value="梅田">梅田</option>
+<option value="江花">江花</option>
+<option value="江持">江持</option>
+<option value="大桑原">大桑原</option>
+<option value="大久保">大久保</option>
+<option value="大栗">大栗</option>
+<option value="大袋町">大袋町</option>
+<option value="大町">大町</option>
+<option value="岡東町">岡東町</option>
+<option value="小倉">小倉</option>
+<option value="越久">越久</option>
+<option value="卸町">卸町</option>
+<option value="影沼町">影沼町</option>
+<option value="加治町">加治町</option>
+<option value="上小山田">上小山田</option>
+<option value="上北町">上北町</option>
+<option value="北上町">北上町</option>
+<option value="北町">北町</option>
+<option value="北山寺町">北山寺町</option>
+<option value="北横田">北横田</option>
+<option value="季の郷">季の郷</option>
+<option value="木之崎">木之崎</option>
+<option value="崩免">崩免</option>
+<option value="栗谷沢">栗谷沢</option>
+<option value="弘法坦">弘法坦</option>
+<option value="向陽町">向陽町</option>
+<option value="小作田">小作田</option>
+<option value="小中">小中</option>
+<option value="境免">境免</option>
+<option value="栄町">栄町</option>
+<option value="坂の上町">坂の上町</option>
+<option value="桜岡">桜岡</option>
+<option value="五月雨">五月雨</option>
+<option value="塩田">塩田</option>
+<option value="志茂">志茂</option>
+<option value="下小山田">下小山田</option>
+<option value="下宿前">下宿前</option>
+<option value="下宿町">下宿町</option>
+<option value="上人坦">上人坦</option>
+<option value="新田">新田</option>
+<option value="陣場町">陣場町</option>
+<option value="新町">新町</option>
+<option value="諏訪町">諏訪町</option>
+<option value="勢至堂">勢至堂</option>
+<option value="芹沢町">芹沢町</option>
+<option value="千日堂">千日堂</option>
+<option value="台">台</option>
+<option value="大黒町">大黒町</option>
+<option value="高久田境">高久田境</option>
+<option value="滝">滝</option>
+<option value="舘ケ岡">舘ケ岡</option>
+<option value="館取町">館取町</option>
+<option value="田中">田中</option>
+<option value="茶畑町">茶畑町</option>
+<option value="長禄町">長禄町</option>
+<option value="塚田">塚田</option>
+<option value="堤">堤</option>
+<option value="寺田">寺田</option>
+<option value="中宿">中宿</option>
+<option value="中曽根">中曽根</option>
+<option value="長沼">長沼</option>
+<option value="仲の町">仲の町</option>
+<option value="中町">中町</option>
+<option value="中山">中山</option>
+<option value="並木町">並木町</option>
+<option value="滑川">滑川</option>
+<option value="仁井田">仁井田</option>
+<option value="西川">西川</option>
+<option value="西川町">西川町</option>
+<option value="西田町">西田町</option>
+<option value="西の内町">西の内町</option>
+<option value="虹の台">虹の台</option>
+<option value="西山寺町">西山寺町</option>
+<option value="柱田">柱田</option>
+<option value="畑田">畑田</option>
+<option value="八幡町">八幡町</option>
+<option value="八幡山">八幡山</option>
+<option value="花岡">花岡</option>
+<option value="花の里">花の里</option>
+<option value="浜尾">浜尾</option>
+<option value="東作">東作</option>
+<option value="東町">東町</option>
+<option value="日照田">日照田</option>
+<option value="日向町">日向町</option>
+<option value="広表">広表</option>
+<option value="深渡戸">深渡戸</option>
+<option value="袋田">袋田</option>
+<option value="古河">古河</option>
+<option value="古舘">古舘</option>
+<option value="古屋敷">古屋敷</option>
+<option value="桙衝">桙衝</option>
+<option value="保土原">保土原</option>
+<option value="堀込">堀込</option>
+<option value="堀底町">堀底町</option>
+<option value="牡丹園">牡丹園</option>
+<option value="前川">前川</option>
+<option value="前田川">前田川</option>
+<option value="松塚">松塚</option>
+<option value="丸田町">丸田町</option>
+<option value="緑町">緑町</option>
+<option value="南上町">南上町</option>
+<option value="南町">南町</option>
+<option value="宮先町">宮先町</option>
+<option value="宮の杜">宮の杜</option>
+<option value="妙見">妙見</option>
+<option value="狸森">狸森</option>
+<option value="本町">本町</option>
+<option value="森宿">森宿</option>
+<option value="守屋">守屋</option>
+<option value="守谷舘">守谷舘</option>
+<option value="矢沢">矢沢</option>
+<option value="矢田野">矢田野</option>
+<option value="山寺町">山寺町</option>
+<option value="山寺道">山寺道</option>
+<option value="横田">横田</option>
+<option value="横山町">横山町</option>
+<option value="吉美根">吉美根</option>
+<option value="六郎兵衛">六郎兵衛</option>
+<option value="六軒">六軒</option>
+<option value="和田">和田</option>
+<option value="和田道">和田道</option>',
+    '喜多方市' => '<option value="１丁目">１丁目</option>
+<option value="２丁目">２丁目</option>
+<option value="３丁目">３丁目</option>
+<option value="青葉台">青葉台</option>
+<option value="熱塩加納町相田">熱塩加納町相田</option>
+<option value="熱塩加納町熱塩">熱塩加納町熱塩</option>
+<option value="熱塩加納町居廻">熱塩加納町居廻</option>
+<option value="熱塩加納町加納">熱塩加納町加納</option>
+<option value="熱塩加納町林際">熱塩加納町林際</option>
+<option value="熱塩加納町宮川">熱塩加納町宮川</option>
+<option value="熱塩加納町山田">熱塩加納町山田</option>
+<option value="熱塩加納町米岡">熱塩加納町米岡</option>
+<option value="飯田道上">飯田道上</option>
+<option value="石田">石田</option>
+<option value="市道">市道</option>
+<option value="一本木上">一本木上</option>
+<option value="一本木下">一本木下</option>
+<option value="井戸尻">井戸尻</option>
+<option value="稲清水">稲清水</option>
+<option value="稲荷宮">稲荷宮</option>
+<option value="岩月町入田付">岩月町入田付</option>
+<option value="岩月町大都">岩月町大都</option>
+<option value="岩月町橿野">岩月町橿野</option>
+<option value="岩月町喜多方">岩月町喜多方</option>
+<option value="岩月町宮津">岩月町宮津</option>
+<option value="梅竹">梅竹</option>
+<option value="永久">永久</option>
+<option value="江中子">江中子</option>
+<option value="扇田">扇田</option>
+<option value="大荒井">大荒井</option>
+<option value="大坪">大坪</option>
+<option value="大豆田">大豆田</option>
+<option value="大道田">大道田</option>
+<option value="大谷地">大谷地</option>
+<option value="大谷地田">大谷地田</option>
+<option value="押切">押切</option>
+<option value="押切東">押切東</option>
+<option value="押切南">押切南</option>
+<option value="御清水">御清水</option>
+<option value="御清水東">御清水東</option>
+<option value="御清水南">御清水南</option>
+<option value="小田">小田</option>
+<option value="小田付道上">小田付道上</option>
+<option value="小田付道下">小田付道下</option>
+<option value="落合">落合</option>
+<option value="御茶屋">御茶屋</option>
+<option value="加登">加登</option>
+<option value="蝦蟆渕">蝦蟆渕</option>
+<option value="上江">上江</option>
+<option value="上川向">上川向</option>
+<option value="上三宮町上三宮">上三宮町上三宮</option>
+<option value="上三宮町三谷">上三宮町三谷</option>
+<option value="上三宮町吉川">上三宮町吉川</option>
+<option value="川下">川下</option>
+<option value="北原">北原</option>
+<option value="北町">北町</option>
+<option value="北町上">北町上</option>
+<option value="行作">行作</option>
+<option value="経壇">経壇</option>
+<option value="経壇東">経壇東</option>
+<option value="窪屋敷">窪屋敷</option>
+<option value="熊倉町雄国">熊倉町雄国</option>
+<option value="熊倉町熊倉">熊倉町熊倉</option>
+<option value="熊倉町新合">熊倉町新合</option>
+<option value="熊倉町都">熊倉町都</option>
+<option value="慶徳町新宮">慶徳町新宮</option>
+<option value="慶徳町豊岡">慶徳町豊岡</option>
+<option value="慶徳町松舞家">慶徳町松舞家</option>
+<option value="慶徳町山科">慶徳町山科</option>
+<option value="慶徳道上">慶徳道上</option>
+<option value="慶徳道下">慶徳道下</option>
+<option value="越巻">越巻</option>
+<option value="五ノ神">五ノ神</option>
+<option value="坂井道上">坂井道上</option>
+<option value="桜ガ丘">桜ガ丘</option>
+<option value="桜町">桜町</option>
+<option value="さつきが丘">さつきが丘</option>
+<option value="沢ノ目">沢ノ目</option>
+<option value="沢ノ免">沢ノ免</option>
+<option value="塩川町天沼">塩川町天沼</option>
+<option value="塩川町新町">塩川町新町</option>
+<option value="塩川町石橋">塩川町石橋</option>
+<option value="塩川町大在家">塩川町大在家</option>
+<option value="塩川町大田木">塩川町大田木</option>
+<option value="塩川町岡ノ前">塩川町岡ノ前</option>
+<option value="塩川町会知">塩川町会知</option>
+<option value="塩川町金橋">塩川町金橋</option>
+<option value="塩川町経塚">塩川町経塚</option>
+<option value="塩川町窪">塩川町窪</option>
+<option value="塩川町源太屋敷">塩川町源太屋敷</option>
+<option value="塩川町黄金田">塩川町黄金田</option>
+<option value="塩川町五合">塩川町五合</option>
+<option value="塩川町御殿場">塩川町御殿場</option>
+<option value="塩川町小府根">塩川町小府根</option>
+<option value="塩川町四奈川">塩川町四奈川</option>
+<option value="塩川町清水岸">塩川町清水岸</option>
+<option value="塩川町下前田">塩川町下前田</option>
+<option value="塩川町新丁">塩川町新丁</option>
+<option value="塩川町諏訪北">塩川町諏訪北</option>
+<option value="塩川町諏訪町">塩川町諏訪町</option>
+<option value="塩川町諏訪前">塩川町諏訪前</option>
+<option value="塩川町反町">塩川町反町</option>
+<option value="塩川町高道">塩川町高道</option>
+<option value="塩川町竹ノ花">塩川町竹ノ花</option>
+<option value="塩川町舘ノ内">塩川町舘ノ内</option>
+<option value="塩川町遠田">塩川町遠田</option>
+<option value="塩川町常世">塩川町常世</option>
+<option value="塩川町中町">塩川町中町</option>
+<option value="塩川町中屋沢">塩川町中屋沢</option>
+<option value="塩川町新井田谷地">塩川町新井田谷地</option>
+<option value="塩川町新江木">塩川町新江木</option>
+<option value="塩川町西ノ新田">塩川町西ノ新田</option>
+<option value="塩川町東岡">塩川町東岡</option>
+<option value="塩川町東栄町">塩川町東栄町</option>
+<option value="塩川町藤ノ木">塩川町藤ノ木</option>
+<option value="塩川町古戸城">塩川町古戸城</option>
+<option value="塩川町町北">塩川町町北</option>
+<option value="塩川町身神">塩川町身神</option>
+<option value="塩川町三吉">塩川町三吉</option>
+<option value="塩川町吉沖">塩川町吉沖</option>
+<option value="塩川町米沢町">塩川町米沢町</option>
+<option value="清水が丘">清水が丘</option>
+<option value="清水台">清水台</option>
+<option value="下江">下江</option>
+<option value="下川原">下川原</option>
+<option value="諏訪">諏訪</option>
+<option value="関柴町上高額">関柴町上高額</option>
+<option value="関柴町西勝">関柴町西勝</option>
+<option value="関柴町下柴">関柴町下柴</option>
+<option value="関柴町関柴">関柴町関柴</option>
+<option value="関柴町豊芦">関柴町豊芦</option>
+<option value="関柴町平林">関柴町平林</option>
+<option value="関柴町三津井">関柴三津井</option>
+<option value="瀬戸">瀬戸</option>
+<option value="銭田">銭田</option>
+<option value="千苅">千苅</option>
+<option value="千苅中道上">千苅中道上</option>
+<option value="千苅道上">千苅道上</option>
+<option value="千苅道下">千苅道下</option>
+<option value="惣座宮">惣座宮</option>
+<option value="台">台</option>
+<option value="太子堂">太子堂</option>
+<option value="高郷町揚津">高郷町揚津</option>
+<option value="高郷町池ノ原">高郷町池ノ原</option>
+<option value="高郷町磐見">高郷町磐見</option>
+<option value="高郷町大田賀">高郷町大田賀</option>
+<option value="高郷町上郷">高郷町上郷</option>
+<option value="高郷町川井">高郷町川井</option>
+<option value="高郷町塩坪">高郷町塩坪</option>
+<option value="高郷町夏井">高郷町夏井</option>
+<option value="高郷町西羽賀">高郷町西羽賀</option>
+<option value="高郷町峯">高郷町峯</option>
+<option value="舘野">舘野</option>
+<option value="壇ノ前">壇ノ前</option>
+<option value="長源段">長源段</option>
+<option value="通船場">通船場</option>
+<option value="鶴巻">鶴巻</option>
+<option value="寺田">寺田</option>
+<option value="寺西">寺西</option>
+<option value="寺町">寺町</option>
+<option value="寺町南">寺町南</option>
+<option value="寺南">寺南</option>
+<option value="天満前">天満前</option>
+<option value="樋越">樋越</option>
+<option value="常盤台">常盤台</option>
+<option value="常盤町">常盤町</option>
+<option value="豊川町一井">豊川町一井</option>
+<option value="豊川町沢部">豊川町沢部</option>
+<option value="豊川町高堂太">豊川町高堂太</option>
+<option value="豊川町米室">豊川町米室</option>
+<option value="長内">長内</option>
+<option value="長面">長面</option>
+<option value="中川原">中川原</option>
+<option value="中島">中島</option>
+<option value="中清水">中清水</option>
+<option value="中台">中台</option>
+<option value="中寺">中寺</option>
+<option value="中町">中町</option>
+<option value="梨子ノ木">梨子ノ木</option>
+<option value="七百苅">七百苅</option>
+<option value="南條">南條</option>
+<option value="西井戸尻">西井戸尻</option>
+<option value="西籠田">西籠田</option>
+<option value="西町">西町</option>
+<option value="西四ツ谷">西四ツ谷</option>
+<option value="二本木">二本木</option>
+<option value="沼田">沼田</option>
+<option value="畑台">畑台</option>
+<option value="花園">花園</option>
+<option value="馬場">馬場</option>
+<option value="原田">原田</option>
+<option value="番帳免">番帳免</option>
+<option value="東小原">東小原</option>
+<option value="東籠田">東籠田</option>
+<option value="東川原田">東川原田</option>
+<option value="東桜ガ丘">東桜ガ丘</option>
+<option value="東町">東町</option>
+<option value="百苅田">百苅田</option>
+<option value="広面">広面</option>
+<option value="舞台田">舞台田</option>
+<option value="古寺">古寺</option>
+<option value="細田">細田</option>
+<option value="前田">前田</option>
+<option value="前田上">前田上</option>
+<option value="蒔田">蒔田</option>
+<option value="町北">町北</option>
+<option value="町尻西">町尻西</option>
+<option value="町尻東">町尻東</option>
+<option value="町田">町田</option>
+<option value="町田下">町田下</option>
+<option value="町西">町西</option>
+<option value="松山町大飯坂">松山町大飯坂</option>
+<option value="松山町鳥見山">松山町鳥見山</option>
+<option value="松山町村松">松山町村松</option>
+<option value="見頃道上">見頃道上</option>
+<option value="水上">水上</option>
+<option value="緑町">緑町</option>
+<option value="南原">南原</option>
+<option value="南町">南町</option>
+<option value="宮西">宮西</option>
+<option value="村西">村西</option>
+<option value="屋敷免">屋敷免</option>
+<option value="谷地田">谷地田</option>
+<option value="谷地田上">谷地田上</option>
+<option value="柳清水">柳清水</option>
+<option value="柳原">柳原</option>
+<option value="山都町相川">山都町相川</option>
+<option value="山都町朝倉">山都町朝倉</option>
+<option value="山都町石打場下">山都町石打場下</option>
+<option value="山都町石堀古">山都町石堀古</option>
+<option value="山都町一川">山都町一川</option>
+<option value="山都町一ノ木">山都町一ノ木</option>
+<option value="山都町入海">山都町入海</option>
+<option value="山都町岩渕">山都町岩渕</option>
+<option value="山都町上ノ原道西">山都町上ノ原道西</option>
+<option value="山都町上ノ原道東">山都町上ノ原道東</option>
+<option value="山都町上ノ山平">山都町上ノ山平</option>
+<option value="山都町馬放場">山都町馬放場</option>
+<option value="山都町江戸塚">山都町江戸塚</option>
+<option value="山都町太田">山都町太田</option>
+<option value="山都町大林">山都町大林</option>
+<option value="山都町大山中">山都町大山中</option>
+<option value="山都町金子沢">山都町金子沢</option>
+<option value="山都町上石打場">山都町上石打場</option>
+<option value="山都町上新田">山都町上新田</option>
+<option value="山都町木曽">山都町木曽</option>
+<option value="山都町北松ノ前">山都町北松ノ前</option>
+<option value="山都町久祢花">山都町久祢花</option>
+<option value="山都町蔵ノ後">山都町蔵ノ後</option>
+<option value="山都町五十苅">山都町五十苅</option>
+<option value="山都町木幡">山都町木幡</option>
+<option value="山都町小舟寺">山都町小舟寺</option>
+<option value="山都町小松">山都町小松</option>
+<option value="山都町小山">山都町小山</option>
+<option value="山都町沢尻">山都町沢尻</option>
+<option value="山都町沢田">山都町沢田</option>
+<option value="山都町三ノ宮">山都町三ノ宮</option>
+<option value="山都町清水上">山都町清水上</option>
+<option value="山都町清水尻">山都町清水尻</option>
+<option value="山都町下石打場">山都町下石打場</option>
+<option value="山都町下殿戸">山都町下殿戸</option>
+<option value="山都町蛇崩">山都町蛇崩</option>
+<option value="山都町舘原">山都町舘原</option>
+<option value="山都町田向">山都町田向</option>
+<option value="山都町殿戸">山都町殿戸</option>
+<option value="山都町中石打場">山都町中石打場</option>
+<option value="山都町中新田">山都町中新田</option>
+<option value="山都町中野">山都町中野</option>
+<option value="山都町七十苅">山都町七十苅</option>
+<option value="山都町西川">山都町西川</option>
+<option value="山都町西原">山都町西原</option>
+<option value="山都町墓ノ後">山都町墓ノ後</option>
+<option value="山都町広古屋敷">山都町広古屋敷</option>
+<option value="山都町広中新田">山都町広中新田</option>
+<option value="山都町広野">山都町広野</option>
+<option value="山都町広葎田">山都町広葎田</option>
+<option value="山都町古屋敷">山都町古屋敷</option>
+<option value="山都町蓬莱">山都町蓬莱</option>
+<option value="山都町町尻">山都町町尻</option>
+<option value="山都町松ノ前">山都町松ノ前</option>
+<option value="山都町三津合">山都町三津合</option>
+<option value="山都町三ツ山">山都町三ツ山</option>
+<option value="山都町葎田">山都町葎田</option>
+<option value="山都町弥左エ門田">山都町弥左エ門田</option>
+<option value="山都町谷地">山都町谷地</option>
+<option value="山都町山中">山都町山中</option>
+<option value="山都町早稲谷">山都町早稲谷</option>
+<option value="山ノ神">山ノ神</option>
+<option value="四百苅">四百苅</option>
+<option value="六枚長">六枚長</option>
+<option value="六百刈">六百刈</option>',
+    '相馬市' => '<option value="赤木">赤木</option>
+<option value="粟津">粟津</option>
+<option value="石上">石上</option>
+<option value="磯部">磯部</option>
+<option value="今田">今田</option>
+<option value="岩子">岩子</option>
+<option value="大坪">大坪</option>
+<option value="大野台">大野台</option>
+<option value="大曲">大曲</option>
+<option value="沖ノ内">沖ノ内</option>
+<option value="小野">小野</option>
+<option value="尾浜">尾浜</option>
+<option value="柏崎">柏崎</option>
+<option value="蒲庭">蒲庭</option>
+<option value="北飯渕">北飯渕</option>
+<option value="北小泉">北小泉</option>
+<option value="黒木">黒木</option>
+<option value="小泉">小泉</option>
+<option value="光陽">光陽</option>
+<option value="椎木">椎木</option>
+<option value="立谷">立谷</option>
+<option value="玉野">玉野</option>
+<option value="長老内">長老内</option>
+<option value="塚部">塚部</option>
+<option value="塚ノ町">塚ノ町</option>
+<option value="坪田">坪田</option>
+<option value="百槻">百槻</option>
+<option value="富沢">富沢</option>
+<option value="中野">中野</option>
+<option value="中村">中村</option>
+<option value="成田">成田</option>
+<option value="新田">新田</option>
+<option value="新沼">新沼</option>
+<option value="西山">西山</option>
+<option value="日下石">日下石</option>
+<option value="初野">初野</option>
+<option value="馬場野">馬場野</option>
+<option value="原釜">原釜</option>
+<option value="東玉野">東玉野</option>
+<option value="程田">程田</option>
+<option value="南飯渕">南飯渕</option>
+<option value="本笑">本笑</option>
+<option value="山上">山上</option>
+<option value="柚木">柚木</option>
+<option value="和田">和田</option>',
+    '二本松市' => '<option value="赤井沢">赤井沢</option>
+<option value="浅川">浅川</option>
+<option value="安達ケ原">安達ケ原</option>
+<option value="鐙摺石">鐙摺石</option>
+<option value="伊佐沼町">伊佐沼町</option>
+<option value="石ノ花">石ノ花</option>
+<option value="石畑">石畑</option>
+<option value="板目沢">板目沢</option>
+<option value="市海道">市海道</option>
+<option value="井戸神">井戸神</option>
+<option value="岩崎">岩崎</option>
+<option value="丑子内">丑子内</option>
+<option value="乳母沢">乳母沢</option>
+<option value="上原">上原</option>
+<option value="江口">江口</option>
+<option value="榎戸">榎戸</option>
+<option value="大石ケ作">大石ケ作</option>
+<option value="大稲場">大稲場</option>
+<option value="大久保">大久保</option>
+<option value="大坂">大坂</option>
+<option value="大沢">大沢</option>
+<option value="大関">大関</option>
+<option value="太田">太田</option>
+<option value="大平中井">大平中井</option>
+<option value="大壇">大壇</option>
+<option value="大平山">大平山</option>
+<option value="大町">大町</option>
+<option value="大森沢">大森沢</option>
+<option value="岡ノ内">岡ノ内</option>
+<option value="沖">沖</option>
+<option value="小沢">小沢</option>
+<option value="落合">落合</option>
+<option value="小浜">小浜</option>
+<option value="表">表</option>
+<option value="郭内">郭内</option>
+<option value="隠里">隠里</option>
+<option value="片岸">片岸</option>
+<option value="金色">金色</option>
+<option value="金色久保">金色久保</option>
+<option value="冠木">冠木</option>
+<option value="上太田">上太田</option>
+<option value="上川崎">上川崎</option>
+<option value="上新田">上新田</option>
+<option value="上長折">上長折</option>
+<option value="上葉木坂">上葉木坂</option>
+<option value="上平内">上平内</option>
+<option value="上蓬田">上蓬田</option>
+<option value="亀谷">亀谷</option>
+<option value="唐谷山">唐谷山</option>
+<option value="借宿">借宿</option>
+<option value="北トロミ">北トロミ</option>
+<option value="木藤次郎内">木藤次郎内</option>
+<option value="木ノ崎">木ノ崎</option>
+<option value="木ノ根坂">木ノ根坂</option>
+<option value="向陽台">向陽台</option>
+<option value="郡山台">郡山台</option>
+<option value="小セ川">小セ川</option>
+<option value="小関">小関</option>
+<option value="小高内">小高内</option>
+<option value="木幡">木幡</option>
+<option value="古家">古家</option>
+<option value="西勝田">西勝田</option>
+<option value="才木山">才木山</option>
+<option value="西光内">西光内</option>
+<option value="在師">在師</option>
+<option value="幸町">幸町</option>
+<option value="茶園">茶園</option>
+<option value="栄町">栄町</option>
+<option value="作">作</option>
+<option value="作田">作田</option>
+<option value="笹屋">笹屋</option>
+<option value="五月町">五月町</option>
+<option value="沢松倉">沢松倉</option>
+<option value="三合内">三合内</option>
+<option value="三雄山">三雄山</option>
+<option value="塩沢">塩沢</option>
+<option value="塩沢町">塩沢町</option>
+<option value="式部内">式部内</option>
+<option value="下町">下町</option>
+<option value="渋川">渋川</option>
+<option value="島寺">島寺</option>
+<option value="島ノ内">島ノ内</option>
+<option value="下川崎">下川崎</option>
+<option value="下平">下平</option>
+<option value="下長折">下長折</option>
+<option value="下ノ内">下ノ内</option>
+<option value="下山田">下山田</option>
+<option value="上竹">上竹</option>
+<option value="正法寺町">正法寺町</option>
+<option value="昭和町">昭和町</option>
+<option value="新座">新座</option>
+<option value="新生町">新生町</option>
+<option value="新田">新田</option>
+<option value="新林">新林</option>
+<option value="神明石">神明石</option>
+<option value="水神">水神</option>
+<option value="末広町">末広町</option>
+<option value="菅田">菅田</option>
+<option value="杉沢">杉沢</option>
+<option value="杉田駄子内">杉田駄子内</option>
+<option value="杉田仲之内">杉田仲之内</option>
+<option value="杉田町">杉田町</option>
+<option value="鈴石東町">鈴石東町</option>
+<option value="鈴石町">鈴石町</option>
+<option value="硯石">硯石</option>
+<option value="住吉">住吉</option>
+<option value="諏訪原">諏訪原</option>
+<option value="関">関</option>
+<option value="瀬ノ上">瀬ノ上</option>
+<option value="芹沢">芹沢</option>
+<option value="反返">反返</option>
+<option value="反田">反田</option>
+<option value="大根畑">大根畑</option>
+<option value="大作">大作</option>
+<option value="太子堂">太子堂</option>
+<option value="高越松ケ作">高越松ケ作</option>
+<option value="高越屋戸">高越屋戸</option>
+<option value="高田">高田</option>
+<option value="高平">高平</option>
+<option value="高西">高西</option>
+<option value="岳温泉">岳温泉</option>
+<option value="岳温泉大和">岳温泉大和</option>
+<option value="岳温泉西大和">岳温泉西大和</option>
+<option value="岳温泉深堀">岳温泉深堀</option>
+<option value="岳温泉横森">岳温泉横森</option>
+<option value="竹柄">竹柄</option>
+<option value="竹田">竹田</option>
+<option value="竹ノ内">竹ノ内</option>
+<option value="岳東町">岳東町</option>
+<option value="田沢">田沢</option>
+<option value="立石">立石</option>
+<option value="舘野">舘野</option>
+<option value="舘野原">舘野原</option>
+<option value="田町">田町</option>
+<option value="坦子内">坦子内</option>
+<option value="智恵子の森">智恵子の森</option>
+<option value="長者宮">長者宮</option>
+<option value="長命">長命</option>
+<option value="槻木">槻木</option>
+<option value="鉄扇町">鉄扇町</option>
+<option value="峠">峠</option>
+<option value="藤太郎内">藤太郎内</option>
+<option value="藤之前">藤之前</option>
+<option value="百目木">百目木</option>
+<option value="十神">十神</option>
+<option value="遠山">遠山</option>
+<option value="遠西">遠西</option>
+<option value="戸沢">戸沢</option>
+<option value="苗松">苗松</option>
+<option value="中江">中江</option>
+<option value="長折">長折</option>
+<option value="中里">中里</option>
+<option value="永田">永田</option>
+<option value="中ノ目">中ノ目</option>
+<option value="中町">中町</option>
+<option value="中森">中森</option>
+<option value="中山田">中山田</option>
+<option value="長下">長下</option>
+<option value="永田鍛治内">永田鍛治内</option>
+<option value="永田才木">永田才木</option>
+<option value="永田積内">永田積内</option>
+<option value="永田橋積">永田橋積</option>
+<option value="永田馬保内">永田馬保内</option>
+<option value="永田御堂内">永田御堂内</option>
+<option value="七ツ段">七ツ段</option>
+<option value="成上">成上</option>
+<option value="成田">成田</option>
+<option value="成田日向">成田日向</option>
+<option value="成田町">成田町</option>
+<option value="二伊滝">二伊滝</option>
+<option value="西池">西池</option>
+<option value="錦町">錦町</option>
+<option value="西新殿">西新殿</option>
+<option value="西町">西町</option>
+<option value="沼ケ作">沼ケ作</option>
+<option value="根崎">根崎</option>
+<option value="萩坂">萩坂</option>
+<option value="橋本">橋本</option>
+<option value="八万舘">八万舘</option>
+<option value="初森">初森</option>
+<option value="羽石">羽石</option>
+<option value="馬場平">馬場平</option>
+<option value="原セ天ケ作">原セ天ケ作</option>
+<option value="原セ大畑">原セ大畑</option>
+<option value="原セ笠張">原セ笠張</option>
+<option value="原セ上平">原セ上平</option>
+<option value="原セ上ノ内">原セ上ノ内</option>
+<option value="原セ川原">原セ川原</option>
+<option value="原セ才木">原セ才木</option>
+<option value="原セ諏訪">原セ諏訪</option>
+<option value="原セ堰下">原セ堰下</option>
+<option value="原セ仲谷地">原セ仲谷地</option>
+<option value="原セ日照田">原セ日照田</option>
+<option value="原セ山口">原セ山口</option>
+<option value="原田">原田</option>
+<option value="針道">針道</option>
+<option value="東裏">東裏</option>
+<option value="東新殿">東新殿</option>
+<option value="東町">東町</option>
+<option value="毘沙門堂">毘沙門堂</option>
+<option value="毘沙門堂山">毘沙門堂山</option>
+<option value="姫子松">姫子松</option>
+<option value="平石三丁目">平石三丁目</option>
+<option value="平石高田">平石高田</option>
+<option value="平石町">平石町</option>
+<option value="袋内">袋内</option>
+<option value="二又">二又</option>
+<option value="不動">不動</option>
+<option value="不動平">不動平</option>
+<option value="舟石">舟石</option>
+<option value="舟形石">舟形石</option>
+<option value="舟形石山">舟形石山</option>
+<option value="細野">細野</option>
+<option value="坊主滝">坊主滝</option>
+<option value="堀越">堀越</option>
+<option value="前田">前田</option>
+<option value="前原">前原</option>
+<option value="松岡">松岡</option>
+<option value="松林">松林</option>
+<option value="水上">水上</option>
+<option value="南トロミ">南トロミ</option>
+<option value="南町">南町</option>
+<option value="箕輪">箕輪</option>
+<option value="三原町">三原町</option>
+<option value="三保内">三保内</option>
+<option value="宮沢">宮沢</option>
+<option value="宮戸">宮戸</option>
+<option value="宮本">宮本</option>
+<option value="明主内">明主内</option>
+<option value="向作田">向作田</option>
+<option value="向原">向原</option>
+<option value="本町">本町</option>
+<option value="茂原">茂原</option>
+<option value="諸越谷">諸越谷</option>
+<option value="薬師">薬師</option>
+<option value="八坂町">八坂町</option>
+<option value="社前">社前</option>
+<option value="休石">休石</option>
+<option value="休石原">休石原</option>
+<option value="屋戸入">屋戸入</option>
+<option value="矢ノ戸">矢ノ戸</option>
+<option value="山田">山田</option>
+<option value="谷和子">谷和子</option>
+<option value="油井">油井</option>
+<option value="雄平台">雄平台</option>
+<option value="湯川町">湯川町</option>
+<option value="吉倉">吉倉</option>
+<option value="米五町">米五町</option>
+<option value="米沢">米沢</option>
+<option value="蓬田">蓬田</option>
+<option value="若宮">若宮</option>',
+    '田村市' => '<option value="大越町上大越">大越町上大越</option>
+<option value="大越町栗出">大越町栗出</option>
+<option value="大越町下大越">大越町下大越</option>
+<option value="大越町牧野">大越町牧野</option>
+<option value="大越町早稲川">大越町早稲川</option>
+<option value="滝根町神俣">滝根町神俣</option>
+<option value="滝根町菅谷">滝根町菅谷</option>
+<option value="滝根町広瀬">滝根町広瀬</option>
+<option value="常葉町鹿山">常葉町鹿山</option>
+<option value="常葉町久保">常葉町久保</option>
+<option value="常葉町小桧山">常葉町小桧山</option>
+<option value="常葉町関本">常葉町関本</option>
+<option value="常葉町常葉">常葉町常葉</option>
+<option value="常葉町西向">常葉町西向</option>
+<option value="常葉町新田作">常葉町新田作</option>
+<option value="常葉町堀田">常葉町堀田</option>
+<option value="常葉町山根">常葉町山根</option>
+<option value="常葉町早稲川">常葉町早稲川</option>
+<option value="船引町芦沢">船引町芦沢</option>
+<option value="船引町荒和田">船引町荒和田</option>
+<option value="船引町石沢">船引町石沢</option>
+<option value="船引町石森">船引町石森</option>
+<option value="船引町今泉">船引町今泉</option>
+<option value="船引町大倉">船引町大倉</option>
+<option value="船引町門沢">船引町門沢</option>
+<option value="船引町門鹿">船引町門鹿</option>
+<option value="船引町要田">船引町要田</option>
+<option value="船引町上移">船引町上移</option>
+<option value="船引町北移">船引町北移</option>
+<option value="船引町北鹿又">船引町北鹿又</option>
+<option value="船引町椚山">船引町椚山</option>
+<option value="船引町光陽台">船引町光陽台</option>
+<option value="船引町笹山">船引町笹山</option>
+<option value="船引町東部台">船引町東部台</option>
+<option value="船引町遠山沢">船引町遠山沢</option>
+<option value="船引町長外路">船引町長外路</option>
+<option value="船引町永谷">船引町永谷</option>
+<option value="船引町中山">船引町中山</option>
+<option value="船引町成田">船引町成田</option>
+<option value="船引町新舘">船引町新舘</option>
+<option value="船引町春山">船引町春山</option>
+<option value="船引町船引">船引町船引</option>
+<option value="船引町堀越">船引町堀越</option>
+<option value="船引町南移">船引町南移</option>
+<option value="船引町文珠">船引町文珠</option>
+<option value="船引町横道">船引町横道</option>
+<option value="都路町岩井沢">都路町岩井沢</option>
+<option value="都路町古道">都路町古道</option>',
+    '南相馬市' => '',
+    '伊達市' => '<option value="initial_value">Initial Option</option>',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => ''
 );
 
 $selectedValue = $_POST['selectedValue'];
 
-// Check if selectedValue exists in options array
 if (array_key_exists($selectedValue, $optionsBox3)) {
+
+if($selectedValue == '伊達市'){
+
+   echo $optionsBox3['伊達市'] = '<option value="initial_value">Hello</option>';
+   }
+   else {
     echo $optionsBox3[$selectedValue];
+   }
+
 } else {
-    echo '<option value="">町名</option>';
+
+echo '<option value="">町名</option>';
+
 }
-?>

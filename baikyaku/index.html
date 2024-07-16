@@ -159,7 +159,6 @@
                                         <option value="宮崎県">宮崎県</option>
                                         <option value="鹿児島県">鹿児島県</option>
                                         <option value="沖縄県">沖縄県</option>
-
                                     </select>
                                 </div>
                                 <div class="select w-[10rem] bg-white">
@@ -171,7 +170,7 @@
                                 <div class="select w-[10rem] bg-white">
                                     <select id="selectBox3" name="selectBox3"
                                         onchange="updateContent(this, 'selectedContent3')">
-                                        <option value="町名">町名</option>
+                                        <option value="">町名</option>
                                     </select>
 
                                 </div>
@@ -320,20 +319,6 @@
             document.getElementById("locationForm").submit();
         }
 
-        /*document.getElementById('locationForm').addEventListener('submit', function (e) {
-            var select1 = document.getElementById('selectBox1');
-            var selectedOption1 = select1.options[select1.selectedIndex].text;
-            document.getElementById('selectedText1').value = selectedOption1;
-
-            var select2 = document.getElementById('selectBox2');
-            var selectedOption2 = select2.options[select2.selectedIndex].text;
-            document.getElementById('selectedText2').value = selectedOption2;
-
-            var select3 = document.getElementById('selectBox3');
-            var selectedOption3 = select3.options[select3.selectedIndex].text;
-            document.getElementById('selectedText3').value = selectedOption3;
-        });*/
-
         $(document).ready(function () {
 
             $('#selectBox1').change(function () {
@@ -344,8 +329,6 @@
                     data: { selectedValue: selectedValue },
                     success: function (response) {
                         $('#selectBox2').html(response);
-
-                        $('#selectBox2').trigger('change');
                     }
                 });
             });

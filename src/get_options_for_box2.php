@@ -1,5 +1,6 @@
 <?php
 // Assume this array maps option values to their corresponding HTML
+
 $options = array(
     '北海道' => '<option value="">市区郡</option>
 <option value="札幌市中央区">札幌市中央区</option>
@@ -342,7 +343,6 @@ $options = array(
 <option value="山形市">山形市</option>
 <option value="米沢市">米沢市</option>
 <option value="鶴岡市">鶴岡市</option>
-
 <option value="酒田市">酒田市</option>
 <option value="新庄市">新庄市</option>
 <option value="寒河江市">寒河江市</option>
@@ -374,9 +374,68 @@ $options = array(
 <option value="西置賜郡飯豊町">西置賜郡飯豊町</option>
 <option value="東田川郡三川町">東田川郡三川町</option>
 <option value="東田川郡庄内町">東田川郡庄内町</option>
-<option value="飽海郡遊佐町">飽海郡遊佐町</option>
-',
-    '福島県' => '<option value="">市区郡</option>',
+<option value="飽海郡遊佐町">飽海郡遊佐町</option>',
+    '福島県' => '<option value="">市区郡</option>
+    <option value="福島市">福島市</option>
+<option value="会津若松市">会津若松市</option>
+<option value="郡山市">郡山市</option>
+<option value="いわき市">いわき市</option>
+<option value="白河市">白河市</option>
+<option value="須賀川市">須賀川市</option>
+<option value="喜多方市">喜多方市</option>
+<option value="相馬市">相馬市</option>
+<option value="二本松市">二本松市</option>
+<option value="田村市">田村市</option>
+<option value="南相馬市">南相馬市</option>
+
+<option value="伊達市">伊達市</option>
+<option value="本宮市">本宮市</option>
+<option value="伊達郡桑折町">伊達郡桑折町</option>
+<option value="伊達郡国見町">伊達郡国見町</option>
+<option value="伊達郡川俣町">伊達郡川俣町</option>
+<option value="安達郡大玉村">安達郡大玉村</option>
+<option value="岩瀬郡鏡石町">岩瀬郡鏡石町</option>
+<option value="岩瀬郡天栄村">岩瀬郡天栄村</option>
+<option value="南会津郡下郷町">南会津郡下郷町</option>
+<option value="南会津郡檜枝岐村">南会津郡檜枝岐村</option>
+<option value="南会津郡只見町">南会津郡只見町</option>
+<option value="南会津郡南会津町">南会津郡南会津町</option>
+<option value="耶麻郡北塩原村">耶麻郡北塩原村</option>
+<option value="耶麻郡西会津町">耶麻郡西会津町</option>
+<option value="耶麻郡磐梯町">耶麻郡磐梯町</option>
+<option value="耶麻郡猪苗代町">耶麻郡猪苗代町</option>
+<option value="河沼郡会津坂下町">河沼郡会津坂下町</option>
+<option value="河沼郡湯川村">河沼郡湯川村</option>
+<option value="河沼郡柳津町">河沼郡柳津町</option>
+<option value="大沼郡三島町">大沼郡三島町</option>
+<option value="大沼郡金山町">大沼郡金山町</option>
+<option value="大沼郡昭和村">大沼郡昭和村</option>
+<option value="大沼郡会津美里町">大沼郡会津美里町</option>
+<option value="西白河郡西郷村">西白河郡西郷村</option>
+<option value="西白河郡泉崎村">西白河郡泉崎村</option>
+<option value="西白河郡中島村">西白河郡中島村</option>
+<option value="西白河郡矢吹町">西白河郡矢吹町</option>
+<option value="東白川郡棚倉町">東白川郡棚倉町</option>
+<option value="東白川郡矢祭町">東白川郡矢祭町</option>
+<option value="東白川郡塙町">東白川郡塙町</option>
+<option value="東白川郡鮫川村">東白川郡鮫川村</option>
+<option value="石川郡石川町">石川郡石川町</option>
+<option value="石川郡玉川村">石川郡玉川村</option>
+<option value="石川郡平田村">石川郡平田村</option>
+<option value="石川郡浅川町">石川郡浅川町</option>
+<option value="石川郡古殿町">石川郡古殿町</option>
+<option value="田村郡三春町">田村郡三春町</option>
+<option value="田村郡小野町">田村郡小野町</option>
+<option value="双葉郡広野町">双葉郡広野町</option>
+<option value="双葉郡楢葉町">双葉郡楢葉町</option>
+<option value="双葉郡富岡町">双葉郡富岡町</option>
+<option value="双葉郡川内村">双葉郡川内村</option>
+<option value="双葉郡大熊町">双葉郡大熊町</option>
+<option value="双葉郡双葉町">双葉郡双葉町</option>
+<option value="双葉郡浪江町">双葉郡浪江町</option>
+<option value="双葉郡葛尾村">双葉郡葛尾村</option>
+<option value="相馬郡新地町">相馬郡新地町</option>
+<option value="相馬郡飯舘村">相馬郡飯舘村</option>',
     '茨城県' => '<option value="">市区郡</option>',
     '栃木県' => '<option value="">市区郡</option>',
     '群馬県' => '<option value="">市区郡</option>',
@@ -419,12 +478,14 @@ $options = array(
     '沖縄県' => '<option value="">市区郡</option>'
 );
 
-// Fetch selected value from AJAX request
-$selectedValue = $_POST['selectedValue'];
 
-// Check if selectedValue exists in options array
-if (array_key_exists($selectedValue, $options)) {
-    echo $options[$selectedValue];
-} else {
-    echo '<option value="">都道府県</option>';
-}
+    $selectedValues = $_POST['selectedValue'];
+
+    if (array_key_exists($selectedValues, $options)) {
+
+        echo $options[$selectedValues];
+    } else {
+        echo '<option value="">町名</option>';
+    }
+
+
