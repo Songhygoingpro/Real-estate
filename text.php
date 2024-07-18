@@ -1,17 +1,18 @@
-
 <?php
-// Include the file where $options array is defined
-include 'test.php';
 
-$options1 = array('option3' => 'test',
-'value1' => 'hello'); 
+$options = array(
+    '北海道' => '<option value>select</option>
+    <option value="市区郡">市区郡</option>
+                 <option value="札幌市中央区">札幌市中央区</option>',
+    '秋田県' => '<option value>select</option><option value="市区郡">市区郡</option>
+                 <option value="秋田市">秋田市</option>'
+);
 
-echo array_key_exists('option3', $options1);
+$selectedValue = $_POST['selectedValue'];
 
-if($options['option1'] == 'value1'){
-    echo $options1['value1'] = 'test';
+if (array_key_exists($selectedValue, $options)) {
+    echo $options[$selectedValue];
+} else {
+    echo '<option value="">test</option>';
 }
-
-
-
 ?>

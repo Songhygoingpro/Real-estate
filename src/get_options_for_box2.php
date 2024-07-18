@@ -173,6 +173,9 @@ $options = array(
 <option value="中川郡豊頃町">中川郡豊頃町</option>
 <option value="中川郡本別町">中川郡本別町</option>
 <option value="足寄郡足寄町">足寄郡足寄町</option>
+<option value="釧路市">釧路市</option
+<option value="室蘭市">室蘭市</option>
+<option value="旭川市">旭川市</option>
 <option value="足寄郡陸別町">足寄郡陸別町</option>
 <option value="十勝郡浦幌町">十勝郡浦幌町</option>
 <option value="釧路郡釧路町">釧路郡釧路町</option>
@@ -185,14 +188,7 @@ $options = array(
 <option value="野付郡別海町">野付郡別海町</option>
 <option value="標津郡中標津町">標津郡中標津町</option>
 <option value="標津郡標津町">標津郡標津町</option>
-<option value="目梨郡羅臼町">目梨郡羅臼町</option>
-
-<option value="旭川市">旭川市</option>
-<option value="室蘭市">室蘭市</option>
-<option value="釧路市">釧路市</option>
-<option value="松前郡福島町">松前郡福島町</option>
-<option value="天塩郡天塩町">天塩郡天塩町</option>
-',
+<option value="目梨郡羅臼町">目梨郡羅臼町</option>',
     '青森県' => '
     <option value="">市区郡</option>
 <option value="青森市">青森市</option>
@@ -237,6 +233,10 @@ $options = array(
 <option value="三戸郡新郷村">三戸郡新郷村</option>
 ',
     '岩手県' => '<option value="">市区郡</option>
+    <option value="盛岡市">盛岡市</option>
+<option value="宮古市">宮古市</option>
+<option value="大船渡市">大船渡市</option>
+<option value="花巻市">花巻市</option>
     <option value="北上市">北上市</option>
     <option value="久慈市">久慈市</option>
     <option value="遠野市">遠野市</option>
@@ -266,11 +266,6 @@ $options = array(
     <option value="九戸郡九戸村">九戸郡九戸村</option>
     <option value="九戸郡洋野町">九戸郡洋野町</option>
     <option value="二戸郡一戸町">二戸郡一戸町</option>
-
-<option value="盛岡市">盛岡市</option>
-<option value="宮古市">宮古市</option>
-<option value="大船渡市">大船渡市</option>
-<option value="花巻市">花巻市</option>
 ',
     '宮城県' => '<option value="">市区郡</option>
     <option value="仙台市青葉区">仙台市青葉区</option>
@@ -376,7 +371,7 @@ $options = array(
 <option value="東田川郡庄内町">東田川郡庄内町</option>
 <option value="飽海郡遊佐町">飽海郡遊佐町</option>',
     '福島県' => '<option value="">市区郡</option>
-    <option value="福島市">福島市</option>
+<option value="福島市">福島市</option>
 <option value="会津若松市">会津若松市</option>
 <option value="郡山市">郡山市</option>
 <option value="いわき市">いわき市</option>
@@ -387,7 +382,6 @@ $options = array(
 <option value="二本松市">二本松市</option>
 <option value="田村市">田村市</option>
 <option value="南相馬市">南相馬市</option>
-
 <option value="伊達市">伊達市</option>
 <option value="本宮市">本宮市</option>
 <option value="伊達郡桑折町">伊達郡桑折町</option>
@@ -436,12 +430,312 @@ $options = array(
 <option value="双葉郡葛尾村">双葉郡葛尾村</option>
 <option value="相馬郡新地町">相馬郡新地町</option>
 <option value="相馬郡飯舘村">相馬郡飯舘村</option>',
-    '茨城県' => '<option value="">市区郡</option>',
-    '栃木県' => '<option value="">市区郡</option>',
-    '群馬県' => '<option value="">市区郡</option>',
-    '埼玉県' => '<option value="">市区郡</option>',
-    '千葉県' => '<option value="">市区郡</option>',
-    '東京都' => '<option value="">市区郡</option>',
+    '茨城県' => '<option value="">市区郡</option>
+<option value="水戸市">水戸市</option>
+<option value="日立市">日立市</option>
+<option value="土浦市">土浦市</option>
+<option value="古河市">古河市</option>
+<option value="石岡市">石岡市</option>
+<option value="結城市">結城市</option>
+<option value="龍ケ崎市">龍ケ崎市</option>
+<option value="下妻市">下妻市</option>
+<option value="常総市">常総市</option>
+<option value="常陸太田市">常陸太田市</option>
+<option value="高萩市">高萩市</option>
+<option value="北茨城市">北茨城市</option>
+<option value="笠間市">笠間市</option>
+<option value="取手市">取手市</option>
+<option value="牛久市">牛久市</option>
+<option value="つくば市">つくば市</option>
+<option value="ひたちなか市">ひたちなか市</option>
+<option value="鹿嶋市">鹿嶋市</option>
+<option value="潮来市">潮来市</option>
+<option value="守谷市">守谷市</option>
+<option value="常陸大宮市">常陸大宮市</option>
+<option value="那珂市">那珂市</option>
+<option value="筑西市">筑西市</option>
+<option value="坂東市">坂東市</option>
+<option value="稲敷市">稲敷市</option>
+<option value="かすみがうら市">かすみがうら市</option>
+<option value="桜川市">桜川市</option>
+<option value="神栖市">神栖市</option>
+<option value="行方市">行方市</option>
+<option value="鉾田市">鉾田市</option>
+<option value="つくばみらい市">つくばみらい市</option>
+<option value="小美玉市">小美玉市</option>
+<option value="東茨城郡茨城町">東茨城郡茨城町</option>
+<option value="東茨城郡大洗町">東茨城郡大洗町</option>
+<option value="東茨城郡城里町">東茨城郡城里町</option>
+<option value="那珂郡東海村">那珂郡東海村</option>
+<option value="久慈郡大子町">久慈郡大子町</option>
+<option value="稲敷郡美浦村">稲敷郡美浦村</option>
+<option value="稲敷郡阿見町">稲敷郡阿見町</option>
+<option value="稲敷郡河内町">稲敷郡河内町</option>
+<option value="結城郡八千代町">結城郡八千代町</option>
+<option value="猿島郡五霞町">猿島郡五霞町</option>
+<option value="猿島郡境町">猿島郡境町</option>
+<option value="北相馬郡利根町">北相馬郡利根町</option>',
+    '栃木県' => '<option value="">市区郡</option>
+<option value="宇都宮市">宇都宮市</option>
+<option value="足利市">足利市</option>
+<option value="栃木市">栃木市</option>
+<option value="佐野市">佐野市</option>
+<option value="鹿沼市">鹿沼市</option>
+<option value="日光市">日光市</option>
+<option value="小山市">小山市</option>
+<option value="真岡市">真岡市</option>
+<option value="大田原市">大田原市</option>
+<option value="矢板市">矢板市</option>
+<option value="那須塩原市">那須塩原市</option>
+<option value="さくら市">さくら市</option>
+<option value="那須烏山市">那須烏山市</option>
+<option value="下野市">下野市</option>
+<option value="河内郡上三川町">河内郡上三川町</option>
+<option value="芳賀郡益子町">芳賀郡益子町</option>
+<option value="芳賀郡茂木町">芳賀郡茂木町</option>
+<option value="芳賀郡市貝町">芳賀郡市貝町</option>
+<option value="芳賀郡芳賀町">芳賀郡芳賀町</option>
+<option value="下都賀郡壬生町">下都賀郡壬生町</option>
+<option value="下都賀郡野木町">下都賀郡野木町</option>
+<option value="塩谷郡塩谷町">塩谷郡塩谷町</option>
+<option value="塩谷郡高根沢町">塩谷郡高根沢町</option>
+<option value="那須郡那須町">那須郡那須町</option>
+<option value="那須郡那珂川町">那須郡那珂川町</option>',
+    '群馬県' => '<option value="">市区郡</option>
+<option value="前橋市">前橋市</option>
+<option value="高崎市">高崎市</option>
+<option value="桐生市">桐生市</option>
+<option value="伊勢崎市">伊勢崎市</option>
+<option value="太田市">太田市</option>
+<option value="沼田市">沼田市</option>
+<option value="館林市">館林市</option>
+<option value="渋川市">渋川市</option>
+<option value="藤岡市">藤岡市</option>
+<option value="富岡市">富岡市</option>
+<option value="安中市">安中市</option>
+<option value="みどり市">みどり市</option>
+<option value="北群馬郡榛東村">北群馬郡榛東村</option>
+<option value="北群馬郡吉岡町">北群馬郡吉岡町</option>
+<option value="多野郡上野村">多野郡上野村</option>
+<option value="多野郡神流町">多野郡神流町</option>
+<option value="甘楽郡下仁田町">甘楽郡下仁田町</option>
+<option value="甘楽郡南牧村">甘楽郡南牧村</option>
+<option value="甘楽郡甘楽町">甘楽郡甘楽町</option>
+<option value="吾妻郡中之条町">吾妻郡中之条町</option>
+<option value="吾妻郡長野原町">吾妻郡長野原町</option>
+<option value="吾妻郡嬬恋村">吾妻郡嬬恋村</option>
+<option value="吾妻郡草津町">吾妻郡草津町</option>
+<option value="吾妻郡高山村">吾妻郡高山村</option>
+<option value="吾妻郡東吾妻町">吾妻郡東吾妻町</option>
+<option value="利根郡片品村">利根郡片品村</option>
+<option value="利根郡川場村">利根郡川場村</option>
+<option value="利根郡昭和村">利根郡昭和村</option>
+<option value="利根郡みなかみ町">利根郡みなかみ町</option>
+<option value="佐波郡玉村町">佐波郡玉村町</option>
+<option value="邑楽郡板倉町">邑楽郡板倉町</option>
+<option value="邑楽郡明和町">邑楽郡明和町</option>
+<option value="邑楽郡千代田町">邑楽郡千代田町</option>
+<option value="邑楽郡大泉町">邑楽郡大泉町</option>
+<option value="邑楽郡邑楽町">邑楽郡邑楽町</option>',
+    '埼玉県' => '<option value="">市区郡</option>
+    <option value="さいたま市西区">さいたま市西区</option>
+<option value="さいたま市北区">さいたま市北区</option>
+<option value="さいたま市大宮区">さいたま市大宮区</option>
+<option value="さいたま市見沼区">さいたま市見沼区</option>
+<option value="さいたま市中央区">さいたま市中央区</option>
+<option value="さいたま市桜区">さいたま市桜区</option>
+<option value="さいたま市浦和区">さいたま市浦和区</option>
+<option value="さいたま市南区">さいたま市南区</option>
+<option value="さいたま市緑区">さいたま市緑区</option>
+<option value="さいたま市岩槻区">さいたま市岩槻区</option>
+<option value="川越市">川越市</option>
+<option value="熊谷市">熊谷市</option>
+<option value="川口市">川口市</option>
+<option value="行田市">行田市</option>
+<option value="秩父市">秩父市</option>
+<option value="所沢市">所沢市</option>
+<option value="飯能市">飯能市</option>
+<option value="加須市">加須市</option>
+<option value="本庄市">本庄市</option>
+<option value="東松山市">東松山市</option>
+<option value="春日部市">春日部市</option>
+<option value="狭山市">狭山市</option>
+<option value="羽生市">羽生市</option>
+<option value="鴻巣市">鴻巣市</option>
+<option value="深谷市">深谷市</option>
+<option value="上尾市">上尾市</option>
+<option value="草加市">草加市</option>
+<option value="越谷市">越谷市</option>
+<option value="蕨市">蕨市</option>
+<option value="戸田市">戸田市</option>
+<option value="入間市">入間市</option>
+<option value="朝霞市">朝霞市</option>
+<option value="志木市">志木市</option>
+<option value="和光市">和光市</option>
+<option value="新座市">新座市</option>
+<option value="桶川市">桶川市</option>
+<option value="久喜市">久喜市</option>
+<option value="北本市">北本市</option>
+<option value="八潮市">八潮市</option>
+<option value="富士見市">富士見市</option>
+<option value="三郷市">三郷市</option>
+<option value="蓮田市">蓮田市</option>
+<option value="坂戸市">坂戸市</option>
+<option value="幸手市">幸手市</option>
+<option value="鶴ヶ島市">鶴ヶ島市</option>
+<option value="日高市">日高市</option>
+<option value="吉川市">吉川市</option>
+<option value="ふじみ野市">ふじみ野市</option>
+<option value="白岡市">白岡市</option>
+<option value="北足立郡伊奈町">北足立郡伊奈町</option>
+<option value="入間郡三芳町">入間郡三芳町</option>
+<option value="入間郡毛呂山町">入間郡毛呂山町</option>
+<option value="入間郡越生町">入間郡越生町</option>
+<option value="比企郡滑川町">比企郡滑川町</option>
+<option value="比企郡嵐山町">比企郡嵐山町</option>
+<option value="比企郡小川町">比企郡小川町</option>
+<option value="比企郡川島町">比企郡川島町</option>
+<option value="比企郡吉見町">比企郡吉見町</option>
+<option value="比企郡鳩山町">比企郡鳩山町</option>
+<option value="比企郡ときがわ町">比企郡ときがわ町</option>
+<option value="秩父郡横瀬町">秩父郡横瀬町</option>
+<option value="秩父郡皆野町">秩父郡皆野町</option>
+<option value="秩父郡長瀞町">秩父郡長瀞町</option>
+<option value="秩父郡小鹿野町">秩父郡小鹿野町</option>
+<option value="秩父郡東秩父村">秩父郡東秩父村</option>
+<option value="児玉郡美里町">児玉郡美里町</option>
+<option value="児玉郡神川町">児玉郡神川町</option>
+<option value="児玉郡上里町">児玉郡上里町</option>
+<option value="大里郡寄居町">大里郡寄居町</option>
+<option value="南埼玉郡宮代町">南埼玉郡宮代町</option>
+<option value="北葛飾郡杉戸町">北葛飾郡杉戸町</option>
+<option value="北葛飾郡松伏町">北葛飾郡松伏町</option>
+',
+    '千葉県' => '<option value="">市区郡</option>
+    <option value="千葉市中央区">千葉市中央区</option>
+    <option value="千葉市花見川区">千葉市花見川区</option>
+    <option value="千葉市稲毛区">千葉市稲毛区</option>
+    <option value="千葉市若葉区">千葉市若葉区</option>
+    <option value="千葉市緑区">千葉市緑区</option>
+    <option value="千葉市美浜区">千葉市美浜区</option>
+    <option value="銚子市">銚子市</option>
+    <option value="市川市">市川市</option>
+    <option value="船橋市">船橋市</option>
+    <option value="館山市">館山市</option>
+    <option value="木更津市">木更津市</option>
+    <option value="松戸市">松戸市</option>
+    <option value="野田市">野田市</option>
+    <option value="茂原市">茂原市</option>
+    <option value="成田市">成田市</option>
+    <option value="佐倉市">佐倉市</option>
+    <option value="東金市">東金市</option>
+    <option value="旭市">旭市</option>
+    <option value="習志野市">習志野市</option>
+    <option value="柏市">柏市</option>
+    <option value="勝浦市">勝浦市</option>
+    <option value="市原市">市原市</option>
+    <option value="流山市">流山市</option>
+    <option value="八千代市">八千代市</option>
+    <option value="我孫子市">我孫子市</option>
+    <option value="鴨川市">鴨川市</option>
+    <option value="鎌ケ谷市">鎌ケ谷市</option>
+    <option value="君津市">君津市</option>
+    <option value="富津市">富津市</option>
+    <option value="浦安市">浦安市</option>
+    <option value="四街道市">四街道市</option>
+    <option value="袖ケ浦市">袖ケ浦市</option>
+    <option value="八街市">八街市</option>
+    <option value="印西市">印西市</option>
+    <option value="白井市">白井市</option>
+    <option value="富里市">富里市</option>
+    <option value="南房総市">南房総市</option>
+    <option value="匝瑳市">匝瑳市</option>
+    <option value="香取市">香取市</option>
+    <option value="山武市">山武市</option>
+    <option value="いすみ市">いすみ市</option>
+    <option value="大網白里市">大網白里市</option>
+    <option value="印旛郡酒々井町">印旛郡酒々井町</option>
+    <option value="印旛郡栄町">印旛郡栄町</option>
+    <option value="香取郡神崎町">香取郡神崎町</option>
+    <option value="香取郡多古町">香取郡多古町</option>
+    <option value="香取郡東庄町">香取郡東庄町</option>
+    <option value="山武郡九十九里町">山武郡九十九里町</option>
+    <option value="山武郡芝山町">山武郡芝山町</option>
+    <option value="山武郡横芝光町">山武郡横芝光町</option>
+    <option value="長生郡一宮町">長生郡一宮町</option>
+    <option value="長生郡睦沢町">長生郡睦沢町</option>
+    <option value="長生郡長生村">長生郡長生村</option>
+    <option value="長生郡白子町">長生郡白子町</option>
+    <option value="長生郡長柄町">長生郡長柄町</option>
+    <option value="長生郡長南町">長生郡長南町</option>
+    <option value="夷隅郡大多喜町">夷隅郡大多喜町</option>
+    <option value="夷隅郡御宿町">夷隅郡御宿町</option>
+    <option value="安房郡鋸南町">安房郡鋸南町</option>',
+    '東京都' => '<option value="">市区郡</option>
+    <option value="千代田区">千代田区</option>
+    <option value="中央区">中央区</option>
+    <option value="港区">港区</option>
+    <option value="新宿区">新宿区</option>
+    <option value="文京区">文京区</option>
+    <option value="台東区">台東区</option>
+    <option value="墨田区">墨田区</option>
+    <option value="江東区">江東区</option>
+    <option value="品川区">品川区</option>
+    <option value="大田区">大田区</option>
+    <option value="世田谷区">世田谷区</option>
+    <option value="渋谷区">渋谷区</option>
+    <option value="中野区">中野区</option>
+    <option value="豊島区">豊島区</option>
+    <option value="北区">北区</option>
+    <option value="板橋区">板橋区</option>
+    <option value="練馬区">練馬区</option>
+    
+<option value="荒川区">荒川区</option>
+<option value="足立区">足立区</option>
+<option value="葛飾区">葛飾区</option>
+<option value="江戸川区">江戸川区</option>
+<option value="杉並区">杉並区</option>
+<option value="目黒区">目黒区</option>
+<option value="八王子市">八王子市</option>
+<option value="立川市">立川市</option>
+<option value="武蔵野市">武蔵野市</option>
+<option value="三鷹市">三鷹市</option>
+<option value="青梅市">青梅市</option>
+<option value="府中市">府中市</option>
+<option value="昭島市">昭島市</option>
+<option value="調布市">調布市</option>
+<option value="町田市">町田市</option>
+<option value="小金井市">小金井市</option>
+<option value="小平市">小平市</option>
+<option value="日野市">日野市</option>
+<option value="東村山市">東村山市</option>
+<option value="国分寺市">国分寺市</option>
+<option value="国立市">国立市</option>
+<option value="福生市">福生市</option>
+<option value="狛江市">狛江市</option>
+<option value="東大和市">東大和市</option>
+<option value="清瀬市">清瀬市</option>
+<option value="東久留米市">東久留米市</option>
+<option value="武蔵村山市">武蔵村山市</option>
+<option value="多摩市">多摩市</option>
+<option value="稲城市">稲城市</option>
+<option value="羽村市">羽村市</option>
+<option value="あきる野市">あきる野市</option>
+<option value="西東京市">西東京市</option>
+<option value="西多摩郡瑞穂町">西多摩郡瑞穂町</option>
+<option value="西多摩郡日の出町">西多摩郡日の出町</option>
+<option value="西多摩郡檜原村">西多摩郡檜原村</option>
+<option value="西多摩郡奥多摩町">西多摩郡奥多摩町</option>
+<option value="大島町">大島町</option>
+<option value="利島村">利島村</option>
+<option value="新島村">新島村</option>
+<option value="神津島村">神津島村</option>
+<option value="三宅島三宅村">三宅島三宅村</option>
+<option value="御蔵島村">御蔵島村</option>
+<option value="八丈島八丈町">八丈島八丈町</option>
+<option value="青ヶ島村">青ヶ島村</option>
+<option value="小笠原村">小笠原村</option>
+',
     '神奈川県' => '<option value="">市区郡</option>',
     '新潟県' => '<option value="">市区郡</option>',
     '富山県' => '<option value="">市区郡</option>',
@@ -478,14 +772,10 @@ $options = array(
     '沖縄県' => '<option value="">市区郡</option>'
 );
 
+$selectedValue = $_POST['selectedValue'];
 
-    $selectedValues = $_POST['selectedValue'];
-
-    if (array_key_exists($selectedValues, $options)) {
-
-        echo $options[$selectedValues];
-    } else {
-        echo '<option value="">町名</option>';
-    }
-
-
+if (array_key_exists($selectedValue, $options)) {
+    echo $options[$selectedValue];
+} else {
+    echo '<option value="">test</option>';
+}
