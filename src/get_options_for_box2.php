@@ -804,7 +804,6 @@ $options = array(
 <option value="新潟市江南区">新潟市江南区</option>
 <option value="新潟市秋葉区">新潟市秋葉区</option>
 <option value="新潟市南区">新潟市南区</option>
-
 <option value="新潟市西区">新潟市西区</option>
 <option value="新潟市西蒲区">新潟市西蒲区</option>
 <option value="長岡市">長岡市</option>
@@ -836,7 +835,22 @@ $options = array(
 <option value="刈羽郡刈羽村">刈羽郡刈羽村</option>
 <option value="岩船郡関川村">岩船郡関川村</option>
 <option value="岩船郡粟島浦村">岩船郡粟島浦村</option>',
-    '富山県' => '<option value="">市区郡</option>',
+    '富山県' => '<option value="">市区郡</option>
+<option value="富山市">富山市</option>
+<option value="高岡市">高岡市</option>
+<option value="魚津市">魚津市</option>
+<option value="氷見市">氷見市</option>
+<option value="滑川市">滑川市</option>
+<option value="黒部市">黒部市</option>
+<option value="砺波市">砺波市</option>
+<option value="小矢部市">小矢部市</option>
+<option value="南砺市">南砺市</option>
+<option value="射水市">射水市</option>
+<option value="中新川郡舟橋村">中新川郡舟橋村</option>
+<option value="中新川郡上市町">中新川郡上市町</option>
+<option value="中新川郡立山町">中新川郡立山町</option>
+<option value="下新川郡入善町">下新川郡入善町</option>
+<option value="下新川郡朝日町">下新川郡朝日町</option>',
     '石川県' => '<option value="">市区郡</option>',
     '福井県' => '<option value="">市区郡</option>',
     '山梨県' => '<option value="">市区郡</option>',
