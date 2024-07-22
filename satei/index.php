@@ -1,17 +1,24 @@
 <?php
 
 session_start();
+
+$物件の種別 = '';
+$selectBox1 = '';
+$selectBox2 = '';
+$selectBox3 = '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  $物件の種別 = $_POST['物件の種別'];
-  $selectBox1 = $_POST['selectBox1'];
-  $selectBox2 = $_POST['selectBox2'];
-  $selectBox3 = $_POST['selectBox3'];
+  $物件の種別 = isset($_POST['物件の種別']) ? htmlspecialchars($_POST['物件の種別']) : '';
+  $selectBox1 = isset($_POST['selectBox1']) ? htmlspecialchars($_POST['selectBox1']) : '';
+  $selectBox2 = isset($_POST['selectBox2']) ? htmlspecialchars($_POST['selectBox2']) : '';
+  $selectBox3 = isset($_POST['selectBox3']) ? htmlspecialchars($_POST['selectBox3']) : '';
+
+  // Store sanitized data in session variables
   $_SESSION['物件の種別'] = $物件の種別;
   $_SESSION['selectBox1'] = $selectBox1;
   $_SESSION['selectBox2'] = $selectBox2;
   $_SESSION['selectBox3'] = $selectBox3;
-  
 }
 ?>
 
@@ -298,7 +305,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <ul class="grid gap-4">
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="現況" value="ご自身またはご家族・親戚が居住中" id="居住中" /><label for="居住中 ">ご自身またはご家族・親族が居住中</label>
+                  <input class="bg-gray-300" type="radio" name="現況" value="ご自身またはご家族・親戚が居住中" id="居住中" />
+                  <label for="居住中">ご自身またはご家族・親族が居住中</label>
                 </li>
                 <li class="flex gap-4">
                   <input class="bg-gray-300" type="radio" name="現況" value="賃貸中" id="賃貸中" /><label for="賃貸中">賃貸中</label>
@@ -405,7 +413,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="bg-gray-500 p-1 text-white">任意</p>
                 <p class="font-bold">希望する連絡方法</p>
               </div>
-              <div class="flex gap-4"> 
+              <div class="flex gap-4">
                 <div class="flex gap-2">
                   <input class="bg-gray-300" type="checkbox" name="preferredContact" value="電話" id="電話" /><label for="電話">電話</label>
                 </div>

@@ -7,11 +7,27 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
+// Database configuration
+$servername = "localhost";
+$username = "root";
+$password = ""; 
+$dbname = "real_estate";
+$port = 3307; 
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 session_start();
 
     // Collect and sanitize form data 
     $物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
     $物件の所在地 = htmlspecialchars($_SESSION['selectBox1']) . htmlspecialchars($_SESSION['selectBox2']) . htmlspecialchars($_SESSION['selectBox3']);
+    $email = htmlspecialchars($_POST['email']);
     $floorArea = htmlspecialchars($_POST['floorArea']);
     $yearBuilt = htmlspecialchars($_POST['yearBuilt']);
     $currentState = htmlspecialchars($_POST['currentState']);
@@ -20,7 +36,6 @@ session_start();
     $name = htmlspecialchars($_POST['name']);
     $phoneticName = htmlspecialchars($_POST['phoneticName']);
     $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
-    $email = htmlspecialchars($_POST['email']);
     $preferredContact = htmlspecialchars($_POST['preferredContact']);
     $preferredContact1 = htmlspecialchars($_POST['preferredContact1']);
 
@@ -105,8 +120,26 @@ session_start();
             </html>
         ";
 
-        $mail->send();
-        header("Location: success.php");
-        exit();
+        // $mail->send();
+        // header("Location: success.php");
+        // exit();
+         // Send email
+    if ($mail->send()) {
+        // Insert data into the database
+        $stmt = $conn->prepare("INSERT INTO inquiries (type_of_property, location, email) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $物件の種別, $物件の所在地, $email);
+
+        if ($stmt->execute()) {
+            header("Location: success.php");
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+        $stmt->close();
+    } else {
+        echo "Failed to send email.";
+    }
+
+    // Close database connection
+    $conn->close();
 }
 ?>

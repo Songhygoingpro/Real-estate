@@ -38,6 +38,6 @@
 <body>
     <h1>Form Submission Successful!</h1>
     <p>Thank you for your submission.</p>
-    <a href="index.php" class="btn">Back to Home</a>
+    <a href="../baikyaku/index.html" class="btn">Back to Home</a>
 </body>
 </html>
