@@ -1480,11 +1480,137 @@ $options = array(
     <option value="隠岐郡知夫村">隠岐郡知夫村</option>
     <option value="隠岐郡隠岐の島町">隠岐郡隠岐の島町</option>
 ',
-    '岡山県' => '<option value="">市区郡</option>',
-    '広島県' => '<option value="">市区郡</option>',
-    '山口県' => '<option value="">市区郡</option>',
-    '徳島県' => '<option value="">市区郡</option>',
-    '香川県' => '<option value="">市区郡</option>',
+    '岡山県' => '<option value="">市区郡</option>
+    <option value="岡山市北区">岡山市北区</option>
+    <option value="岡山市中区">岡山市中区</option>
+    <option value="岡山市東区">岡山市東区</option>
+    <option value="岡山市南区">岡山市南区</option>
+    <option value="倉敷市">倉敷市</option>
+    <option value="津山市">津山市</option>
+    <option value="玉野市">玉野市</option>
+    <option value="笠岡市">笠岡市</option>
+    <option value="井原市">井原市</option>
+    <option value="総社市">総社市</option>
+    <option value="高梁市">高梁市</option>
+    <option value="新見市">新見市</option>
+    <option value="備前市">備前市</option>
+    <option value="瀬戸内市">瀬戸内市</option>
+    <option value="赤磐市">赤磐市</option>
+    <option value="真庭市">真庭市</option>
+    <option value="美作市">美作市</option>
+    <option value="浅口市">浅口市</option>
+    <option value="和気郡和気町">和気郡和気町</option>
+    <option value="都窪郡早島町">都窪郡早島町</option>
+    <option value="浅口郡里庄町">浅口郡里庄町</option>
+    <option value="小田郡矢掛町">小田郡矢掛町</option>
+    <option value="真庭郡新庄村">真庭郡新庄村</option>
+    <option value="苫田郡鏡野町">苫田郡鏡野町</option>
+    <option value="勝田郡勝央町">勝田郡勝央町</option>
+    <option value="勝田郡奈義町">勝田郡奈義町</option>
+    <option value="英田郡西粟倉村">英田郡西粟倉村</option>
+    <option value="久米郡久米南町">久米郡久米南町</option>
+    <option value="久米郡美咲町">久米郡美咲町</option>
+    <option value="加賀郡吉備中央町">加賀郡吉備中央町</option>
+',
+    '広島県' => '<option value="">市区郡</option>
+    <option value="広島市中区">広島市中区</option>
+    <option value="広島市東区">広島市東区</option>
+    <option value="広島市南区">広島市南区</option>
+    <option value="広島市西区">広島市西区</option>
+    <option value="広島市安佐南区">広島市安佐南区</option>
+    <option value="広島市安佐北区">広島市安佐北区</option>
+    <option value="広島市安芸区">広島市安芸区</option>
+    <option value="広島市佐伯区">広島市佐伯区</option>
+    <option value="呉市">呉市</option>
+    <option value="竹原市">竹原市</option>
+    <option value="三原市">三原市</option>
+    
+<option value="尾道市">尾道市</option>
+<option value="福山市">福山市</option>
+<option value="府中市">府中市</option>
+<option value="三次市">三次市</option>
+<option value="庄原市">庄原市</option>
+<option value="大竹市">大竹市</option>
+<option value="東広島市">東広島市</option>
+<option value="廿日市市">廿日市市</option>
+<option value="安芸高田市">安芸高田市</option>
+<option value="江田島市">江田島市</option>
+<option value="安芸郡府中町">安芸郡府中町</option>
+<option value="安芸郡海田町">安芸郡海田町</option>
+<option value="安芸郡熊野町">安芸郡熊野町</option>
+<option value="安芸郡坂町">安芸郡坂町</option>
+<option value="山県郡安芸太田町">山県郡安芸太田町</option>
+<option value="山県郡北広島町">山県郡北広島町</option>
+<option value="豊田郡大崎上島町">豊田郡大崎上島町</option>
+<option value="世羅郡世羅町">世羅郡世羅町</option>
+<option value="神石郡神石高原町">神石郡神石高原町</option>
+',
+    '山口県' => '<option value="">市区郡</option>
+    <option value="下関市">下関市</option>
+<option value="宇部市">宇部市</option>
+<option value="山口市">山口市</option>
+<option value="萩市">萩市</option>
+<option value="防府市">防府市</option>
+<option value="下松市">下松市</option>
+<option value="岩国市">岩国市</option>
+<option value="光市">光市</option>
+<option value="長門市">長門市</option>
+<option value="柳井市">柳井市</option>
+<option value="美祢市">美祢市</option>
+<option value="周南市">周南市</option>
+<option value="山陽小野田市">山陽小野田市</option>
+<option value="大島郡周防大島町">大島郡周防大島町</option>
+<option value="玖珂郡和木町">玖珂郡和木町</option>
+<option value="熊毛郡上関町">熊毛郡上関町</option>
+<option value="熊毛郡田布施町">熊毛郡田布施町</option>
+<option value="熊毛郡平生町">熊毛郡平生町</option>
+<option value="阿武郡阿武町">阿武郡阿武町</option>
+',
+    '徳島県' => '<option value="">市区郡</option>
+    <option value="徳島市">徳島市</option>
+<option value="鳴門市">鳴門市</option>
+<option value="小松島市">小松島市</option>
+<option value="阿南市">阿南市</option>
+<option value="吉野川市">吉野川市</option>
+<option value="阿波市">阿波市</option>
+<option value="美馬市">美馬市</option>
+<option value="三好市">三好市</option>
+<option value="勝浦郡勝浦町">勝浦郡勝浦町</option>
+<option value="勝浦郡上勝町">勝浦郡上勝町</option>
+<option value="名東郡佐那河内村">名東郡佐那河内村</option>
+<option value="名西郡石井町">名西郡石井町</option>
+<option value="名西郡神山町">名西郡神山町</option>
+<option value="那賀郡那賀町">那賀郡那賀町</option>
+<option value="海部郡牟岐町">海部郡牟岐町</option>
+<option value="海部郡美波町">海部郡美波町</option>
+<option value="海部郡海陽町">海部郡海陽町</option>
+<option value="板野郡松茂町">板野郡松茂町</option>
+<option value="板野郡北島町">板野郡北島町</option>
+<option value="板野郡藍住町">板野郡藍住町</option>
+<option value="板野郡板野町">板野郡板野町</option>
+<option value="板野郡上板町">板野郡上板町</option>
+<option value="美馬郡つるぎ町">美馬郡つるぎ町</option>
+<option value="三好郡東みよし町">三好郡東みよし町</option>
+',
+    '香川県' => '<option value="">市区郡</option>
+    <option value="高松市">高松市</option>
+<option value="丸亀市">丸亀市</option>
+<option value="坂出市">坂出市</option>
+<option value="善通寺市">善通寺市</option>
+<option value="観音寺市">観音寺市</option>
+<option value="さぬき市">さぬき市</option>
+<option value="東かがわ市">東かがわ市</option>
+<option value="三豊市">三豊市</option>
+<option value="小豆郡土庄町">小豆郡土庄町</option>
+<option value="小豆郡小豆島町">小豆郡小豆島町</option>
+<option value="木田郡三木町">木田郡三木町</option>
+<option value="香川郡直島町">香川郡直島町</option>
+<option value="綾歌郡宇多津町">綾歌郡宇多津町</option>
+<option value="綾歌郡綾川町">綾歌郡綾川町</option>
+<option value="仲多度郡琴平町">仲多度郡琴平町</option>
+<option value="仲多度郡多度津町">仲多度郡多度津町</option>
+<option value="仲多度郡まんのう町">仲多度郡まんのう町</option>
+',
     '愛媛県' => '<option value="">市区郡</option>',
     '高知県' => '<option value="">市区郡</option>',
     '福岡県' => '<option value="">市区郡</option>',
