@@ -381,6 +381,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="grid gap-4">
                 <p class="text-[#5D0000]">番号の間違いがないようご確認ください</p>
                 <p>例: 0312340000</p>
+                <input type="text" name="phone_number" class="w-full bg-gray-300" required >
                 <div class="flex gap-4">
                   <p>ご希望の連絡時間帯</p>
                   <div class="select w-[12rem] bg-gray-300">
