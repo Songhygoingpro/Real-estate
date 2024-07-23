@@ -376,6 +376,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
               <div class="flex items-center gap-4">
                 <p class="bg-red-500 p-1 text-white">必須</p>
+                <p class="font-bold">性別</p>
+              </div>
+              <div class="grid gap-4">
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="男性"><label for="男性">男性</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="女性"><label for="女性">女性</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="その他"><label for="その他">その他</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="回答しない"><label for="回答しない">回答しない</label></div>
+              </div>
+            </div>
+            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+              <div class="flex items-center gap-4">
+                <p class="bg-red-500 p-1 text-white">必須</p>
                 <p class="font-bold">電話番号</p>
               </div>
               <div class="grid gap-4">

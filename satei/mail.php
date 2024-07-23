@@ -27,6 +27,7 @@ session_start();
     // Collect and sanitize form data 
     $物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
     $物件の所在地 = htmlspecialchars($_SESSION['selectBox1']) . htmlspecialchars($_SESSION['selectBox2']) . htmlspecialchars($_SESSION['selectBox3']);
+    $間取り = htmlspecialchars($_SESSION['間取り']);
     $email = htmlspecialchars($_POST['email']);
     $floorArea = htmlspecialchars($_POST['floorArea']);
     $yearBuilt = htmlspecialchars($_POST['yearBuilt']);
@@ -61,7 +62,7 @@ session_start();
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Property Inquiry';
+        $mail->Subject = 'お問い合わせ｜売却査定';
         $mail->Body    = "
             <html>
             <head>
@@ -85,6 +86,9 @@ session_start();
                 </div>
                 <div class='property-info'>
                     <strong>物件の所在地:</strong> $物件の所在地<br>
+                </div>
+                <div class='property-info'>
+                    <strong>間取り:</strong> $間取り<br>
                 </div>
                 <div class='property-info'>
                     <strong>Floor Area:</strong> $floorArea<br>
