@@ -190,7 +190,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="grid gap-4">
                 <div class="flex items-center gap-4">
                   <div class="select w-[15rem] bg-gray-300">
-                    <select name="専有面積">
+                    <select name="築年">
                       <option value="">--選択してください--</option>
                       <option value="2024">2024年(令和6年) 今年</option>
                       <option value="2023">2023年(令和5年) 築1年</option>
@@ -301,18 +301,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
               <div class="flex items-center gap-4">
                 <p class="bg-red-500 p-1 text-white">必須</p>
-                <p class="font-bold">現況</p>
+                <p class="font-bold">現状</p>
               </div>
               <ul class="grid gap-4">
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="現況" value="ご自身またはご家族・親戚が居住中" id="居住中" />
+                  <input class="bg-gray-300" type="radio" name="現状" value="ご自身またはご家族・親戚が居住中" id="居住中" />
                   <label for="居住中">ご自身またはご家族・親族が居住中</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="現況" value="賃貸中" id="賃貸中" /><label for="賃貸中">賃貸中</label>
+                  <input class="bg-gray-300" type="radio" name="現状" value="賃貸中" id="賃貸中" /><label for="賃貸中">賃貸中</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="現況" value="空き家" id="空き家" /><label for="空き家">空き家</label>
+                  <input class="bg-gray-300" type="radio" name="現状" value="空き家" id="空き家" /><label for="空き家">空き家</label>
                 </li>
               </ul>
             </div>
@@ -323,22 +323,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <ul class="grid gap-4">
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="名義人" id="名義人" /><label for="名義人">名義人</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="名義人" id="名義人" /><label for="名義人">名義人</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="名義人に売却の同意を得た家族、親族" id="配偶者" /><label for="配偶者">名義人に売却の同意を得た家族、親族</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="名義人に売却の同意を得た家族、親族" id="配偶者" /><label for="配偶者">名義人に売却の同意を得た家族、親族</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="共有名義" id="共有名義" /><label for="共有名義">共有名義</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="共有名義" id="共有名義" /><label for="共有名義">共有名義</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="会社名義" id="会社名義" /><label for="会社名義">会社名義</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="会社名義" id="会社名義" /><label for="会社名義">会社名義</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方" id="代理人" /><label for="代理人">弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方" id="代理人" /><label for="代理人">弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="関係" value="不動産業者" id="不動産業者" /><label for="不動産業者">不動産業者</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="不動産業者" id="不動産業者" /><label for="不動産業者">不動産業者</label>
                 </li>
               </ul>
             </div>
@@ -348,7 +348,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="font-bold">住宅ローン残高(残債)</p>
               </div>
               <div class="flex items-center gap-4">
-                <p>約</p><input type="text" name="残債" class="w-full bg-gray-300">
+                <p>約</p><input type="text" name="住宅ローン残高" class="w-full bg-gray-300">
                 <p class="w-[3rem]">万円</p>
               </div>
             </div>
@@ -379,10 +379,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="font-bold">性別</p>
               </div>
               <div class="grid gap-4">
-                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="男性"><label for="男性">男性</label></div>
-                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="女性"><label for="女性">女性</label></div>
-                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="その他"><label for="その他">その他</label></div>
-                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="gender" id="回答しない"><label for="回答しない">回答しない</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="男性" value="男性"><label for="男性">男性</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="女性" value="女性"><label for="女性">女性</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="その他" value="その他"><label for="その他">その他</label></div>
+                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="回答しない" value="回答しない"><label for="回答しない">回答しない</label></div>
               </div>
             </div>
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
@@ -393,11 +393,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="grid gap-4">
                 <p class="text-[#5D0000]">番号の間違いがないようご確認ください</p>
                 <p>例: 0312340000</p>
-                <input type="text" name="phone_number" class="w-full bg-gray-300" required >
+                <input type="text" name="電話番号" class="w-full bg-gray-300" required >
                 <div class="flex gap-4">
                   <p>ご希望の連絡時間帯</p>
                   <div class="select w-[12rem] bg-gray-300">
-                    <select name="電話番号">
+                    <select name="">
                       <option value="1">指定なし</option>
                       <option value="2">平日午前中</option>
                       <option value="3">平日午後</option>
@@ -418,7 +418,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="grid gap-4">
                 <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
                 <p>例：baikyaku_t@realestate.co.jp PC、携帯どちらも可</p>
-                <input type="email" name="email" class="p-[10px] w-full bg-gray-300" required />
+                <input type="email" name="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
               </div>
             </div>
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
@@ -428,10 +428,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <div class="flex gap-4">
                 <div class="flex gap-2">
-                  <input class="bg-gray-300" type="checkbox" name="preferredContact" value="電話" id="電話" /><label for="電話">電話</label>
+                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法1" value="電話" id="電話" /><label for="電話">電話</label>
                 </div>
                 <div class="flex gap-2">
-                  <input class="bg-gray-300" type="checkbox" name="preferredContact1" value="メール" id="メール" /><label for="メール">メール</label>
+                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法2" value="メール" id="メール" /><label for="メール">メール</label>
                 </div>
               </div>
             </div>

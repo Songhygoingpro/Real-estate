@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Successful</title>
+    <title>フォームが送信されました。</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
-    
         body {
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #EFF0F1;
             text-align: center;
-            padding: 50px;
+            font-family: "Inter", sans-serif;
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+
         .btn {
-            padding: 10px 20px;
-            background-color: #007bff;
+            padding: 1rem 2rem;
+            background-color: #5DADFF;
             color: #fff;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
+
 <body>
-    <h1>Form Submission Successful!</h1>
-    <p>Thank you for your submission.</p>
-    <a href="../baikyaku/index.html" class="btn">Back to Home</a>
+    <main>
+        <section class="flex justify-center items-center p-4 pt-8">
+            <div class="flex flex-col justify-center items-center gap-8 bg-[#DBDEDF] px-4 py-8 md:p-8 container" data-aos="fadeUp">
+                <img src="../assets/img/successful-submission-image.png" class="max-w-16 w-full h-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">フォームが送信されました。</h1>
+                <p>ご提出いただきありがとうございます。</p>
+                <a href="../baikyaku/index.html" class="btn font-bold">ホームに戻る</a>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 1000,
+      offset: 0,
+      once: true,
+    });
+  </script>
 </body>
 </html>

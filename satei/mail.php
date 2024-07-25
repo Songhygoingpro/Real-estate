@@ -6,40 +6,27 @@ use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
-
-// Database configuration
-$servername = "localhost";
-$username = "root";
-$password = ""; 
-$dbname = "real_estate";
-$port = 3307; 
-
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require '../config/db_config.php';
 
 session_start();
 
     // Collect and sanitize form data 
     $物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
     $物件の所在地 = htmlspecialchars($_SESSION['selectBox1']) . htmlspecialchars($_SESSION['selectBox2']) . htmlspecialchars($_SESSION['selectBox3']);
-    $間取り = htmlspecialchars($_SESSION['間取り']);
-    $email = htmlspecialchars($_POST['email']);
-    $floorArea = htmlspecialchars($_POST['floorArea']);
-    $yearBuilt = htmlspecialchars($_POST['yearBuilt']);
-    $currentState = htmlspecialchars($_POST['currentState']);
-    $relationship = htmlspecialchars($_POST['relationship']);
-    $loanBalance = htmlspecialchars($_POST['loanBalance']);
-    $name = htmlspecialchars($_POST['name']);
-    $phoneticName = htmlspecialchars($_POST['phoneticName']);
-    $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
-    $preferredContact = htmlspecialchars($_POST['preferredContact']);
-    $preferredContact1 = htmlspecialchars($_POST['preferredContact1']);
-
+    $間取り = htmlspecialchars($_POST['間取り']);
+    $専有面積 = htmlspecialchars($_POST['専有面積']);
+    $築年 = htmlspecialchars($_POST['築年']);
+    $現状 = htmlspecialchars($_POST['現状']);
+    $あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係']);
+    $住宅ローン残高    = htmlspecialchars($_POST['住宅ローン残高']);
+    $お名前 = htmlspecialchars($_POST['お名前']);
+    $フリガナ = htmlspecialchars($_POST['フリガナ']);
+    $性別 = htmlspecialchars($_POST['性別']);
+    $電話番号= htmlspecialchars($_POST['電話番号']);
+    $メールアドレス = htmlspecialchars($_POST['メールアドレス']);
+    $希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1']) : '';
+    $希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2']) : '';
+   
     // Prepare the email content
 
     if (isset($_POST["send"])) {
@@ -56,12 +43,13 @@ session_start();
         $mail->Port = 465; // TCP port to connect to
 
         //Recipients
-        $mail->setFrom( $_POST["email"], $_POST["name"]); // Sender Email and name
+        $mail->setFrom( $_POST["メールアドレス"], $_POST["お名前"]); // Sender Email and name
         $mail->addAddress('songhy994@gmail.com');     //Add a recipient email  
-        $mail->addReplyTo($_POST["email"], $_POST["name"]); // reply to sender email
+        $mail->addReplyTo($_POST["メールアドレス"], $_POST["お名前"]); // reply to sender email
 
         //Content
         $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
         $mail->Subject = 'お問い合わせ｜売却査定';
         $mail->Body    = "
             <html>
@@ -91,47 +79,48 @@ session_start();
                     <strong>間取り:</strong> $間取り<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Floor Area:</strong> $floorArea<br>
+                    <strong>専有面積 :</strong> $専有面積 <br>
                 </div>
                 <div class='property-info'>
-                    <strong>Year Built:</strong> $yearBuilt<br>
+                    <strong>築年:</strong> $築年<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Current State:</strong> $currentState<br>
+                    <strong>現状:</strong> $現状<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Relationship to Property:</strong> $relationship<br>
+                    <strong>あなたと売却物件との関係:</strong> $あなたと売却物件との関係<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Loan Balance:</strong> $loanBalance<br>
+                    <strong>住宅ローン残高:</strong> $住宅ローン残高<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Name:</strong> $name<br>
+                    <strong>お名前:</strong> $お名前<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Phonetic Name:</strong> $phoneticName<br>
+                    <strong>フリガナ:</strong> $フリガナ<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Phone Number:</strong> $phoneNumber<br>
+                    <strong>性別:</strong> $性別<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Email:</strong> $email<br>
+                    <strong>電話番号:</strong> $電話番号<br>
                 </div>
                 <div class='property-info'>
-                    <strong>Preferred Contact Method:</strong> $preferredContact$preferredContact1<br>
+                    <strong>メールアドレス:</strong> $メールアドレス<br>
+                </div>
+                <div class='property-info'>
+                    <strong>希望する連絡方法:</strong> $希望する連絡方法1$希望する連絡方法2<br>
                 </div>
             </body>
             </html>
         ";
 
-        // $mail->send();
-        // header("Location: success.php");
-        // exit();
+        
          // Send email
     if ($mail->send()) {
         // Insert data into the database
-        $stmt = $conn->prepare("INSERT INTO inquiries (type_of_property, location, email) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $物件の種別, $物件の所在地, $email);
+        $stmt = $conn->prepare("INSERT INTO inquiries (property_type, address, name, gender, phone_number, email_address) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssss", $物件の種別, $物件の所在地 ,$お名前,$性別 ,$電話番号, $メールアドレス);
 
         if ($stmt->execute()) {
             header("Location: success.php");
@@ -143,7 +132,6 @@ session_start();
         echo "Failed to send email.";
     }
 
-    // Close database connection
     $conn->close();
 }
 ?>
