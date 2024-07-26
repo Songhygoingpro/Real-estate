@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-body {
-  margin: 0;
-  background-color: #EFF0F1;
-  font-family: "Inter", sans-serif;
-}
-
 
 /*navigation drawer button*/
 #burger {

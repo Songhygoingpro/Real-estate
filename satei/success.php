@@ -9,10 +9,17 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
+
+@font-face {
+    font-family: 'Meiryo';
+    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
         body {
             background-color: #EFF0F1;
             text-align: center;
-            font-family: "Inter", sans-serif;
+            font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
         }
 
         .btn {

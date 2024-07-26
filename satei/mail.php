@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -10,55 +11,64 @@ require '../config/db_config.php';
 
 session_start();
 
-    // Collect and sanitize form data 
-    $物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
-    $物件の所在地 = htmlspecialchars($_SESSION['selectBox1']) . htmlspecialchars($_SESSION['selectBox2']) . htmlspecialchars($_SESSION['selectBox3']);
-    $間取り = htmlspecialchars($_POST['間取り']);
-    $専有面積 = htmlspecialchars($_POST['専有面積']);
-    $築年 = htmlspecialchars($_POST['築年']);
-    $現状 = htmlspecialchars($_POST['現状']);
-    $あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係']);
-    $住宅ローン残高    = htmlspecialchars($_POST['住宅ローン残高']);
-    $お名前 = htmlspecialchars($_POST['お名前']);
-    $フリガナ = htmlspecialchars($_POST['フリガナ']);
-    $性別 = htmlspecialchars($_POST['性別']);
-    $電話番号= htmlspecialchars($_POST['電話番号']);
-    $メールアドレス = htmlspecialchars($_POST['メールアドレス']);
-    $希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1']) : '';
-    $希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2']) : '';
-   
-    // Prepare the email content
+// Collect and sanitize form data 
+$物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
+$物件の所在地 = htmlspecialchars($_SESSION['prefecture']) . htmlspecialchars($_SESSION['city']) . htmlspecialchars($_SESSION['town']);
+$丁目 = htmlspecialchars($_POST['丁目']);
+$マンション名 = htmlspecialchars($_POST['マンション名']);
+$号室 = htmlspecialchars($_POST['号室']);
+$間取り = htmlspecialchars($_POST['間取り']);
+$専有面積 = htmlspecialchars($_POST['専有面積']);
+$築年 = htmlspecialchars($_POST['築年']);
+$現状 = htmlspecialchars($_POST['現状']);
+$あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係']);
+$住宅ローン残高    = htmlspecialchars($_POST['住宅ローン残高']);
+$お名前 = htmlspecialchars($_POST['お名前']);
+$フリガナ = htmlspecialchars($_POST['フリガナ']);
+$性別 = htmlspecialchars($_POST['性別']);
+$電話番号 = htmlspecialchars($_POST['電話番号']);
+$ご希望の連絡時間帯 = htmlspecialchars($_POST['ご希望の連絡時間帯']);
+$メールアドレス = htmlspecialchars($_POST['メールアドレス']);
+$希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1']) : '';
+$希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2']) : '';
 
-    if (isset($_POST["send"])) {
+// Prepare the email content
+
+if (isset($_POST["send"])) {
     $mail = new PHPMailer(true);
 
+    //Server settings
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';  // Your SMTP server
+    $mail->SMTPAuth = true;
+    $mail->Username = 'songhy994@gmail.com'; // SMTP username
+    $mail->Password = 'synawxawlelpzreg'; // SMTP password
+    $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465; // TCP port to connect to
 
-        //Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';  // Your SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = 'songhy994@gmail.com'; // SMTP username
-        $mail->Password = 'synawxawlelpzreg'; // SMTP password
-        $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 465; // TCP port to connect to
+    //Recipients
+    $mail->setFrom($_POST["メールアドレス"], $_POST["お名前"]); // Sender Email and name
+    $mail->addAddress('songhy994@gmail.com');     //Add a recipient email  
+    $mail->addReplyTo($_POST["メールアドレス"], $_POST["お名前"]); // reply to sender email
 
-        //Recipients
-        $mail->setFrom( $_POST["メールアドレス"], $_POST["お名前"]); // Sender Email and name
-        $mail->addAddress('songhy994@gmail.com');     //Add a recipient email  
-        $mail->addReplyTo($_POST["メールアドレス"], $_POST["お名前"]); // reply to sender email
-
-        //Content
-        $mail->isHTML(true);
-        $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'お問い合わせ｜売却査定';
-        $mail->Body    = "
+    //Content
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = 'お問い合わせ｜売却査定';
+    $mail->Body    = "
             <html>
             <head>
                 <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        line-height: 1.6;
-                    }
+                    @font-face {
+    font-family: 'Meiryo';
+    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+      body {
+        font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
+      }
                     .property-info {
                         margin-bottom: 10px;
                     }
@@ -73,7 +83,7 @@ session_start();
                     <strong>物件の種別:</strong> $物件の種別<br>
                 </div>
                 <div class='property-info'>
-                    <strong>物件の所在地:</strong> $物件の所在地<br>
+                    <strong>物件の所在地:</strong> $物件の所在地 $丁目$マンション名$号室<br>
                 </div>
                 <div class='property-info'>
                     <strong>間取り:</strong> $間取り<br>
@@ -105,6 +115,9 @@ session_start();
                 <div class='property-info'>
                     <strong>電話番号:</strong> $電話番号<br>
                 </div>
+                 <div class='property-info'>
+                    <strong>ご希望の連絡時間帯:</strong> $ご希望の連絡時間帯<br>
+                </div>
                 <div class='property-info'>
                     <strong>メールアドレス:</strong> $メールアドレス<br>
                 </div>
@@ -115,12 +128,12 @@ session_start();
             </html>
         ";
 
-        
-         // Send email
+
+    // Send email
     if ($mail->send()) {
         // Insert data into the database
         $stmt = $conn->prepare("INSERT INTO inquiries (property_type, address, name, gender, phone_number, email_address) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $物件の種別, $物件の所在地 ,$お名前,$性別 ,$電話番号, $メールアドレス);
+        $stmt->bind_param("ssssss", $物件の種別, $物件の所在地, $お名前, $性別, $電話番号, $メールアドレス);
 
         if ($stmt->execute()) {
             header("Location: success.php");
@@ -134,4 +147,3 @@ session_start();
 
     $conn->close();
 }
-?>

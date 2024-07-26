@@ -12,10 +12,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>不動産売却</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      @font-face {
+    font-family: 'Meiryo';
+    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
       }
     </style>
   </head>
@@ -140,8 +145,9 @@
                 <div class="grid md:flex gap-4">
                   <div class="select w-[10rem] bg-white">
                     <select
-                      name="selectBox1"
-                      id="selectBox1"
+                      name="prefecture"
+                      id="prefecture"
+                      required
                     >
                       <option value>都道府県</option>
                       <option value="北海道">北海道</option>
@@ -195,16 +201,18 @@
                   </div>
                   <div class="select w-[10rem] bg-white">
                     <select
-                      id="selectBox2"
-                      name="selectBox2"
+                      id="city"
+                      name="city"
+                      required
                     >
                       <option value="">市区郡</option>
                     </select>
                   </div>
                   <div class="select w-[10rem] bg-white">
                     <select
-                      id="selectBox3"
-                      name="selectBox3"
+                      id="town"
+                      name="town"
+                      required
                     >
                       <option value="">町名</option>
                     </select>
@@ -418,27 +426,27 @@
       }
 
       $(document).ready(function () {
-    $('#selectBox1').change(function () {
+    $('#prefecture').change(function () {
         var selectedValue = $(this).val();
         $.ajax({
             url: '../src/get_options_for_box2.php',
             type: 'POST',
             data: { selectedValue: selectedValue },
             success: function (response) {
-                $('#selectBox2').html(response);
+                $('#city').html(response);
             }
         });
     });
 
-    $('#selectBox2').change(function () {
+    $('#city').change(function () {
         var selectedValue = $(this).val();
-        var parentValue = $('#selectBox1').val();
+        var parentValue = $('#prefecture').val();
         $.ajax({
             url: '../src/get_options_for_box3.php',
             type: 'POST',
             data: { selectedValue: selectedValue, parentValue: parentValue },
             success: function (response) {
-                $('#selectBox3').html(response);
+                $('#town').html(response);
             }
         });
     });
