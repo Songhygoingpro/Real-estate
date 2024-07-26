@@ -1982,5 +1982,5 @@ $selectedValue = $_POST['selectedValue'];
 if (array_key_exists($selectedValue, $options)) {
     echo $options[$selectedValue];
 } else {
-    echo '<option value="">test</option>';
+    echo '<option value="">市区郡</option>';
 }
