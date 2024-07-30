@@ -79,10 +79,11 @@
   .select::after {
     content: "\25BC";
     position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    right: 0.6rem;
+    top: 0.6rem;
     pointer-events: none; 
     color: black;
+    font-size: 0.85rem;
   }
 
   /*custom aos*/

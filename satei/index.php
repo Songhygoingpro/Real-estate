@@ -424,7 +424,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="grid gap-4">
                   <div class="grid gap-4">
                     <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
-                    <p>例：baikyaku_t@realestate.co.jp PC、携帯どちらも可</p>
+                    <p>例：baikyaku_t@realestate.co.jp <br class="sm:hidden block"/>PC、携帯どちらも可</p>
                     <input type="email" name="メールアドレス" id="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
                   </div>
                   <div class="grid gap-4">
