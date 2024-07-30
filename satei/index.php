@@ -35,16 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>査定</title>
   <style>
-    @font-face {
-    font-family: 'Meiryo';
-    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
-      body {
-        font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
-      }
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+    }
   </style>
 </head>
 
@@ -54,9 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </header>
   <main>
     <section class="form-section flex justify-center items-center py-16">
-      <div class="form-section__inner w-full max-w-[1040px] grid gap-6 px-4">
+      <div class="form-section__inner w-full max-w-[1040px] h-auto grid gap-6 px-4">
         <h1 class="text-3xl text-center font-bold">査定</h1>
-        <form class="grid gap-6" action="mail.php" method="post">
+        <form class="grid gap-6" action="mail.php" method="post" id="inquiriesForm" onsubmit="submitForm(event)">
           <div class="grid border-0 md:border-[1px] border-black">
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] gap-4 p-4 px-0 md:px-8">
               <div class="flex items-center gap-4">
@@ -97,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
               <div class="flex items-center gap-4">
-                <p class="bg-red-500 p-1 text-white">必須</p>
+                <p class="bg-gray-500 p-1 text-white">任意</p>
                 <p class="font-bold">間取り</p>
               </div>
               <div class="grid gap-4">
@@ -124,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
               <div class="flex items-center gap-4">
-                <p class="bg-red-500 p-1 text-white">必須</p>
+                <p class="bg-gray-500 p-1 text-white">任意</p>
                 <p class="font-bold">専有面積</p>
               </div>
               <div class="grid gap-4">
@@ -182,7 +177,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="480㎡ (145.2坪)">480㎡ (145.2坪)</option>
                     <option value="490㎡ (148.2坪)">490㎡ (148.2坪)</option>
                     <option value="500㎡ (151.3坪) 以上">500㎡ (151.3坪) 以上</option>
-
                   </select>
                 </div>
                 <p class="text-[#5D0000]">おおよその面積でかまいません</p>
@@ -344,7 +338,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方" id="代理人" /><label for="代理人">弁護士、銀行担当者など、名義人・名義人の家族、親族から依頼を受けた方</label>
                 </li>
                 <li class="flex gap-4">
-                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="不動産業者" id="不動産業者" /><label for="不動産業者">不動産業者</label>
+                  <input class="bg-gray-300" type="radio" name="あなたと売却物件との関係" value="その他" id="その他" /><label for="その他">その他</label>
                 </li>
               </ul>
             </div>
@@ -355,6 +349,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <div class="flex items-center gap-4">
                 <p>約</p><input type="text" name="住宅ローン残高" class="w-full bg-gray-300">
+                <p class="w-[3rem]">万円</p>
+              </div>
+            </div>
+            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+              <div class="flex items-center gap-4">
+                <p class="bg-gray-500 p-1 text-white">任意</p>
+                <p class="font-bold">希望買取金額</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <p>約</p><input type="text" name="希望買取金額" class="w-full bg-gray-300">
                 <p class="w-[3rem]">万円</p>
               </div>
             </div>
@@ -387,7 +391,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="grid gap-4">
                 <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="男性" value="男性"><label for="男性">男性</label></div>
                 <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="女性" value="女性"><label for="女性">女性</label></div>
-                <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="その他" value="その他"><label for="その他">その他</label></div>
                 <div class="flex gap-4"><input class="bg-gray-300" type="radio" name="性別" id="回答しない" value="回答しない"><label for="回答しない">回答しない</label></div>
               </div>
             </div>
@@ -404,43 +407,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <p>ご希望の連絡時間帯</p>
                   <div class="select w-[12rem] bg-gray-300">
                     <select name="ご希望の連絡時間帯">
-                      <option value="指定なし">指定なし</option>
-                      <option value="平日午前中">平日午前中</option>
-                      <option value="平日午後">平日午後</option>
-                      <option value="平日夜">平日夜</option>
-                      <option value="土日祝午前中">土日祝午前中</option>
-                      <option value="土日祝午後">土日祝午後</option>
-                      <option value="土日祝夜">土日祝夜</option>
+                      <option value="9:00 - 12:00">9:00 - 12:00</option>
+                      <option value="12:00 - 15:00">12:00 - 15:00</option>
+                      <option value="15:00 - 18:00">15:00 - 18:00</option>
+                      <option value="18:00 - 21:00">18:00 - 21:00</option>
                     </select>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
-              <div class="flex items-center gap-4">
-                <p class="bg-red-500 p-1 text-white">必須</p>
-                <p class="font-bold">メールアドレス</p>
-              </div>
-              <div class="grid gap-4">
-                <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
-                <p>例：baikyaku_t@realestate.co.jp PC、携帯どちらも可</p>
-                <input type="email" name="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
-              </div>
-            </div>
-            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
-              <div class="flex items-center gap-4">
-                <p class="bg-gray-500 p-1 text-white">任意</p>
-                <p class="font-bold">希望する連絡方法</p>
-              </div>
-              <div class="flex gap-4">
-                <div class="flex gap-2">
-                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法1" value="電話" id="電話" /><label for="電話">電話</label>
+              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+                <div class="flex items-center gap-4">
+                  <p class="bg-red-500 p-1 text-white">必須</p>
+                  <p class="font-bold">メールアドレス</p>
                 </div>
-                <div class="flex gap-2">
-                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法2" value="メール" id="メール" /><label for="メール">メール</label>
+                <div class="grid gap-4">
+                  <div class="grid gap-4">
+                    <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
+                    <p>例：baikyaku_t@realestate.co.jp PC、携帯どちらも可</p>
+                    <input type="email" name="メールアドレス" id="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
+                  </div>
+                  <div class="grid gap-4">
+                    <p>メールアドレス（確認用）</p>
+                    <input type="email" name="メールアドレス（確認用）" id="メールアドレス（確認用）" class="p-[10px] w-full bg-gray-300" required />
+                    <p class="hidden text-red-400" id="email-confirmation-warning" >アドレスが異なります</p>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+                <div class="flex items-center gap-4">
+                  <p class="bg-gray-500 p-1 text-white">任意</p>
+                  <p class="font-bold">希望する連絡方法</p>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex gap-2">
+                    <input class="bg-gray-300" type="checkbox" name="希望する連絡方法1" value="電話" id="電話" /><label for="電話">電話</label>
+                  </div>
+                  <div class="flex gap-2">
+                    <input class="bg-gray-300" type="checkbox" name="希望する連絡方法2" value="メール" id="メール" /><label for="メール">メール</label>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+                <div class="flex items-center gap-4">
+                  <p class="bg-gray-500 p-1 text-white">任意</p>
+                  <p class="font-bold">希望査定方法</p>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex gap-2">
+                    <input class="bg-gray-300" type="checkbox" name="希望査定方法1" value="机上" id="机上" /><label for="机上">机上</label>
+                  </div>
+                  <div class="flex gap-2">
+                    <input class="bg-gray-300" type="checkbox" name="希望査定方法2" value="訪問" id="訪問" /><label for="訪問">訪問</label>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="flex justify-center">
             <button type="submit" name="send" class="px-8 py-4 bg-[#5DADFF] hover:bg-[#0060c3] transition-all text-white text-xl font-bold">
@@ -457,7 +478,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="flex gap-4">
           <a href="#">不動産売却</a>
           <a href="#">不動産購入</a>
-          <a href="#">お問合せ</a>
+          <a href="#">お問い合わせ</a>
+          <a href="#">加盟店募集</a>
         </div>
         <div class="flex gap-4">
           <a href="#">プライバシーポリシー</a>
@@ -480,6 +502,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       offset: 0,
       once: true,
     });
+
+    function submitForm(event) {
+          
+            let form = document.getElementById("inquiriesForm");
+
+            let email = document.getElementById("メールアドレス");
+            let confirmEmail = document.getElementById("メールアドレス（確認用）");
+
+            if (form.checkValidity()) {
+                if (email.value === confirmEmail.value) {
+                    form.submit();
+                    document.getElementById("email-confirmation-warning").classList.add('hidden');
+                } else {
+                  document.getElementById("email-confirmation-warning").classList.remove('hidden');
+                  event.preventDefault();
+                }
+            } else {
+                form.reportValidity();
+                event.preventDefault();
+            }
+        }
   </script>
 </body>
 

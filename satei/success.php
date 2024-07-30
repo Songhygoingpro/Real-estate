@@ -10,17 +10,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
 
-@font-face {
-    font-family: 'Meiryo';
-    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-        body {
-            background-color: #EFF0F1;
-            text-align: center;
-            font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+    }
 
         .btn {
             padding: 1rem 2rem;
@@ -40,7 +34,7 @@
 
 <body>
     <main>
-        <section class="flex justify-center items-center p-4 pt-8">
+        <section class="flex justify-center items-center p-4 h-[100vh]">
             <div class="flex flex-col justify-center items-center gap-8 bg-[#DBDEDF] px-4 py-8 md:p-8 container" data-aos="fadeUp">
                 <img src="../assets/img/successful-submission-image.png" class="max-w-16 w-full h-auto">
                 <h1 class="text-3xl md:text-5xl font-bold">フォームが送信されました。</h1>

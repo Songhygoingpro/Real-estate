@@ -22,7 +22,8 @@ $専有面積 = htmlspecialchars($_POST['専有面積']);
 $築年 = htmlspecialchars($_POST['築年']);
 $現状 = htmlspecialchars($_POST['現状']);
 $あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係']);
-$住宅ローン残高    = htmlspecialchars($_POST['住宅ローン残高']);
+$住宅ローン残高 = htmlspecialchars($_POST['住宅ローン残高']);
+$希望買取金額 = htmlspecialchars($_POST['希望買取金額']);
 $お名前 = htmlspecialchars($_POST['お名前']);
 $フリガナ = htmlspecialchars($_POST['フリガナ']);
 $性別 = htmlspecialchars($_POST['性別']);
@@ -31,6 +32,8 @@ $ご希望の連絡時間帯 = htmlspecialchars($_POST['ご希望の連絡時間
 $メールアドレス = htmlspecialchars($_POST['メールアドレス']);
 $希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1']) : '';
 $希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2']) : '';
+$希望査定方法1 = isset($_POST['希望査定方法1']) ? htmlspecialchars($_POST['希望査定方法1']) : '';
+$希望査定方法2 = isset($_POST['希望査定方法2']) ? htmlspecialchars($_POST['希望査定方法2']) : '';
 
 // Prepare the email content
 
@@ -48,7 +51,7 @@ if (isset($_POST["send"])) {
 
     //Recipients
     $mail->setFrom($_POST["メールアドレス"], $_POST["お名前"]); // Sender Email and name
-    $mail->addAddress('songhy994@gmail.com');     //Add a recipient email  
+    $mail->addAddress('songhyham@gmail.com');     //Add a recipient email  
     $mail->addReplyTo($_POST["メールアドレス"], $_POST["お名前"]); // reply to sender email
 
     //Content
@@ -59,23 +62,16 @@ if (isset($_POST["send"])) {
             <html>
             <head>
                 <style>
-                    @font-face {
-    font-family: 'Meiryo';
-    src: url('../assets/fonts/Meiryo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-      body {
-        font-family: 'Meiryo', 'Arial', 'Helvetica', sans-serif;
-      }
+                
                     .property-info {
                         margin-bottom: 10px;
+                        color: black;
                     }
                     .property-info strong {
                         display: inline-block;
                         width: 200px;
                     }
+
                 </style>
             </head>
             <body>
@@ -83,7 +79,7 @@ if (isset($_POST["send"])) {
                     <strong>物件の種別:</strong> $物件の種別<br>
                 </div>
                 <div class='property-info'>
-                    <strong>物件の所在地:</strong> $物件の所在地 $丁目$マンション名$号室<br>
+                    <strong>物件の所在地:</strong> $物件の所在地  $丁目$マンション名$号室<br>
                 </div>
                 <div class='property-info'>
                     <strong>間取り:</strong> $間取り<br>
@@ -102,6 +98,9 @@ if (isset($_POST["send"])) {
                 </div>
                 <div class='property-info'>
                     <strong>住宅ローン残高:</strong> $住宅ローン残高<br>
+                </div>
+                <div class='property-info'>
+                    <strong>希望買取金額:</strong> $希望買取金額<br>
                 </div>
                 <div class='property-info'>
                     <strong>お名前:</strong> $お名前<br>
@@ -124,13 +123,16 @@ if (isset($_POST["send"])) {
                 <div class='property-info'>
                     <strong>希望する連絡方法:</strong> $希望する連絡方法1$希望する連絡方法2<br>
                 </div>
+                <div class='property-info'>
+                    <strong>希望査定方法:</strong> $希望査定方法1$希望査定方法2<br>
+                </div>
             </body>
             </html>
         ";
 
 
     // Send email
-    if ($mail->send()) {
+   /*  if ($mail->send()) {
         // Insert data into the database
         $stmt = $conn->prepare("INSERT INTO inquiries (property_type, address, name, gender, phone_number, email_address) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $物件の種別, $物件の所在地, $お名前, $性別, $電話番号, $メールアドレス);
@@ -145,5 +147,12 @@ if (isset($_POST["send"])) {
         echo "Failed to send email.";
     }
 
-    $conn->close();
+    $conn->close(); */
+    
+    if ($mail->send()) {
+    // Email sent successfully
+    header("Location: success.php");
+} else {
+    echo "Failed to send email.";
+}
 }
