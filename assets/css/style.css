@@ -70,18 +70,18 @@
     box-shadow: none;
   }
   
-  .select {
+  .custom-select-box {
     position: relative;
     display: flex;
     overflow: hidden;
   }
   
-  .select select {
+  .custom-select-box select {
     flex: 1;
     padding: 0.5rem;
   }
   
-  .select::after {
+  .custom-select-box::after {
     content: "\25BC";
     position: absolute;
     right: 0.6rem;

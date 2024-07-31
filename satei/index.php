@@ -34,13 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>査定</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-
-    body {
-      font-family: "Noto Sans JP", sans-serif;
-    }
-  </style>
 </head>
 
 <body data-aos="custom-fadeUp">
@@ -96,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="font-bold">間取り</p>
               </div>
               <div class="grid gap-4">
-                <div class="select w-[15rem] bg-gray-300">
+                <div class="custom-select-box w-[15rem] bg-gray-300">
                   <select name="間取り">
                     <option value="">--選択してください--</option>
                     <option value="1R">1R</option>
@@ -123,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="font-bold">専有面積</p>
               </div>
               <div class="grid gap-4">
-                <div class="select w-[15rem] bg-gray-300">
+                <div class="custom-select-box w-[15rem] bg-gray-300">
                   <select name="専有面積">
                     <option value="">--選択してください--</option>
                     <option value="0">わからない</option>
@@ -189,7 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <div class="grid gap-4">
                 <div class="flex items-center gap-4">
-                  <div class="select w-[15rem] bg-gray-300">
+                  <div class="custom-select-box w-[15rem] bg-gray-300">
                     <select name="築年">
                       <option value="">--選択してください--</option>
                       <option value="2024年(令和6年)今年">2024年(令和6年) 今年</option>
@@ -405,7 +398,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="number" name="電話番号" class="w-full bg-gray-300" required>
                 <div class="flex gap-4">
                   <p>ご希望の連絡時間帯</p>
-                  <div class="select w-[12rem] bg-gray-300">
+                  <div class="custom-select-box w-[12rem] bg-gray-300">
                     <select name="ご希望の連絡時間帯">
                       <option value="9:00 - 12:00">9:00 - 12:00</option>
                       <option value="12:00 - 15:00">12:00 - 15:00</option>
@@ -416,52 +409,52 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
               </div>
             </div>
-              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
-                <div class="flex items-center gap-4">
-                  <p class="bg-red-500 p-1 text-white">必須</p>
-                  <p class="font-bold">メールアドレス</p>
+            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+              <div class="flex items-center gap-4">
+                <p class="bg-red-500 p-1 text-white">必須</p>
+                <p class="font-bold">メールアドレス</p>
+              </div>
+              <div class="grid gap-4">
+                <div class="grid gap-4">
+                  <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
+                  <p>例：baikyaku_t@realestate.co.jp <br class="sm:hidden block" />PC、携帯どちらも可</p>
+                  <input type="email" name="メールアドレス" id="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
                 </div>
                 <div class="grid gap-4">
-                  <div class="grid gap-4">
-                    <p class="text-[#5D0000]">メールアドレスの間違いがないようご確認ください</p>
-                    <p>例：baikyaku_t@realestate.co.jp <br class="sm:hidden block"/>PC、携帯どちらも可</p>
-                    <input type="email" name="メールアドレス" id="メールアドレス" class="p-[10px] w-full bg-gray-300" required />
-                  </div>
-                  <div class="grid gap-4">
-                    <p>メールアドレス（確認用）</p>
-                    <input type="email" name="メールアドレス（確認用）" id="メールアドレス（確認用）" class="p-[10px] w-full bg-gray-300" required />
-                    <p class="hidden text-red-400" id="email-confirmation-warning" >アドレスが異なります</p>
-                  </div>
+                  <p>メールアドレス（確認用）</p>
+                  <input type="email" name="メールアドレス（確認用）" id="メールアドレス（確認用）" class="p-[10px] w-full bg-gray-300" required />
+                  <p class="hidden text-red-400" id="email-confirmation-warning">アドレスが異なります</p>
                 </div>
               </div>
-              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
-                <div class="flex items-center gap-4">
-                  <p class="bg-gray-500 p-1 text-white">任意</p>
-                  <p class="font-bold">希望する連絡方法</p>
+            </div>
+            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+              <div class="flex items-center gap-4">
+                <p class="bg-gray-500 p-1 text-white">任意</p>
+                <p class="font-bold">希望する連絡方法</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex gap-2">
+                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法1" value="電話" id="電話" /><label for="電話">電話</label>
                 </div>
-                <div class="flex gap-4">
-                  <div class="flex gap-2">
-                    <input class="bg-gray-300" type="checkbox" name="希望する連絡方法1" value="電話" id="電話" /><label for="電話">電話</label>
-                  </div>
-                  <div class="flex gap-2">
-                    <input class="bg-gray-300" type="checkbox" name="希望する連絡方法2" value="メール" id="メール" /><label for="メール">メール</label>
-                  </div>
+                <div class="flex gap-2">
+                  <input class="bg-gray-300" type="checkbox" name="希望する連絡方法2" value="メール" id="メール" /><label for="メール">メール</label>
                 </div>
               </div>
-              <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
-                <div class="flex items-center gap-4">
-                  <p class="bg-gray-500 p-1 text-white">任意</p>
-                  <p class="font-bold">希望査定方法</p>
+            </div>
+            <div class="grid grid-rows-[auto_auto] md:grid-cols-[17rem_1fr] items-start gap-4 p-4 px-0 md:px-8 border-0 md:border-t-[1px] border-black">
+              <div class="flex items-center gap-4">
+                <p class="bg-gray-500 p-1 text-white">任意</p>
+                <p class="font-bold">希望査定方法</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex gap-2">
+                  <input class="bg-gray-300" type="checkbox" name="希望査定方法1" value="机上" id="机上" /><label for="机上">机上</label>
                 </div>
-                <div class="flex gap-4">
-                  <div class="flex gap-2">
-                    <input class="bg-gray-300" type="checkbox" name="希望査定方法1" value="机上" id="机上" /><label for="机上">机上</label>
-                  </div>
-                  <div class="flex gap-2">
-                    <input class="bg-gray-300" type="checkbox" name="希望査定方法2" value="訪問" id="訪問" /><label for="訪問">訪問</label>
-                  </div>
+                <div class="flex gap-2">
+                  <input class="bg-gray-300" type="checkbox" name="希望査定方法2" value="訪問" id="訪問" /><label for="訪問">訪問</label>
                 </div>
               </div>
+            </div>
           </div>
           <div class="flex justify-center">
             <button type="submit" name="send" class="px-8 py-4 bg-[#5DADFF] hover:bg-[#0060c3] transition-all text-white text-xl font-bold">
@@ -476,14 +469,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="footer__inner p-4 md:p-8">
       <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 text-[12px] md:text-sm h-36">
         <div class="flex gap-4">
-          <a href="#">不動産売却</a>
-          <a href="#">不動産購入</a>
-          <a href="#">お問い合わせ</a>
-          <a href="#">加盟店募集</a>
+          <a href="#" data-aos="fade-up">不動産売却</a>
+          <a href="#" data-aos="fade-up">不動産購入</a>
+          <a href="#" data-aos="fade-up">お問い合わせ</a>
+          <a href="#" data-aos="fade-up">加盟店募集</a>
         </div>
         <div class="flex gap-4">
-          <a href="#">プライバシーポリシー</a>
-          <a href="#">ご利用規約</a>
+          <a href="#" data-aos="fade-up">プライバシーポリシー</a>
+          <a href="#" data-aos="fade-up">ご利用規約</a>
         </div>
       </div>
     </div>
@@ -503,26 +496,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       once: true,
     });
 
+
+    //loading warning message when the email is not marching
     function submitForm(event) {
-          
-            let form = document.getElementById("inquiriesForm");
 
-            let email = document.getElementById("メールアドレス");
-            let confirmEmail = document.getElementById("メールアドレス（確認用）");
+      let form = document.getElementById("inquiriesForm");
 
-            if (form.checkValidity()) {
-                if (email.value === confirmEmail.value) {
-                    form.submit();
-                    document.getElementById("email-confirmation-warning").classList.add('hidden');
-                } else {
-                  document.getElementById("email-confirmation-warning").classList.remove('hidden');
-                  event.preventDefault();
-                }
-            } else {
-                form.reportValidity();
-                event.preventDefault();
-            }
+      let email = document.getElementById("メールアドレス");
+      let confirmEmail = document.getElementById("メールアドレス（確認用）");
+
+      if (form.checkValidity()) {
+        if (email.value === confirmEmail.value) {
+          form.submit();
+          document.getElementById("email-confirmation-warning").classList.add('hidden');
+        } else {
+          document.getElementById("email-confirmation-warning").classList.remove('hidden');
+          event.preventDefault();
         }
+      } else {
+        form.reportValidity();
+        event.preventDefault();
+      }
+    }
+
+    //aos timing
+    document.querySelectorAll('[data-aos="fade-up"]').forEach((element, index) => {
+      element.setAttribute('data-aos-delay', `${index * 100}`);
+    });
   </script>
 </body>
 

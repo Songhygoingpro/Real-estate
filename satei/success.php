@@ -8,15 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-
-        body {
-            font-family: "Noto Sans JP", sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
     <main>
         <section class="flex justify-center items-center p-4 h-[100vh]">
@@ -46,6 +39,7 @@
             once: true,
         });
 
+        //aos timing
         document.querySelectorAll('[data-aos="fade-up"]').forEach((element, index) => {
             element.setAttribute('data-aos-delay', `${index * 100}`);
         });

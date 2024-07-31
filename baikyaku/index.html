@@ -97,7 +97,7 @@
               <h3 class="text-white font-bold text-center md:text-start">
                 物件の種別
               </h3>
-              <div class="select w-[10rem] bg-white">
+              <div class="custom-select-box w-[10rem] bg-white">
                 <select name="物件の種別" id="物件の種別" required>
                   <option value>物件種別</option>
                   <option value="マンション">マンション</option>
@@ -111,7 +111,7 @@
                 物件の所在地
               </h3>
               <div class="grid md:flex gap-4">
-                <div class="select w-[10rem] bg-white">
+                <div class="custom-select-box w-[10rem] bg-white">
                   <select name="prefecture" id="prefecture" required>
                     <option value>都道府県</option>
                     <option value="北海道">北海道</option>
@@ -163,12 +163,12 @@
                     <option value="沖縄県">沖縄県</option>
                   </select>
                 </div>
-                <div class="select w-[10rem] bg-white">
+                <div class="custom-select-box w-[10rem] bg-white">
                   <select id="city" name="city" required>
                     <option value="">市区郡</option>
                   </select>
                 </div>
-                <div class="select w-[10rem] bg-white">
+                <div class="custom-select-box w-[10rem] bg-white">
                   <select id="town" name="town" required>
                     <option value="">町名</option>
                   </select>
@@ -313,14 +313,14 @@
     <div class="footer__inner p-4 md:p-8">
       <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 text-[12px] md:text-sm h-36">
         <div class="flex gap-4">
-          <a href="#">不動産売却</a>
-          <a href="#">不動産購入</a>
-          <a href="#">お問い合わせ</a>
-          <a href="#">加盟店募集</a>
+          <a href="#" data-aos="fade-up">不動産売却</a>
+          <a href="#" data-aos="fade-up">不動産購入</a>
+          <a href="#" data-aos="fade-up">お問い合わせ</a>
+          <a href="#" data-aos="fade-up">加盟店募集</a>
         </div>
         <div class="flex gap-4">
-          <a href="#">プライバシーポリシー</a>
-          <a href="#">ご利用規約</a>
+          <a href="#" data-aos="fade-up">プライバシーポリシー</a>
+          <a href="#" data-aos="fade-up">ご利用規約</a>
         </div>
       </div>
     </div>
@@ -342,8 +342,8 @@
       once: true,
     });
 
+//submitForm funciton for addiction button at the bottom of the page 
     function submitForm() {
-
       let form = document.getElementById("locationForm");
 
       if (form.checkValidity()) {
@@ -353,11 +353,12 @@
       }
     }
 
+//make  options in select boxes change dynamically correspond to prefecture or city
     $(document).ready(function () {
       $('#prefecture').change(function () {
         var selectedValue = $(this).val();
         $.ajax({
-          url: '../src/get_options_for_box2.php',
+          url: '../src/get_options_for_city.php',
           type: 'POST',
           data: { selectedValue: selectedValue },
           success: function (response) {
@@ -370,7 +371,7 @@
         var selectedValue = $(this).val();
         var parentValue = $('#prefecture').val();
         $.ajax({
-          url: '../src/get_options_for_box3.php',
+          url: '../src/get_options_for_town.php',
           type: 'POST',
           data: { selectedValue: selectedValue, parentValue: parentValue },
           success: function (response) {

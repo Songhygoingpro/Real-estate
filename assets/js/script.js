@@ -14,6 +14,11 @@ step_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
 
+const footer = document.querySelectorAll('.footer [data-aos="fade-up"]');
+footer.forEach((element, index) => {
+    element.setAttribute('data-aos-delay', `${index * 100}`);
+});
+
 //Change background and text color of navigation menu when scroll off the top
 window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
