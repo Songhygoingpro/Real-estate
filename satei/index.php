@@ -473,8 +473,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
   </main>
   <footer class="footer bg-[#00152A] grid text-white mt-16">
-    <div class="footer__inner p-8">
-      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 text-sm h-36">
+    <div class="footer__inner p-4 md:p-8">
+      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 text-[12px] md:text-sm h-36">
         <div class="flex gap-4">
           <a href="#">不動産売却</a>
           <a href="#">不動産購入</a>
