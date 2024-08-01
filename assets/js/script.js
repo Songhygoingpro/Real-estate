@@ -26,13 +26,14 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
         header.classList.add('bg-white');
         header.classList.remove('text-white');
-
+        header.classList.add('shadow-md');
         nav_menu__button.forEach((span) => {
             span.style.backgroundColor = 'black';
         });
     } else {
         header.classList.remove('bg-white');
         header.classList.add('text-white');
+        header.classList.remove('shadow-md');
         nav_menu__button.forEach((span) => {
             span.style.backgroundColor = 'white';
         });
