@@ -35,6 +35,20 @@ $希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlsp
 $希望査定方法1 = isset($_POST['希望査定方法1']) ? htmlspecialchars($_POST['希望査定方法1']) : '';
 $希望査定方法2 = isset($_POST['希望査定方法2']) ? htmlspecialchars($_POST['希望査定方法2']) : '';
 
+$希望する連絡方法 = $希望する連絡方法1;
+if (empty($希望する連絡方法2) || empty($希望する連絡方法)) {
+    $希望する連絡方法 .=   $希望する連絡方法2;
+} else {
+    $希望する連絡方法 .= ' / ' . $希望する連絡方法2;
+}
+
+$希望査定方法 = $希望査定方法1;
+if (empty($希望査定方法2) || empty($希望査定方法)) {
+    $希望査定方法 .= $希望査定方法2;
+} else{
+    $希望査定方法 .= ' / ' . $希望査定方法2;
+}
+
 // Prepare the email content
 
 if (isset($_POST["send"])) {
@@ -97,10 +111,10 @@ if (isset($_POST["send"])) {
                     <strong>あなたと売却物件との関係:</strong> $あなたと売却物件との関係<br>
                 </div>
                 <div class='property-info'>
-                    <strong>住宅ローン残高:</strong> $住宅ローン残高<br>
+                    <strong>住宅ローン残高:</strong>約<span>$住宅ローン残高</span>万円<br>
                 </div>
                 <div class='property-info'>
-                    <strong>希望買取金額:</strong> $希望買取金額<br>
+                    <strong>希望買取金額:</strong>約<span>$希望買取金額</span>万円<br>
                 </div>
                 <div class='property-info'>
                     <strong>お名前:</strong> $お名前<br>
@@ -121,10 +135,10 @@ if (isset($_POST["send"])) {
                     <strong>メールアドレス:</strong> $メールアドレス<br>
                 </div>
                 <div class='property-info'>
-                    <strong>希望する連絡方法:</strong> $希望する連絡方法1$希望する連絡方法2<br>
+                    <strong>希望する連絡方法:</strong> $希望する連絡方法<br>
                 </div>
                 <div class='property-info'>
-                    <strong>希望査定方法:</strong> $希望査定方法1$希望査定方法2<br>
+                    <strong>希望査定方法:</strong> $希望査定方法<br>
                 </div>
             </body>
             </html>
