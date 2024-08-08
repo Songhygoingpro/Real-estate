@@ -356,7 +356,7 @@
 //make  options in select boxes change dynamically correspond to prefecture or city
     $(document).ready(function () {
       $('#prefecture').change(function () {
-        var selectedValue = $(this).val();
+        let selectedValue = $(this).val();
         $.ajax({
           url: '../src/get_options_for_city.php',
           type: 'POST',
@@ -368,8 +368,8 @@
       });
 
       $('#city').change(function () {
-        var selectedValue = $(this).val();
-        var parentValue = $('#prefecture').val();
+        let selectedValue = $(this).val();
+        let parentValue = $('#prefecture').val();
         $.ajax({
           url: '../src/get_options_for_town.php',
           type: 'POST',
