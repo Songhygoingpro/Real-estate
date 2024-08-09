@@ -9,10 +9,10 @@ $town = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  $物件の種別 = isset($_POST['物件の種別']) ? htmlspecialchars($_POST['物件の種別']) : '';
-  $prefecture = isset($_POST['prefecture']) ? htmlspecialchars($_POST['prefecture']) : '';
-  $city = isset($_POST['city']) ? htmlspecialchars($_POST['city']) : '';
-  $town = isset($_POST['town']) ? htmlspecialchars($_POST['town']) : '';
+  $物件の種別 = isset($_POST['物件の種別']) ? htmlspecialchars($_POST['物件の種別'], ENT_QUOTES, 'UTF-8') : '';
+$prefecture = isset($_POST['prefecture']) ? htmlspecialchars($_POST['prefecture'], ENT_QUOTES, 'UTF-8') : '';
+$city = isset($_POST['city']) ? htmlspecialchars($_POST['city'], ENT_QUOTES, 'UTF-8') : '';
+$town = isset($_POST['town']) ? htmlspecialchars($_POST['town'], ENT_QUOTES, 'UTF-8') : '';
 
   // Store sanitized data in session variables
   $_SESSION['物件の種別'] = $物件の種別;

@@ -12,29 +12,30 @@ require '../config/db_config.php';
 session_start();
 
 // Collect and sanitize form data 
-$物件の種別 = htmlspecialchars($_SESSION['物件の種別']);
-$物件の所在地 = htmlspecialchars($_SESSION['prefecture']) . htmlspecialchars($_SESSION['city']) . htmlspecialchars($_SESSION['town']);
-$丁目 = htmlspecialchars(trim($_POST['丁目']));
-$マンション名 = htmlspecialchars(trim($_POST['マンション名']));
-$号室 = htmlspecialchars(trim($_POST['号室']));
-$間取り = htmlspecialchars($_POST['間取り']);
-$専有面積 = htmlspecialchars($_POST['専有面積']);
-$築年 = htmlspecialchars($_POST['築年']);
-$現状 = htmlspecialchars($_POST['現状']);
-$あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係']);
-$住宅ローン残高 = htmlspecialchars(trim($_POST['住宅ローン残高']));
-$希望買取金額 = htmlspecialchars(trim($_POST['希望買取金額']));
-$お名前 = htmlspecialchars(trim($_POST['お名前']));
-$フリガナ = htmlspecialchars(trim($_POST['フリガナ']));
-$性別 = htmlspecialchars($_POST['性別']);
-$電話番号 = htmlspecialchars(trim($_POST['電話番号']));
-$ご希望の連絡時間帯 = htmlspecialchars($_POST['ご希望の連絡時間帯']);
-$メールアドレス = htmlspecialchars(trim($_POST['メールアドレス']));
-$希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1']) : '';
-$希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2']) : '';
-$希望査定方法1 = isset($_POST['希望査定方法1']) ? htmlspecialchars($_POST['希望査定方法1']) : '';
-$希望査定方法2 = isset($_POST['希望査定方法2']) ? htmlspecialchars($_POST['希望査定方法2']) : '';
+$物件の種別 = htmlspecialchars($_SESSION['物件の種別'], ENT_QUOTES, 'UTF-8');
+$物件の所在地 = htmlspecialchars($_SESSION['prefecture'], ENT_QUOTES, 'UTF-8') . htmlspecialchars($_SESSION['city'], ENT_QUOTES, 'UTF-8') . htmlspecialchars($_SESSION['town'], ENT_QUOTES, 'UTF-8');
+$丁目 = htmlspecialchars(trim($_POST['丁目']), ENT_QUOTES, 'UTF-8');
+$マンション名 = htmlspecialchars(trim($_POST['マンション名']), ENT_QUOTES, 'UTF-8');
+$号室 = htmlspecialchars(trim($_POST['号室']), ENT_QUOTES, 'UTF-8');
+$間取り = htmlspecialchars($_POST['間取り'], ENT_QUOTES, 'UTF-8');
+$専有面積 = htmlspecialchars($_POST['専有面積'], ENT_QUOTES, 'UTF-8');
+$築年 = htmlspecialchars($_POST['築年'], ENT_QUOTES, 'UTF-8');
+$現状 = htmlspecialchars($_POST['現状'], ENT_QUOTES, 'UTF-8');
+$あなたと売却物件との関係 = htmlspecialchars($_POST['あなたと売却物件との関係'], ENT_QUOTES, 'UTF-8');
+$住宅ローン残高 = htmlspecialchars(trim($_POST['住宅ローン残高']), ENT_QUOTES, 'UTF-8');
+$希望買取金額 = htmlspecialchars(trim($_POST['希望買取金額']), ENT_QUOTES, 'UTF-8');
+$お名前 = htmlspecialchars(trim($_POST['お名前']), ENT_QUOTES, 'UTF-8');
+$フリガナ = htmlspecialchars(trim($_POST['フリガナ']), ENT_QUOTES, 'UTF-8');
+$性別 = htmlspecialchars($_POST['性別'], ENT_QUOTES, 'UTF-8');
+$電話番号 = htmlspecialchars(trim($_POST['電話番号']), ENT_QUOTES, 'UTF-8');
+$ご希望の連絡時間帯 = htmlspecialchars($_POST['ご希望の連絡時間帯'], ENT_QUOTES, 'UTF-8');
+$メールアドレス = htmlspecialchars(trim($_POST['メールアドレス']), ENT_QUOTES, 'UTF-8');
+$希望する連絡方法1 = isset($_POST['希望する連絡方法1']) ? htmlspecialchars($_POST['希望する連絡方法1'], ENT_QUOTES, 'UTF-8') : '';
+$希望する連絡方法2 = isset($_POST['希望する連絡方法2']) ? htmlspecialchars($_POST['希望する連絡方法2'], ENT_QUOTES, 'UTF-8') : '';
+$希望査定方法1 = isset($_POST['希望査定方法1']) ? htmlspecialchars($_POST['希望査定方法1'], ENT_QUOTES, 'UTF-8') : '';
+$希望査定方法2 = isset($_POST['希望査定方法2']) ? htmlspecialchars($_POST['希望査定方法2'], ENT_QUOTES, 'UTF-8') : '';
 
+//Add a '/' between options if both are chosen.
 $希望する連絡方法 = $希望する連絡方法1;
 if (empty($希望する連絡方法2) || empty($希望する連絡方法)) {
     $希望する連絡方法 .=   $希望する連絡方法2;
@@ -165,7 +166,7 @@ if (isset($_POST["send"])) {
     
     if ($mail->send()) {
     // Email sent successfully
-    header("Location: success.php");
+    header("Location: success.html");
 } else {
     echo "Failed to send email.";
 }
